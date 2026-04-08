@@ -1,0 +1,1393 @@
+###-Starting CPU-###
+(Init:0)/0/0ms - Switching Process In
+(Init:0)/0/9ms - Switching Process In
+###-Process: (Short_Task:1) has been created-###
+###-Process: (Medium_Task:2) has been created-###
+###-Process: (Long_Task:3) has been created-###
+
+--- Scheduler with Goodness Snapshot at 10ms (MinExp: 0, MaxWait: 0) ---
+ Task: (Long_Task:3)   | Exp:          0 | Wait:          0 | Goodness:     1.0000 
+ Task: (Medium_Task:2) | Exp:          0 | Wait:          0 | Goodness:     1.0000 
+ Task: (Short_Task:1)  | Exp:          0 | Wait:          0 | Goodness:     1.0000 
+----------------------------------------------------------------------------------
+(Long_Task:3)/100/10ms - Switching Process In
+
+--- Scheduler with Goodness Snapshot at 20ms (MinExp: 0, MaxWait: 10000000) ---
+ Task: (Long_Task:3)   | Exp:    6666666 | Wait:          0 | Goodness:    84.3333 [RUNNING]
+ Task: (Medium_Task:2) | Exp:          0 | Wait:   10000000 | Goodness:     1.0000 
+ Task: (Short_Task:1)  | Exp:          0 | Wait:   10000000 | Goodness:     1.0000 
+----------------------------------------------------------------------------------
+(Medium_Task:2)/100/19ms - Switching Process In
+
+--- Scheduler with Goodness Snapshot at 30ms (MinExp: 0, MaxWait: 20000000) ---
+ Task: (Long_Task:3)   | Exp:    6666666 | Wait:   10000000 | Goodness:    14.6364 
+ Task: (Medium_Task:2) | Exp:    6666666 | Wait:          0 | Goodness:   161.0000 [RUNNING]
+ Task: (Short_Task:1)  | Exp:          0 | Wait:   20000000 | Goodness:     1.0000 
+----------------------------------------------------------------------------------
+(Short_Task:1)/100/29ms - Switching Process In
+
+--- Scheduler with Goodness Snapshot at 40ms (MinExp: 6666666, MaxWait: 20000000) ---
+ Task: (Long_Task:3)   | Exp:    6666666 | Wait:   20000000 | Goodness:     1.0000 
+ Task: (Medium_Task:2) | Exp:    6666666 | Wait:   10000000 | Goodness:     1.9091 
+ Task: (Short_Task:1)  | Exp:    6666666 | Wait:          0 | Goodness:    21.0000 [RUNNING]
+----------------------------------------------------------------------------------
+(Long_Task:3)/100/39ms - Switching Process In
+
+--- Scheduler with Goodness Snapshot at 50ms (MinExp: 6666666, MaxWait: 20000000) ---
+ Task: (Long_Task:3)   | Exp:    8888888 | Wait:          0 | Goodness:    27.0870 [RUNNING]
+ Task: (Medium_Task:2) | Exp:    6666666 | Wait:   20000000 | Goodness:     1.0000 
+ Task: (Short_Task:1)  | Exp:    6666666 | Wait:   10000000 | Goodness:     1.9091 
+----------------------------------------------------------------------------------
+(Medium_Task:2)/100/49ms - Switching Process In
+
+--- Scheduler with Goodness Snapshot at 60ms (MinExp: 6666666, MaxWait: 20000000) ---
+ Task: (Long_Task:3)   | Exp:    8888888 | Wait:   10000000 | Goodness:     2.4625 
+ Task: (Medium_Task:2) | Exp:    8888888 | Wait:          0 | Goodness:    27.0870 [RUNNING]
+ Task: (Short_Task:1)  | Exp:    6666666 | Wait:   20000000 | Goodness:     1.0000 
+----------------------------------------------------------------------------------
+(Short_Task:1)/100/59ms - Switching Process In
+
+--- Scheduler with Goodness Snapshot at 70ms (MinExp: 8888888, MaxWait: 20000000) ---
+ Task: (Long_Task:3)   | Exp:    8888888 | Wait:   20000000 | Goodness:     1.0000 
+ Task: (Medium_Task:2) | Exp:    8888888 | Wait:   10000000 | Goodness:     1.9091 
+ Task: (Short_Task:1)  | Exp:    8888888 | Wait:          0 | Goodness:    21.0000 [RUNNING]
+----------------------------------------------------------------------------------
+(Long_Task:3)/100/69ms - Switching Process In
+
+--- Scheduler with Goodness Snapshot at 80ms (MinExp: 8888888, MaxWait: 20000000) ---
+ Task: (Long_Task:3)   | Exp:    9629629 | Wait:          0 | Goodness:    22.5730 [RUNNING]
+ Task: (Medium_Task:2) | Exp:    8888888 | Wait:   20000000 | Goodness:     1.0000 
+ Task: (Short_Task:1)  | Exp:    8888888 | Wait:   10000000 | Goodness:     1.9091 
+----------------------------------------------------------------------------------
+(Medium_Task:2)/100/79ms - Switching Process In
+
+--- Scheduler with Goodness Snapshot at 90ms (MinExp: 8888888, MaxWait: 20000000) ---
+ Task: (Long_Task:3)   | Exp:    9629629 | Wait:   10000000 | Goodness:     2.0521 
+ Task: (Medium_Task:2) | Exp:    9629629 | Wait:          0 | Goodness:    22.5730 [RUNNING]
+ Task: (Short_Task:1)  | Exp:    8888888 | Wait:   20000000 | Goodness:     1.0000 
+----------------------------------------------------------------------------------
+(Short_Task:1)/100/89ms - Switching Process In
+
+--- Scheduler with Goodness Snapshot at 100ms (MinExp: 9629629, MaxWait: 20000000) ---
+ Task: (Long_Task:3)   | Exp:    9629629 | Wait:   20000000 | Goodness:     1.0000 
+ Task: (Medium_Task:2) | Exp:    9629629 | Wait:   10000000 | Goodness:     1.9091 
+ Task: (Short_Task:1)  | Exp:    9629629 | Wait:          0 | Goodness:    21.0000 [RUNNING]
+----------------------------------------------------------------------------------
+(Long_Task:3)/100/99ms - Switching Process In
+
+--- Scheduler with Goodness Snapshot at 110ms (MinExp: 9629629, MaxWait: 20000000) ---
+ Task: (Long_Task:3)   | Exp:    9876543 | Wait:          0 | Goodness:    21.4878 [RUNNING]
+ Task: (Medium_Task:2) | Exp:    9629629 | Wait:   20000000 | Goodness:     1.0000 
+ Task: (Short_Task:1)  | Exp:    9629629 | Wait:   10000000 | Goodness:     1.9091 
+----------------------------------------------------------------------------------
+(Medium_Task:2)/100/109ms - Switching Process In
+###-Process: (Late_Task:4) has been created-###
+
+--- Scheduler with Goodness Snapshot at 110ms (MinExp: 0, MaxWait: 10000000) ---
+ Task: (Late_Task:4)   | Exp:          0 | Wait:          0 | Goodness:    11.0000 
+ Task: (Long_Task:3)   | Exp:    9876543 | Wait:          0 | Goodness:   119.6420 
+ Task: (Medium_Task:2) | Exp:    3209876 | Wait:          0 | Goodness:    46.3086 [RUNNING]
+ Task: (Short_Task:1)  | Exp:    9629629 | Wait:   10000000 | Goodness:    10.6296 
+----------------------------------------------------------------------------------
+(Short_Task:1)/100/110ms - Switching Process In
+
+--- Scheduler with Goodness Snapshot at 120ms (MinExp: 0, MaxWait: 10000000) ---
+ Task: (Late_Task:4)   | Exp:          0 | Wait:   10000000 | Goodness:     1.0000 
+ Task: (Long_Task:3)   | Exp:    9876543 | Wait:   10000000 | Goodness:    10.8765 
+ Task: (Medium_Task:2) | Exp:    3209876 | Wait:   10000000 | Goodness:     4.2099 
+ Task: (Short_Task:1)  | Exp:    9876543 | Wait:          0 | Goodness:   119.6420 [RUNNING]
+----------------------------------------------------------------------------------
+(Late_Task:4)/100/119ms - Switching Process In
+
+--- Scheduler with Goodness Snapshot at 130ms (MinExp: 3209876, MaxWait: 20000000) ---
+ Task: (Late_Task:4)   | Exp:    6666666 | Wait:          0 | Goodness:    38.2434 [RUNNING]
+ Task: (Long_Task:3)   | Exp:    9876543 | Wait:   20000000 | Goodness:     2.5836 
+ Task: (Medium_Task:2) | Exp:    3209876 | Wait:   20000000 | Goodness:     1.0000 
+ Task: (Short_Task:1)  | Exp:    9876543 | Wait:   10000000 | Goodness:     4.9323 
+----------------------------------------------------------------------------------
+(Medium_Task:2)/100/129ms - Switching Process In
+
+--- Scheduler with Goodness Snapshot at 140ms (MinExp: 6666666, MaxWait: 30000000) ---
+ Task: (Late_Task:4)   | Exp:    6666666 | Wait:   10000000 | Goodness:     2.8182 
+ Task: (Long_Task:3)   | Exp:    9876543 | Wait:   30000000 | Goodness:     1.4187 
+ Task: (Medium_Task:2) | Exp:    7736625 | Wait:          0 | Goodness:    35.3264 [RUNNING]
+ Task: (Short_Task:1)  | Exp:    9876543 | Wait:   20000000 | Goodness:     2.0942 
+----------------------------------------------------------------------------------
+(Long_Task:3)/100/139ms - Switching Process In
+
+--- Scheduler with Goodness Snapshot at 150ms (MinExp: 6666666, MaxWait: 30000000) ---
+ Task: (Late_Task:4)   | Exp:    6666666 | Wait:   20000000 | Goodness:     1.4762 
+ Task: (Long_Task:3)   | Exp:    9958847 | Wait:          0 | Goodness:    44.3119 [RUNNING]
+ Task: (Medium_Task:2) | Exp:    7736625 | Wait:   10000000 | Goodness:     3.2115 
+ Task: (Short_Task:1)  | Exp:    9876543 | Wait:   30000000 | Goodness:     1.4187 
+----------------------------------------------------------------------------------
+(Short_Task:1)/100/149ms - Switching Process In
+
+--- Scheduler with Goodness Snapshot at 160ms (MinExp: 6666666, MaxWait: 30000000) ---
+ Task: (Late_Task:4)   | Exp:    6666666 | Wait:   30000000 | Goodness:     1.0000 
+ Task: (Long_Task:3)   | Exp:    9958847 | Wait:   10000000 | Goodness:     4.0284 
+ Task: (Medium_Task:2) | Exp:    7736625 | Wait:   20000000 | Goodness:     1.6822 
+ Task: (Short_Task:1)  | Exp:    9958847 | Wait:          0 | Goodness:    44.3119 [RUNNING]
+----------------------------------------------------------------------------------
+(Late_Task:4)/100/159ms - Switching Process In
+
+--- Scheduler with Goodness Snapshot at 170ms (MinExp: 7736625, MaxWait: 30000000) ---
+ Task: (Late_Task:4)   | Exp:    8888888 | Wait:          0 | Goodness:    35.0886 [RUNNING]
+ Task: (Long_Task:3)   | Exp:    9958847 | Wait:   20000000 | Goodness:     1.8517 
+ Task: (Medium_Task:2) | Exp:    7736625 | Wait:   30000000 | Goodness:     1.0000 
+ Task: (Short_Task:1)  | Exp:    9958847 | Wait:   10000000 | Goodness:     3.5350 
+----------------------------------------------------------------------------------
+(Medium_Task:2)/100/169ms - Switching Process In
+
+--- Scheduler with Goodness Snapshot at 180ms (MinExp: 8888888, MaxWait: 30000000) ---
+ Task: (Late_Task:4)   | Exp:    8888888 | Wait:   10000000 | Goodness:     2.8182 
+ Task: (Long_Task:3)   | Exp:    9958847 | Wait:   30000000 | Goodness:     1.1082 
+ Task: (Medium_Task:2) | Exp:    9245541 | Wait:          0 | Goodness:    32.1180 [RUNNING]
+ Task: (Short_Task:1)  | Exp:    9958847 | Wait:   20000000 | Goodness:     1.6359 
+----------------------------------------------------------------------------------
+(Long_Task:3)/100/179ms - Switching Process In
+
+--- Scheduler with Goodness Snapshot at 190ms (MinExp: 8888888, MaxWait: 30000000) ---
+ Task: (Late_Task:4)   | Exp:    8888888 | Wait:   20000000 | Goodness:     1.4762 
+ Task: (Long_Task:3)   | Exp:    9986282 | Wait:          0 | Goodness:    34.4401 [RUNNING]
+ Task: (Medium_Task:2) | Exp:    9245541 | Wait:   10000000 | Goodness:     2.9198 
+ Task: (Short_Task:1)  | Exp:    9958847 | Wait:   30000000 | Goodness:     1.1082 
+----------------------------------------------------------------------------------
+(Short_Task:1)/100/189ms - Switching Process In
+
+--- Scheduler with Goodness Snapshot at 200ms (MinExp: 8888888, MaxWait: 30000000) ---
+ Task: (Late_Task:4)   | Exp:    8888888 | Wait:   30000000 | Goodness:     1.0000 
+ Task: (Long_Task:3)   | Exp:    9986282 | Wait:   10000000 | Goodness:     3.1309 
+ Task: (Medium_Task:2) | Exp:    9245541 | Wait:   20000000 | Goodness:     1.5294 
+ Task: (Short_Task:1)  | Exp:    9986282 | Wait:          0 | Goodness:    34.4401 [RUNNING]
+----------------------------------------------------------------------------------
+(Late_Task:4)/100/199ms - Switching Process In
+
+--- Scheduler with Goodness Snapshot at 210ms (MinExp: 9245541, MaxWait: 30000000) ---
+ Task: (Late_Task:4)   | Exp:    9629629 | Wait:          0 | Goodness:    32.1621 [RUNNING]
+ Task: (Long_Task:3)   | Exp:    9986282 | Wait:   20000000 | Goodness:     1.5829 
+ Task: (Medium_Task:2) | Exp:    9245541 | Wait:   30000000 | Goodness:     1.0000 
+ Task: (Short_Task:1)  | Exp:    9986282 | Wait:   10000000 | Goodness:     3.0219 
+----------------------------------------------------------------------------------
+(Medium_Task:2)/100/209ms - Switching Process In
+
+--- Scheduler with Goodness Snapshot at 220ms (MinExp: 9629629, MaxWait: 30000000) ---
+ Task: (Late_Task:4)   | Exp:    9629629 | Wait:   10000000 | Goodness:     2.8182 
+ Task: (Long_Task:3)   | Exp:    9986282 | Wait:   30000000 | Goodness:     1.0336 
+ Task: (Medium_Task:2) | Exp:    9748513 | Wait:          0 | Goodness:    31.3467 [RUNNING]
+ Task: (Short_Task:1)  | Exp:    9986282 | Wait:   20000000 | Goodness:     1.5257 
+----------------------------------------------------------------------------------
+(Long_Task:3)/100/219ms - Switching Process In
+
+--- Scheduler with Goodness Snapshot at 230ms (MinExp: 9629629, MaxWait: 30000000) ---
+ Task: (Late_Task:4)   | Exp:    9629629 | Wait:   20000000 | Goodness:     1.4762 
+ Task: (Long_Task:3)   | Exp:    9995427 | Wait:          0 | Goodness:    32.0668 [RUNNING]
+ Task: (Medium_Task:2) | Exp:    9748513 | Wait:   10000000 | Goodness:     2.8497 
+ Task: (Short_Task:1)  | Exp:    9986282 | Wait:   30000000 | Goodness:     1.0336 
+----------------------------------------------------------------------------------
+(Short_Task:1)/100/229ms - Switching Process In
+
+--- Scheduler with Goodness Snapshot at 240ms (MinExp: 9629629, MaxWait: 30000000) ---
+ Task: (Late_Task:4)   | Exp:    9629629 | Wait:   30000000 | Goodness:     1.0000 
+ Task: (Long_Task:3)   | Exp:    9995427 | Wait:   10000000 | Goodness:     2.9152 
+ Task: (Medium_Task:2) | Exp:    9748513 | Wait:   20000000 | Goodness:     1.4927 
+ Task: (Short_Task:1)  | Exp:    9995427 | Wait:          0 | Goodness:    32.0668 [RUNNING]
+----------------------------------------------------------------------------------
+(Late_Task:4)/100/239ms - Switching Process In
+
+--- Scheduler with Goodness Snapshot at 250ms (MinExp: 9748513, MaxWait: 30000000) ---
+ Task: (Late_Task:4)   | Exp:    9876543 | Wait:          0 | Goodness:    31.3693 [RUNNING]
+ Task: (Long_Task:3)   | Exp:    9995427 | Wait:   20000000 | Goodness:     1.5101 
+ Task: (Medium_Task:2) | Exp:    9748513 | Wait:   30000000 | Goodness:     1.0000 
+ Task: (Short_Task:1)  | Exp:    9995427 | Wait:   10000000 | Goodness:     2.8829 
+----------------------------------------------------------------------------------
+(Medium_Task:2)/100/249ms - Switching Process In
+
+--- Scheduler with Goodness Snapshot at 260ms (MinExp: 9876543, MaxWait: 30000000) ---
+ Task: (Late_Task:4)   | Exp:    9876543 | Wait:   10000000 | Goodness:     2.8182 
+ Task: (Long_Task:3)   | Exp:    9995427 | Wait:   30000000 | Goodness:     1.0109 
+ Task: (Medium_Task:2) | Exp:    9916171 | Wait:          0 | Goodness:    31.1129 [RUNNING]
+ Task: (Short_Task:1)  | Exp:    9995427 | Wait:   20000000 | Goodness:     1.4923 
+----------------------------------------------------------------------------------
+(Long_Task:3)/100/259ms - Switching Process In
+
+--- Scheduler with Goodness Snapshot at 270ms (MinExp: 9876543, MaxWait: 30000000) ---
+ Task: (Late_Task:4)   | Exp:    9876543 | Wait:   20000000 | Goodness:     1.4762 
+ Task: (Long_Task:3)   | Exp:    9998475 | Wait:          0 | Goodness:    31.3475 [RUNNING]
+ Task: (Medium_Task:2) | Exp:    9916171 | Wait:   10000000 | Goodness:     2.8284 
+ Task: (Short_Task:1)  | Exp:    9995427 | Wait:   30000000 | Goodness:     1.0109 
+----------------------------------------------------------------------------------
+(Short_Task:1)/100/269ms - Switching Process In
+
+--- Scheduler with Goodness Snapshot at 280ms (MinExp: 9876543, MaxWait: 30000000) ---
+ Task: (Late_Task:4)   | Exp:    9876543 | Wait:   30000000 | Goodness:     1.0000 
+ Task: (Long_Task:3)   | Exp:    9998475 | Wait:   10000000 | Goodness:     2.8498 
+ Task: (Medium_Task:2) | Exp:    9916171 | Wait:   20000000 | Goodness:     1.4816 
+ Task: (Short_Task:1)  | Exp:    9998475 | Wait:          0 | Goodness:    31.3475 [RUNNING]
+----------------------------------------------------------------------------------
+(Late_Task:4)/100/279ms - Switching Process In
+
+--- Scheduler with Goodness Snapshot at 290ms (MinExp: 9916171, MaxWait: 30000000) ---
+ Task: (Late_Task:4)   | Exp:    9958847 | Wait:          0 | Goodness:    31.1212 [RUNNING]
+ Task: (Long_Task:3)   | Exp:    9998475 | Wait:   20000000 | Goodness:     1.4873 
+ Task: (Medium_Task:2) | Exp:    9916171 | Wait:   30000000 | Goodness:     1.0000 
+ Task: (Short_Task:1)  | Exp:    9998475 | Wait:   10000000 | Goodness:     2.8394 
+----------------------------------------------------------------------------------
+(Medium_Task:2)/100/289ms - Switching Process In
+
+--- Scheduler with Goodness Snapshot at 300ms (MinExp: 9958847, MaxWait: 30000000) ---
+ Task: (Late_Task:4)   | Exp:    9958847 | Wait:   10000000 | Goodness:     2.8182 
+ Task: (Long_Task:3)   | Exp:    9998475 | Wait:   30000000 | Goodness:     1.0036 
+ Task: (Medium_Task:2) | Exp:    9972057 | Wait:          0 | Goodness:    31.0374 [RUNNING]
+ Task: (Short_Task:1)  | Exp:    9998475 | Wait:   20000000 | Goodness:     1.4815 
+----------------------------------------------------------------------------------
+(Long_Task:3)/100/299ms - Switching Process In
+
+--- Scheduler with Goodness Snapshot at 310ms (MinExp: 9958847, MaxWait: 30000000) ---
+ Task: (Late_Task:4)   | Exp:    9958847 | Wait:   20000000 | Goodness:     1.4762 
+ Task: (Long_Task:3)   | Exp:    9999491 | Wait:          0 | Goodness:    31.1150 [RUNNING]
+ Task: (Medium_Task:2) | Exp:    9972057 | Wait:   10000000 | Goodness:     2.8216 
+ Task: (Short_Task:1)  | Exp:    9998475 | Wait:   30000000 | Goodness:     1.0036 
+----------------------------------------------------------------------------------
+(Short_Task:1)/100/309ms - Switching Process In
+
+--- Scheduler with Goodness Snapshot at 320ms (MinExp: 9958847, MaxWait: 30000000) ---
+ Task: (Late_Task:4)   | Exp:    9958847 | Wait:   30000000 | Goodness:     1.0000 
+ Task: (Long_Task:3)   | Exp:    9999491 | Wait:   10000000 | Goodness:     2.8286 
+ Task: (Medium_Task:2) | Exp:    9972057 | Wait:   20000000 | Goodness:     1.4780 
+ Task: (Short_Task:1)  | Exp:    9999491 | Wait:          0 | Goodness:    31.1150 [RUNNING]
+----------------------------------------------------------------------------------
+(Late_Task:4)/100/319ms - Switching Process In
+
+--- Scheduler with Goodness Snapshot at 330ms (MinExp: 9972057, MaxWait: 30000000) ---
+ Task: (Late_Task:4)   | Exp:    9986282 | Wait:          0 | Goodness:    31.0402 [RUNNING]
+ Task: (Long_Task:3)   | Exp:    9999491 | Wait:   20000000 | Goodness:     1.4799 
+ Task: (Medium_Task:2) | Exp:    9972057 | Wait:   30000000 | Goodness:     1.0000 
+ Task: (Short_Task:1)  | Exp:    9999491 | Wait:   10000000 | Goodness:     2.8252 
+----------------------------------------------------------------------------------
+(Medium_Task:2)/100/329ms - Switching Process In
+
+--- Scheduler with Goodness Snapshot at 340ms (MinExp: 9986282, MaxWait: 30000000) ---
+ Task: (Late_Task:4)   | Exp:    9986282 | Wait:   10000000 | Goodness:     2.8182 
+ Task: (Long_Task:3)   | Exp:    9999491 | Wait:   30000000 | Goodness:     1.0012 
+ Task: (Medium_Task:2) | Exp:    9990685 | Wait:          0 | Goodness:    31.0124 [RUNNING]
+ Task: (Short_Task:1)  | Exp:    9999491 | Wait:   20000000 | Goodness:     1.4780 
+----------------------------------------------------------------------------------
+(Long_Task:3)/100/339ms - Switching Process In
+
+--- Scheduler with Goodness Snapshot at 350ms (MinExp: 9986282, MaxWait: 30000000) ---
+ Task: (Late_Task:4)   | Exp:    9986282 | Wait:   20000000 | Goodness:     1.4762 
+ Task: (Long_Task:3)   | Exp:    9999830 | Wait:          0 | Goodness:    31.0382 [RUNNING]
+ Task: (Medium_Task:2) | Exp:    9990685 | Wait:   10000000 | Goodness:     2.8193 
+ Task: (Short_Task:1)  | Exp:    9999491 | Wait:   30000000 | Goodness:     1.0012 
+----------------------------------------------------------------------------------
+(Short_Task:1)/100/349ms - Switching Process In
+
+--- Scheduler with Goodness Snapshot at 360ms (MinExp: 9986282, MaxWait: 30000000) ---
+ Task: (Late_Task:4)   | Exp:    9986282 | Wait:   30000000 | Goodness:     1.0000 
+ Task: (Long_Task:3)   | Exp:    9999830 | Wait:   10000000 | Goodness:     2.8217 
+ Task: (Medium_Task:2) | Exp:    9990685 | Wait:   20000000 | Goodness:     1.4768 
+ Task: (Short_Task:1)  | Exp:    9999830 | Wait:          0 | Goodness:    31.0382 [RUNNING]
+----------------------------------------------------------------------------------
+(Late_Task:4)/100/359ms - Switching Process In
+
+--- Scheduler with Goodness Snapshot at 370ms (MinExp: 9990685, MaxWait: 30000000) ---
+ Task: (Late_Task:4)   | Exp:    9995427 | Wait:          0 | Goodness:    31.0134 [RUNNING]
+ Task: (Long_Task:3)   | Exp:    9999830 | Wait:   20000000 | Goodness:     1.4774 
+ Task: (Medium_Task:2) | Exp:    9990685 | Wait:   30000000 | Goodness:     1.0000 
+ Task: (Short_Task:1)  | Exp:    9999830 | Wait:   10000000 | Goodness:     2.8205 
+----------------------------------------------------------------------------------
+(Medium_Task:2)/100/369ms - Switching Process In
+
+--- Scheduler with Goodness Snapshot at 380ms (MinExp: 9995427, MaxWait: 30000000) ---
+ Task: (Late_Task:4)   | Exp:    9995427 | Wait:   10000000 | Goodness:     2.8182 
+ Task: (Long_Task:3)   | Exp:    9999830 | Wait:   30000000 | Goodness:     1.0004 
+ Task: (Medium_Task:2) | Exp:    9996895 | Wait:          0 | Goodness:    31.0041 [RUNNING]
+ Task: (Short_Task:1)  | Exp:    9999830 | Wait:   20000000 | Goodness:     1.4768 
+----------------------------------------------------------------------------------
+(Long_Task:3)/100/379ms - Switching Process In
+
+--- Scheduler with Goodness Snapshot at 390ms (MinExp: 9995427, MaxWait: 30000000) ---
+ Task: (Late_Task:4)   | Exp:    9995427 | Wait:   20000000 | Goodness:     1.4762 
+ Task: (Long_Task:3)   | Exp:    9999943 | Wait:          0 | Goodness:    31.0127 [RUNNING]
+ Task: (Medium_Task:2) | Exp:    9996895 | Wait:   10000000 | Goodness:     2.8186 
+ Task: (Short_Task:1)  | Exp:    9999830 | Wait:   30000000 | Goodness:     1.0004 
+----------------------------------------------------------------------------------
+(Short_Task:1)/100/389ms - Switching Process In
+CDA: thread (Short_Task:1) finished
+ Deactivation with Exp:    3333276
+###-Process: (Short_Task:1) is going down-###
+
+--- Scheduler with Goodness Snapshot at 390ms (MinExp: 9995427, MaxWait: 20000000) ---
+ Task: (Late_Task:4)   | Exp:    9995427 | Wait:   20000000 | Goodness:     1.0000 
+ Task: (Long_Task:3)   | Exp:    9999943 | Wait:          0 | Goodness:    21.0086 
+ Task: (Medium_Task:2) | Exp:    9996895 | Wait:   10000000 | Goodness:     1.9093 
+----------------------------------------------------------------------------------
+(Late_Task:4)/100/390ms - Switching Process In
+
+--- Scheduler with Goodness Snapshot at 400ms (MinExp: 9996895, MaxWait: 20000000) ---
+ Task: (Late_Task:4)   | Exp:    9998475 | Wait:          0 | Goodness:    21.0030 [RUNNING]
+ Task: (Long_Task:3)   | Exp:    9999943 | Wait:   10000000 | Goodness:     1.9096 
+ Task: (Medium_Task:2) | Exp:    9996895 | Wait:   20000000 | Goodness:     1.0000 
+----------------------------------------------------------------------------------
+(Medium_Task:2)/100/399ms - Switching Process In
+
+--- Scheduler with Goodness Snapshot at 410ms (MinExp: 9998475, MaxWait: 20000000) ---
+ Task: (Late_Task:4)   | Exp:    9998475 | Wait:   10000000 | Goodness:     1.9091 
+ Task: (Long_Task:3)   | Exp:    9999943 | Wait:   20000000 | Goodness:     1.0001 
+ Task: (Medium_Task:2) | Exp:    9998965 | Wait:          0 | Goodness:    21.0009 [RUNNING]
+----------------------------------------------------------------------------------
+(Long_Task:3)/100/409ms - Switching Process In
+
+--- Scheduler with Goodness Snapshot at 420ms (MinExp: 9998475, MaxWait: 20000000) ---
+ Task: (Late_Task:4)   | Exp:    9998475 | Wait:   20000000 | Goodness:     1.0000 
+ Task: (Long_Task:3)   | Exp:    9999981 | Wait:          0 | Goodness:    21.0029 [RUNNING]
+ Task: (Medium_Task:2) | Exp:    9998965 | Wait:   10000000 | Goodness:     1.9092 
+----------------------------------------------------------------------------------
+(Late_Task:4)/100/419ms - Switching Process In
+
+--- Scheduler with Goodness Snapshot at 430ms (MinExp: 9998965, MaxWait: 20000000) ---
+ Task: (Late_Task:4)   | Exp:    9999491 | Wait:          0 | Goodness:    21.0010 [RUNNING]
+ Task: (Long_Task:3)   | Exp:    9999981 | Wait:   10000000 | Goodness:     1.9093 
+ Task: (Medium_Task:2) | Exp:    9998965 | Wait:   20000000 | Goodness:     1.0000 
+----------------------------------------------------------------------------------
+(Medium_Task:2)/100/429ms - Switching Process In
+
+--- Scheduler with Goodness Snapshot at 440ms (MinExp: 9999491, MaxWait: 20000000) ---
+ Task: (Late_Task:4)   | Exp:    9999491 | Wait:   10000000 | Goodness:     1.9091 
+ Task: (Long_Task:3)   | Exp:    9999981 | Wait:   20000000 | Goodness:     1.0000 
+ Task: (Medium_Task:2) | Exp:    9999655 | Wait:          0 | Goodness:    21.0003 [RUNNING]
+----------------------------------------------------------------------------------
+(Long_Task:3)/100/439ms - Switching Process In
+
+--- Scheduler with Goodness Snapshot at 450ms (MinExp: 9999491, MaxWait: 20000000) ---
+ Task: (Late_Task:4)   | Exp:    9999491 | Wait:   20000000 | Goodness:     1.0000 
+ Task: (Long_Task:3)   | Exp:    9999993 | Wait:          0 | Goodness:    21.0010 [RUNNING]
+ Task: (Medium_Task:2) | Exp:    9999655 | Wait:   10000000 | Goodness:     1.9091 
+----------------------------------------------------------------------------------
+(Late_Task:4)/100/449ms - Switching Process In
+
+--- Scheduler with Goodness Snapshot at 460ms (MinExp: 9999655, MaxWait: 20000000) ---
+ Task: (Late_Task:4)   | Exp:    9999830 | Wait:          0 | Goodness:    21.0003 [RUNNING]
+ Task: (Long_Task:3)   | Exp:    9999993 | Wait:   10000000 | Goodness:     1.9091 
+ Task: (Medium_Task:2) | Exp:    9999655 | Wait:   20000000 | Goodness:     1.0000 
+----------------------------------------------------------------------------------
+(Medium_Task:2)/100/459ms - Switching Process In
+
+--- Scheduler with Goodness Snapshot at 470ms (MinExp: 9999830, MaxWait: 20000000) ---
+ Task: (Late_Task:4)   | Exp:    9999830 | Wait:   10000000 | Goodness:     1.9091 
+ Task: (Long_Task:3)   | Exp:    9999993 | Wait:   20000000 | Goodness:     1.0000 
+ Task: (Medium_Task:2) | Exp:    9999885 | Wait:          0 | Goodness:    21.0001 [RUNNING]
+----------------------------------------------------------------------------------
+(Long_Task:3)/100/469ms - Switching Process In
+
+--- Scheduler with Goodness Snapshot at 480ms (MinExp: 9999830, MaxWait: 20000000) ---
+ Task: (Late_Task:4)   | Exp:    9999830 | Wait:   20000000 | Goodness:     1.0000 
+ Task: (Long_Task:3)   | Exp:    9999997 | Wait:          0 | Goodness:    21.0003 [RUNNING]
+ Task: (Medium_Task:2) | Exp:    9999885 | Wait:   10000000 | Goodness:     1.9091 
+----------------------------------------------------------------------------------
+(Late_Task:4)/100/479ms - Switching Process In
+
+--- Scheduler with Goodness Snapshot at 490ms (MinExp: 9999885, MaxWait: 20000000) ---
+ Task: (Late_Task:4)   | Exp:    9999943 | Wait:          0 | Goodness:    21.0001 [RUNNING]
+ Task: (Long_Task:3)   | Exp:    9999997 | Wait:   10000000 | Goodness:     1.9091 
+ Task: (Medium_Task:2) | Exp:    9999885 | Wait:   20000000 | Goodness:     1.0000 
+----------------------------------------------------------------------------------
+(Medium_Task:2)/100/489ms - Switching Process In
+
+--- Scheduler with Goodness Snapshot at 500ms (MinExp: 9999943, MaxWait: 20000000) ---
+ Task: (Late_Task:4)   | Exp:    9999943 | Wait:   10000000 | Goodness:     1.9091 
+ Task: (Long_Task:3)   | Exp:    9999997 | Wait:   20000000 | Goodness:     1.0000 
+ Task: (Medium_Task:2) | Exp:    9999961 | Wait:          0 | Goodness:    21.0000 [RUNNING]
+----------------------------------------------------------------------------------
+(Long_Task:3)/100/499ms - Switching Process In
+
+--- Scheduler with Goodness Snapshot at 510ms (MinExp: 9999943, MaxWait: 20000000) ---
+ Task: (Late_Task:4)   | Exp:    9999943 | Wait:   20000000 | Goodness:     1.0000 
+ Task: (Long_Task:3)   | Exp:    9999999 | Wait:          0 | Goodness:    21.0001 [RUNNING]
+ Task: (Medium_Task:2) | Exp:    9999961 | Wait:   10000000 | Goodness:     1.9091 
+----------------------------------------------------------------------------------
+(Late_Task:4)/100/509ms - Switching Process In
+
+--- Scheduler with Goodness Snapshot at 520ms (MinExp: 9999961, MaxWait: 20000000) ---
+ Task: (Late_Task:4)   | Exp:    9999981 | Wait:          0 | Goodness:    21.0000 [RUNNING]
+ Task: (Long_Task:3)   | Exp:    9999999 | Wait:   10000000 | Goodness:     1.9091 
+ Task: (Medium_Task:2) | Exp:    9999961 | Wait:   20000000 | Goodness:     1.0000 
+----------------------------------------------------------------------------------
+(Medium_Task:2)/100/519ms - Switching Process In
+
+--- Scheduler with Goodness Snapshot at 530ms (MinExp: 9999981, MaxWait: 20000000) ---
+ Task: (Late_Task:4)   | Exp:    9999981 | Wait:   10000000 | Goodness:     1.9091 
+ Task: (Long_Task:3)   | Exp:    9999999 | Wait:   20000000 | Goodness:     1.0000 
+ Task: (Medium_Task:2) | Exp:    9999987 | Wait:          0 | Goodness:    21.0000 [RUNNING]
+----------------------------------------------------------------------------------
+(Long_Task:3)/100/529ms - Switching Process In
+
+--- Scheduler with Goodness Snapshot at 540ms (MinExp: 9999981, MaxWait: 20000000) ---
+ Task: (Late_Task:4)   | Exp:    9999981 | Wait:   20000000 | Goodness:     1.0000 
+ Task: (Long_Task:3)   | Exp:    9999999 | Wait:          0 | Goodness:    21.0000 [RUNNING]
+ Task: (Medium_Task:2) | Exp:    9999987 | Wait:   10000000 | Goodness:     1.9091 
+----------------------------------------------------------------------------------
+(Late_Task:4)/100/539ms - Switching Process In
+
+--- Scheduler with Goodness Snapshot at 550ms (MinExp: 9999987, MaxWait: 20000000) ---
+ Task: (Late_Task:4)   | Exp:    9999993 | Wait:          0 | Goodness:    21.0000 [RUNNING]
+ Task: (Long_Task:3)   | Exp:    9999999 | Wait:   10000000 | Goodness:     1.9091 
+ Task: (Medium_Task:2) | Exp:    9999987 | Wait:   20000000 | Goodness:     1.0000 
+----------------------------------------------------------------------------------
+(Medium_Task:2)/100/549ms - Switching Process In
+
+--- Scheduler with Goodness Snapshot at 560ms (MinExp: 9999993, MaxWait: 20000000) ---
+ Task: (Late_Task:4)   | Exp:    9999993 | Wait:   10000000 | Goodness:     1.9091 
+ Task: (Long_Task:3)   | Exp:    9999999 | Wait:   20000000 | Goodness:     1.0000 
+ Task: (Medium_Task:2) | Exp:    9999995 | Wait:          0 | Goodness:    21.0000 [RUNNING]
+----------------------------------------------------------------------------------
+(Long_Task:3)/100/559ms - Switching Process In
+
+--- Scheduler with Goodness Snapshot at 570ms (MinExp: 9999993, MaxWait: 20000000) ---
+ Task: (Late_Task:4)   | Exp:    9999993 | Wait:   20000000 | Goodness:     1.0000 
+ Task: (Long_Task:3)   | Exp:    9999999 | Wait:          0 | Goodness:    21.0000 [RUNNING]
+ Task: (Medium_Task:2) | Exp:    9999995 | Wait:   10000000 | Goodness:     1.9091 
+----------------------------------------------------------------------------------
+(Late_Task:4)/100/569ms - Switching Process In
+
+--- Scheduler with Goodness Snapshot at 580ms (MinExp: 9999995, MaxWait: 20000000) ---
+ Task: (Late_Task:4)   | Exp:    9999997 | Wait:          0 | Goodness:    21.0000 [RUNNING]
+ Task: (Long_Task:3)   | Exp:    9999999 | Wait:   10000000 | Goodness:     1.9091 
+ Task: (Medium_Task:2) | Exp:    9999995 | Wait:   20000000 | Goodness:     1.0000 
+----------------------------------------------------------------------------------
+(Medium_Task:2)/100/579ms - Switching Process In
+
+--- Scheduler with Goodness Snapshot at 590ms (MinExp: 9999997, MaxWait: 20000000) ---
+ Task: (Late_Task:4)   | Exp:    9999997 | Wait:   10000000 | Goodness:     1.9091 
+ Task: (Long_Task:3)   | Exp:    9999999 | Wait:   20000000 | Goodness:     1.0000 
+ Task: (Medium_Task:2) | Exp:    9999998 | Wait:          0 | Goodness:    21.0000 [RUNNING]
+----------------------------------------------------------------------------------
+(Long_Task:3)/100/589ms - Switching Process In
+
+--- Scheduler with Goodness Snapshot at 600ms (MinExp: 9999997, MaxWait: 20000000) ---
+ Task: (Late_Task:4)   | Exp:    9999997 | Wait:   20000000 | Goodness:     1.0000 
+ Task: (Long_Task:3)   | Exp:    9999999 | Wait:          0 | Goodness:    21.0000 [RUNNING]
+ Task: (Medium_Task:2) | Exp:    9999998 | Wait:   10000000 | Goodness:     1.9091 
+----------------------------------------------------------------------------------
+(Late_Task:4)/100/599ms - Switching Process In
+
+--- Scheduler with Goodness Snapshot at 610ms (MinExp: 9999998, MaxWait: 20000000) ---
+ Task: (Late_Task:4)   | Exp:    9999999 | Wait:          0 | Goodness:    21.0000 [RUNNING]
+ Task: (Long_Task:3)   | Exp:    9999999 | Wait:   10000000 | Goodness:     1.9091 
+ Task: (Medium_Task:2) | Exp:    9999998 | Wait:   20000000 | Goodness:     1.0000 
+----------------------------------------------------------------------------------
+(Medium_Task:2)/100/609ms - Switching Process In
+
+--- Scheduler with Goodness Snapshot at 620ms (MinExp: 9999999, MaxWait: 20000000) ---
+ Task: (Late_Task:4)   | Exp:    9999999 | Wait:   10000000 | Goodness:     1.9091 
+ Task: (Long_Task:3)   | Exp:    9999999 | Wait:   20000000 | Goodness:     1.0000 
+ Task: (Medium_Task:2) | Exp:    9999999 | Wait:          0 | Goodness:    21.0000 [RUNNING]
+----------------------------------------------------------------------------------
+(Long_Task:3)/100/619ms - Switching Process In
+###-An Interrupt has fired!-###
+
+--- Scheduler with Goodness Snapshot at 620ms (MinExp: 3333333, MaxWait: 10000000) ---
+ Task: (Late_Task:4)   | Exp:    9999999 | Wait:   10000000 | Goodness:     2.5385 
+ Task: (Long_Task:3)   | Exp:    3333333 | Wait:          0 | Goodness:    11.0000 [RUNNING]
+ Task: (Medium_Task:2) | Exp:    9999999 | Wait:          0 | Goodness:    27.9231 
+----------------------------------------------------------------------------------
+(Late_Task:4)/100/622ms - Switching Process In
+
+--- Scheduler with Goodness Snapshot at 630ms (MinExp: 3333333, MaxWait: 10000000) ---
+ Task: (Late_Task:4)   | Exp:    9999999 | Wait:          0 | Goodness:    27.9231 [RUNNING]
+ Task: (Long_Task:3)   | Exp:    3333333 | Wait:   10000000 | Goodness:     1.0000 
+ Task: (Medium_Task:2) | Exp:    9999999 | Wait:   10000000 | Goodness:     2.5385 
+----------------------------------------------------------------------------------
+(Long_Task:3)/100/629ms - Switching Process In
+
+--- Scheduler with Goodness Snapshot at 640ms (MinExp: 7777777, MaxWait: 20000000) ---
+ Task: (Late_Task:4)   | Exp:    9999999 | Wait:   10000000 | Goodness:     2.3924 
+ Task: (Long_Task:3)   | Exp:    7777777 | Wait:          0 | Goodness:    21.0000 [RUNNING]
+ Task: (Medium_Task:2) | Exp:    9999999 | Wait:   20000000 | Goodness:     1.2532 
+----------------------------------------------------------------------------------
+(Medium_Task:2)/100/639ms - Switching Process In
+
+--- Scheduler with Goodness Snapshot at 650ms (MinExp: 7777777, MaxWait: 20000000) ---
+ Task: (Late_Task:4)   | Exp:    9999999 | Wait:   20000000 | Goodness:     1.2532 
+ Task: (Long_Task:3)   | Exp:    7777777 | Wait:   10000000 | Goodness:     1.9091 
+ Task: (Medium_Task:2) | Exp:    9999999 | Wait:          0 | Goodness:    26.3165 [RUNNING]
+----------------------------------------------------------------------------------
+(Late_Task:4)/100/649ms - Switching Process In
+
+--- Scheduler with Goodness Snapshot at 660ms (MinExp: 7777777, MaxWait: 20000000) ---
+ Task: (Late_Task:4)   | Exp:    9999999 | Wait:          0 | Goodness:    26.3165 [RUNNING]
+ Task: (Long_Task:3)   | Exp:    7777777 | Wait:   20000000 | Goodness:     1.0000 
+ Task: (Medium_Task:2) | Exp:    9999999 | Wait:   10000000 | Goodness:     2.3924 
+----------------------------------------------------------------------------------
+(Long_Task:3)/100/659ms - Switching Process In
+
+--- Scheduler with Goodness Snapshot at 670ms (MinExp: 9259259, MaxWait: 20000000) ---
+ Task: (Late_Task:4)   | Exp:    9999999 | Wait:   10000000 | Goodness:     2.0469 
+ Task: (Long_Task:3)   | Exp:    9259259 | Wait:          0 | Goodness:    21.0000 [RUNNING]
+ Task: (Medium_Task:2) | Exp:    9999999 | Wait:   20000000 | Goodness:     1.0722 
+----------------------------------------------------------------------------------
+(Medium_Task:2)/100/669ms - Switching Process In
+
+--- Scheduler with Goodness Snapshot at 680ms (MinExp: 9259259, MaxWait: 20000000) ---
+ Task: (Late_Task:4)   | Exp:    9999999 | Wait:   20000000 | Goodness:     1.0722 
+ Task: (Long_Task:3)   | Exp:    9259259 | Wait:   10000000 | Goodness:     1.9091 
+ Task: (Medium_Task:2) | Exp:    9999999 | Wait:          0 | Goodness:    22.5162 [RUNNING]
+----------------------------------------------------------------------------------
+(Late_Task:4)/100/679ms - Switching Process In
+
+--- Scheduler with Goodness Snapshot at 690ms (MinExp: 9259259, MaxWait: 20000000) ---
+ Task: (Late_Task:4)   | Exp:    9999999 | Wait:          0 | Goodness:    22.5162 [RUNNING]
+ Task: (Long_Task:3)   | Exp:    9259259 | Wait:   20000000 | Goodness:     1.0000 
+ Task: (Medium_Task:2) | Exp:    9999999 | Wait:   10000000 | Goodness:     2.0469 
+----------------------------------------------------------------------------------
+(Long_Task:3)/100/689ms - Switching Process In
+
+--- Scheduler with Goodness Snapshot at 700ms (MinExp: 9753086, MaxWait: 20000000) ---
+ Task: (Late_Task:4)   | Exp:    9999999 | Wait:   10000000 | Goodness:     1.9529 
+ Task: (Long_Task:3)   | Exp:    9753086 | Wait:          0 | Goodness:    21.0000 [RUNNING]
+ Task: (Medium_Task:2) | Exp:    9999999 | Wait:   20000000 | Goodness:     1.0230 
+----------------------------------------------------------------------------------
+(Medium_Task:2)/100/699ms - Switching Process In
+
+--- Scheduler with Goodness Snapshot at 710ms (MinExp: 9753086, MaxWait: 20000000) ---
+ Task: (Late_Task:4)   | Exp:    9999999 | Wait:   20000000 | Goodness:     1.0230 
+ Task: (Long_Task:3)   | Exp:    9753086 | Wait:   10000000 | Goodness:     1.9091 
+ Task: (Medium_Task:2) | Exp:    9999999 | Wait:          0 | Goodness:    21.4822 [RUNNING]
+----------------------------------------------------------------------------------
+(Late_Task:4)/100/709ms - Switching Process In
+
+--- Scheduler with Goodness Snapshot at 720ms (MinExp: 9753086, MaxWait: 20000000) ---
+ Task: (Late_Task:4)   | Exp:    9999999 | Wait:          0 | Goodness:    21.4822 [RUNNING]
+ Task: (Long_Task:3)   | Exp:    9753086 | Wait:   20000000 | Goodness:     1.0000 
+ Task: (Medium_Task:2) | Exp:    9999999 | Wait:   10000000 | Goodness:     1.9529 
+----------------------------------------------------------------------------------
+(Long_Task:3)/100/719ms - Switching Process In
+
+--- Scheduler with Goodness Snapshot at 730ms (MinExp: 9917695, MaxWait: 20000000) ---
+ Task: (Late_Task:4)   | Exp:    9999999 | Wait:   10000000 | Goodness:     1.9235 
+ Task: (Long_Task:3)   | Exp:    9917695 | Wait:          0 | Goodness:    21.0000 [RUNNING]
+ Task: (Medium_Task:2) | Exp:    9999999 | Wait:   20000000 | Goodness:     1.0075 
+----------------------------------------------------------------------------------
+(Medium_Task:2)/100/729ms - Switching Process In
+
+--- Scheduler with Goodness Snapshot at 740ms (MinExp: 9917695, MaxWait: 20000000) ---
+ Task: (Late_Task:4)   | Exp:    9999999 | Wait:   20000000 | Goodness:     1.0075 
+ Task: (Long_Task:3)   | Exp:    9917695 | Wait:   10000000 | Goodness:     1.9091 
+ Task: (Medium_Task:2) | Exp:    9999999 | Wait:          0 | Goodness:    21.1583 [RUNNING]
+----------------------------------------------------------------------------------
+(Late_Task:4)/100/739ms - Switching Process In
+
+--- Scheduler with Goodness Snapshot at 750ms (MinExp: 9917695, MaxWait: 20000000) ---
+ Task: (Late_Task:4)   | Exp:    9999999 | Wait:          0 | Goodness:    21.1583 [RUNNING]
+ Task: (Long_Task:3)   | Exp:    9917695 | Wait:   20000000 | Goodness:     1.0000 
+ Task: (Medium_Task:2) | Exp:    9999999 | Wait:   10000000 | Goodness:     1.9235 
+----------------------------------------------------------------------------------
+(Long_Task:3)/100/749ms - Switching Process In
+
+--- Scheduler with Goodness Snapshot at 760ms (MinExp: 9972565, MaxWait: 20000000) ---
+ Task: (Late_Task:4)   | Exp:    9999999 | Wait:   10000000 | Goodness:     1.9139 
+ Task: (Long_Task:3)   | Exp:    9972565 | Wait:          0 | Goodness:    21.0000 [RUNNING]
+ Task: (Medium_Task:2) | Exp:    9999999 | Wait:   20000000 | Goodness:     1.0025 
+----------------------------------------------------------------------------------
+(Medium_Task:2)/100/759ms - Switching Process In
+
+--- Scheduler with Goodness Snapshot at 770ms (MinExp: 9972565, MaxWait: 20000000) ---
+ Task: (Late_Task:4)   | Exp:    9999999 | Wait:   20000000 | Goodness:     1.0025 
+ Task: (Long_Task:3)   | Exp:    9972565 | Wait:   10000000 | Goodness:     1.9091 
+ Task: (Medium_Task:2) | Exp:    9999999 | Wait:          0 | Goodness:    21.0525 [RUNNING]
+----------------------------------------------------------------------------------
+(Late_Task:4)/100/769ms - Switching Process In
+
+--- Scheduler with Goodness Snapshot at 780ms (MinExp: 9972565, MaxWait: 20000000) ---
+ Task: (Late_Task:4)   | Exp:    9999999 | Wait:          0 | Goodness:    21.0525 [RUNNING]
+ Task: (Long_Task:3)   | Exp:    9972565 | Wait:   20000000 | Goodness:     1.0000 
+ Task: (Medium_Task:2) | Exp:    9999999 | Wait:   10000000 | Goodness:     1.9139 
+----------------------------------------------------------------------------------
+(Long_Task:3)/100/779ms - Switching Process In
+
+--- Scheduler with Goodness Snapshot at 790ms (MinExp: 9990855, MaxWait: 20000000) ---
+ Task: (Late_Task:4)   | Exp:    9999999 | Wait:   10000000 | Goodness:     1.9107 
+ Task: (Long_Task:3)   | Exp:    9990855 | Wait:          0 | Goodness:    21.0000 [RUNNING]
+ Task: (Medium_Task:2) | Exp:    9999999 | Wait:   20000000 | Goodness:     1.0008 
+----------------------------------------------------------------------------------
+(Medium_Task:2)/100/789ms - Switching Process In
+
+--- Scheduler with Goodness Snapshot at 800ms (MinExp: 9990855, MaxWait: 20000000) ---
+ Task: (Late_Task:4)   | Exp:    9999999 | Wait:   20000000 | Goodness:     1.0008 
+ Task: (Long_Task:3)   | Exp:    9990855 | Wait:   10000000 | Goodness:     1.9091 
+ Task: (Medium_Task:2) | Exp:    9999999 | Wait:          0 | Goodness:    21.0175 [RUNNING]
+----------------------------------------------------------------------------------
+(Late_Task:4)/100/799ms - Switching Process In
+
+--- Scheduler with Goodness Snapshot at 810ms (MinExp: 9990855, MaxWait: 20000000) ---
+ Task: (Late_Task:4)   | Exp:    9999999 | Wait:          0 | Goodness:    21.0175 [RUNNING]
+ Task: (Long_Task:3)   | Exp:    9990855 | Wait:   20000000 | Goodness:     1.0000 
+ Task: (Medium_Task:2) | Exp:    9999999 | Wait:   10000000 | Goodness:     1.9107 
+----------------------------------------------------------------------------------
+(Long_Task:3)/100/809ms - Switching Process In
+
+--- Scheduler with Goodness Snapshot at 820ms (MinExp: 9996951, MaxWait: 20000000) ---
+ Task: (Late_Task:4)   | Exp:    9999999 | Wait:   10000000 | Goodness:     1.9096 
+ Task: (Long_Task:3)   | Exp:    9996951 | Wait:          0 | Goodness:    21.0000 [RUNNING]
+ Task: (Medium_Task:2) | Exp:    9999999 | Wait:   20000000 | Goodness:     1.0003 
+----------------------------------------------------------------------------------
+(Medium_Task:2)/100/819ms - Switching Process In
+
+--- Scheduler with Goodness Snapshot at 830ms (MinExp: 9996951, MaxWait: 20000000) ---
+ Task: (Late_Task:4)   | Exp:    9999999 | Wait:   20000000 | Goodness:     1.0003 
+ Task: (Long_Task:3)   | Exp:    9996951 | Wait:   10000000 | Goodness:     1.9091 
+ Task: (Medium_Task:2) | Exp:    9999999 | Wait:          0 | Goodness:    21.0058 [RUNNING]
+----------------------------------------------------------------------------------
+(Late_Task:4)/100/829ms - Switching Process In
+
+--- Scheduler with Goodness Snapshot at 840ms (MinExp: 9996951, MaxWait: 20000000) ---
+ Task: (Late_Task:4)   | Exp:    9999999 | Wait:          0 | Goodness:    21.0058 [RUNNING]
+ Task: (Long_Task:3)   | Exp:    9996951 | Wait:   20000000 | Goodness:     1.0000 
+ Task: (Medium_Task:2) | Exp:    9999999 | Wait:   10000000 | Goodness:     1.9096 
+----------------------------------------------------------------------------------
+(Long_Task:3)/100/839ms - Switching Process In
+
+--- Scheduler with Goodness Snapshot at 850ms (MinExp: 9998983, MaxWait: 20000000) ---
+ Task: (Late_Task:4)   | Exp:    9999999 | Wait:   10000000 | Goodness:     1.9093 
+ Task: (Long_Task:3)   | Exp:    9998983 | Wait:          0 | Goodness:    21.0000 [RUNNING]
+ Task: (Medium_Task:2) | Exp:    9999999 | Wait:   20000000 | Goodness:     1.0001 
+----------------------------------------------------------------------------------
+(Medium_Task:2)/100/849ms - Switching Process In
+
+--- Scheduler with Goodness Snapshot at 860ms (MinExp: 9998983, MaxWait: 20000000) ---
+ Task: (Late_Task:4)   | Exp:    9999999 | Wait:   20000000 | Goodness:     1.0001 
+ Task: (Long_Task:3)   | Exp:    9998983 | Wait:   10000000 | Goodness:     1.9091 
+ Task: (Medium_Task:2) | Exp:    9999999 | Wait:          0 | Goodness:    21.0019 [RUNNING]
+----------------------------------------------------------------------------------
+(Late_Task:4)/100/859ms - Switching Process In
+
+--- Scheduler with Goodness Snapshot at 870ms (MinExp: 9998983, MaxWait: 20000000) ---
+ Task: (Late_Task:4)   | Exp:    9999999 | Wait:          0 | Goodness:    21.0019 [RUNNING]
+ Task: (Long_Task:3)   | Exp:    9998983 | Wait:   20000000 | Goodness:     1.0000 
+ Task: (Medium_Task:2) | Exp:    9999999 | Wait:   10000000 | Goodness:     1.9093 
+----------------------------------------------------------------------------------
+(Long_Task:3)/100/869ms - Switching Process In
+
+--- Scheduler with Goodness Snapshot at 880ms (MinExp: 9999661, MaxWait: 20000000) ---
+ Task: (Late_Task:4)   | Exp:    9999999 | Wait:   10000000 | Goodness:     1.9091 
+ Task: (Long_Task:3)   | Exp:    9999661 | Wait:          0 | Goodness:    21.0000 [RUNNING]
+ Task: (Medium_Task:2) | Exp:    9999999 | Wait:   20000000 | Goodness:     1.0000 
+----------------------------------------------------------------------------------
+(Medium_Task:2)/100/879ms - Switching Process In
+
+--- Scheduler with Goodness Snapshot at 890ms (MinExp: 9999661, MaxWait: 20000000) ---
+ Task: (Late_Task:4)   | Exp:    9999999 | Wait:   20000000 | Goodness:     1.0000 
+ Task: (Long_Task:3)   | Exp:    9999661 | Wait:   10000000 | Goodness:     1.9091 
+ Task: (Medium_Task:2) | Exp:    9999999 | Wait:          0 | Goodness:    21.0006 [RUNNING]
+----------------------------------------------------------------------------------
+(Late_Task:4)/100/889ms - Switching Process In
+
+--- Scheduler with Goodness Snapshot at 900ms (MinExp: 9999661, MaxWait: 20000000) ---
+ Task: (Late_Task:4)   | Exp:    9999999 | Wait:          0 | Goodness:    21.0006 [RUNNING]
+ Task: (Long_Task:3)   | Exp:    9999661 | Wait:   20000000 | Goodness:     1.0000 
+ Task: (Medium_Task:2) | Exp:    9999999 | Wait:   10000000 | Goodness:     1.9091 
+----------------------------------------------------------------------------------
+(Long_Task:3)/100/899ms - Switching Process In
+
+--- Scheduler with Goodness Snapshot at 910ms (MinExp: 9999887, MaxWait: 20000000) ---
+ Task: (Late_Task:4)   | Exp:    9999999 | Wait:   10000000 | Goodness:     1.9091 
+ Task: (Long_Task:3)   | Exp:    9999887 | Wait:          0 | Goodness:    21.0000 [RUNNING]
+ Task: (Medium_Task:2) | Exp:    9999999 | Wait:   20000000 | Goodness:     1.0000 
+----------------------------------------------------------------------------------
+(Medium_Task:2)/100/909ms - Switching Process In
+
+--- Scheduler with Goodness Snapshot at 920ms (MinExp: 9999887, MaxWait: 20000000) ---
+ Task: (Late_Task:4)   | Exp:    9999999 | Wait:   20000000 | Goodness:     1.0000 
+ Task: (Long_Task:3)   | Exp:    9999887 | Wait:   10000000 | Goodness:     1.9091 
+ Task: (Medium_Task:2) | Exp:    9999999 | Wait:          0 | Goodness:    21.0002 [RUNNING]
+----------------------------------------------------------------------------------
+(Late_Task:4)/100/919ms - Switching Process In
+
+--- Scheduler with Goodness Snapshot at 930ms (MinExp: 9999887, MaxWait: 20000000) ---
+ Task: (Late_Task:4)   | Exp:    9999999 | Wait:          0 | Goodness:    21.0002 [RUNNING]
+ Task: (Long_Task:3)   | Exp:    9999887 | Wait:   20000000 | Goodness:     1.0000 
+ Task: (Medium_Task:2) | Exp:    9999999 | Wait:   10000000 | Goodness:     1.9091 
+----------------------------------------------------------------------------------
+(Long_Task:3)/100/929ms - Switching Process In
+
+--- Scheduler with Goodness Snapshot at 940ms (MinExp: 9999962, MaxWait: 20000000) ---
+ Task: (Late_Task:4)   | Exp:    9999999 | Wait:   10000000 | Goodness:     1.9091 
+ Task: (Long_Task:3)   | Exp:    9999962 | Wait:          0 | Goodness:    21.0000 [RUNNING]
+ Task: (Medium_Task:2) | Exp:    9999999 | Wait:   20000000 | Goodness:     1.0000 
+----------------------------------------------------------------------------------
+(Medium_Task:2)/100/939ms - Switching Process In
+
+--- Scheduler with Goodness Snapshot at 950ms (MinExp: 9999962, MaxWait: 20000000) ---
+ Task: (Late_Task:4)   | Exp:    9999999 | Wait:   20000000 | Goodness:     1.0000 
+ Task: (Long_Task:3)   | Exp:    9999962 | Wait:   10000000 | Goodness:     1.9091 
+ Task: (Medium_Task:2) | Exp:    9999999 | Wait:          0 | Goodness:    21.0001 [RUNNING]
+----------------------------------------------------------------------------------
+(Late_Task:4)/100/949ms - Switching Process In
+
+--- Scheduler with Goodness Snapshot at 960ms (MinExp: 9999962, MaxWait: 20000000) ---
+ Task: (Late_Task:4)   | Exp:    9999999 | Wait:          0 | Goodness:    21.0001 [RUNNING]
+ Task: (Long_Task:3)   | Exp:    9999962 | Wait:   20000000 | Goodness:     1.0000 
+ Task: (Medium_Task:2) | Exp:    9999999 | Wait:   10000000 | Goodness:     1.9091 
+----------------------------------------------------------------------------------
+(Long_Task:3)/100/959ms - Switching Process In
+
+--- Scheduler with Goodness Snapshot at 970ms (MinExp: 9999987, MaxWait: 20000000) ---
+ Task: (Late_Task:4)   | Exp:    9999999 | Wait:   10000000 | Goodness:     1.9091 
+ Task: (Long_Task:3)   | Exp:    9999987 | Wait:          0 | Goodness:    21.0000 [RUNNING]
+ Task: (Medium_Task:2) | Exp:    9999999 | Wait:   20000000 | Goodness:     1.0000 
+----------------------------------------------------------------------------------
+(Medium_Task:2)/100/969ms - Switching Process In
+
+--- Scheduler with Goodness Snapshot at 980ms (MinExp: 9999987, MaxWait: 20000000) ---
+ Task: (Late_Task:4)   | Exp:    9999999 | Wait:   20000000 | Goodness:     1.0000 
+ Task: (Long_Task:3)   | Exp:    9999987 | Wait:   10000000 | Goodness:     1.9091 
+ Task: (Medium_Task:2) | Exp:    9999999 | Wait:          0 | Goodness:    21.0000 [RUNNING]
+----------------------------------------------------------------------------------
+(Late_Task:4)/100/979ms - Switching Process In
+
+--- Scheduler with Goodness Snapshot at 990ms (MinExp: 9999987, MaxWait: 20000000) ---
+ Task: (Late_Task:4)   | Exp:    9999999 | Wait:          0 | Goodness:    21.0000 [RUNNING]
+ Task: (Long_Task:3)   | Exp:    9999987 | Wait:   20000000 | Goodness:     1.0000 
+ Task: (Medium_Task:2) | Exp:    9999999 | Wait:   10000000 | Goodness:     1.9091 
+----------------------------------------------------------------------------------
+(Long_Task:3)/100/989ms - Switching Process In
+
+--- Scheduler with Goodness Snapshot at 1000ms (MinExp: 9999995, MaxWait: 20000000) ---
+ Task: (Late_Task:4)   | Exp:    9999999 | Wait:   10000000 | Goodness:     1.9091 
+ Task: (Long_Task:3)   | Exp:    9999995 | Wait:          0 | Goodness:    21.0000 [RUNNING]
+ Task: (Medium_Task:2) | Exp:    9999999 | Wait:   20000000 | Goodness:     1.0000 
+----------------------------------------------------------------------------------
+(Medium_Task:2)/100/999ms - Switching Process In
+
+--- Scheduler with Goodness Snapshot at 1010ms (MinExp: 9999995, MaxWait: 20000000) ---
+ Task: (Late_Task:4)   | Exp:    9999999 | Wait:   20000000 | Goodness:     1.0000 
+ Task: (Long_Task:3)   | Exp:    9999995 | Wait:   10000000 | Goodness:     1.9091 
+ Task: (Medium_Task:2) | Exp:    9999999 | Wait:          0 | Goodness:    21.0000 [RUNNING]
+----------------------------------------------------------------------------------
+(Late_Task:4)/100/1009ms - Switching Process In
+
+--- Scheduler with Goodness Snapshot at 1020ms (MinExp: 9999995, MaxWait: 20000000) ---
+ Task: (Late_Task:4)   | Exp:    9999999 | Wait:          0 | Goodness:    21.0000 [RUNNING]
+ Task: (Long_Task:3)   | Exp:    9999995 | Wait:   20000000 | Goodness:     1.0000 
+ Task: (Medium_Task:2) | Exp:    9999999 | Wait:   10000000 | Goodness:     1.9091 
+----------------------------------------------------------------------------------
+(Long_Task:3)/100/1019ms - Switching Process In
+
+--- Scheduler with Goodness Snapshot at 1030ms (MinExp: 9999998, MaxWait: 20000000) ---
+ Task: (Late_Task:4)   | Exp:    9999999 | Wait:   10000000 | Goodness:     1.9091 
+ Task: (Long_Task:3)   | Exp:    9999998 | Wait:          0 | Goodness:    21.0000 [RUNNING]
+ Task: (Medium_Task:2) | Exp:    9999999 | Wait:   20000000 | Goodness:     1.0000 
+----------------------------------------------------------------------------------
+(Medium_Task:2)/100/1029ms - Switching Process In
+
+--- Scheduler with Goodness Snapshot at 1040ms (MinExp: 9999998, MaxWait: 20000000) ---
+ Task: (Late_Task:4)   | Exp:    9999999 | Wait:   20000000 | Goodness:     1.0000 
+ Task: (Long_Task:3)   | Exp:    9999998 | Wait:   10000000 | Goodness:     1.9091 
+ Task: (Medium_Task:2) | Exp:    9999999 | Wait:          0 | Goodness:    21.0000 [RUNNING]
+----------------------------------------------------------------------------------
+(Late_Task:4)/100/1039ms - Switching Process In
+
+--- Scheduler with Goodness Snapshot at 1050ms (MinExp: 9999998, MaxWait: 20000000) ---
+ Task: (Late_Task:4)   | Exp:    9999999 | Wait:          0 | Goodness:    21.0000 [RUNNING]
+ Task: (Long_Task:3)   | Exp:    9999998 | Wait:   20000000 | Goodness:     1.0000 
+ Task: (Medium_Task:2) | Exp:    9999999 | Wait:   10000000 | Goodness:     1.9091 
+----------------------------------------------------------------------------------
+(Long_Task:3)/100/1049ms - Switching Process In
+
+--- Scheduler with Goodness Snapshot at 1060ms (MinExp: 9999999, MaxWait: 20000000) ---
+ Task: (Late_Task:4)   | Exp:    9999999 | Wait:   10000000 | Goodness:     1.9091 
+ Task: (Long_Task:3)   | Exp:    9999999 | Wait:          0 | Goodness:    21.0000 [RUNNING]
+ Task: (Medium_Task:2) | Exp:    9999999 | Wait:   20000000 | Goodness:     1.0000 
+----------------------------------------------------------------------------------
+(Medium_Task:2)/100/1059ms - Switching Process In
+
+--- Scheduler with Goodness Snapshot at 1070ms (MinExp: 9999999, MaxWait: 20000000) ---
+ Task: (Late_Task:4)   | Exp:    9999999 | Wait:   20000000 | Goodness:     1.0000 
+ Task: (Long_Task:3)   | Exp:    9999999 | Wait:   10000000 | Goodness:     1.9091 
+ Task: (Medium_Task:2) | Exp:    9999999 | Wait:          0 | Goodness:    21.0000 [RUNNING]
+----------------------------------------------------------------------------------
+(Late_Task:4)/100/1069ms - Switching Process In
+
+--- Scheduler with Goodness Snapshot at 1080ms (MinExp: 9999999, MaxWait: 20000000) ---
+ Task: (Late_Task:4)   | Exp:    9999999 | Wait:          0 | Goodness:    21.0000 [RUNNING]
+ Task: (Long_Task:3)   | Exp:    9999999 | Wait:   20000000 | Goodness:     1.0000 
+ Task: (Medium_Task:2) | Exp:    9999999 | Wait:   10000000 | Goodness:     1.9091 
+----------------------------------------------------------------------------------
+(Long_Task:3)/100/1079ms - Switching Process In
+
+--- Scheduler with Goodness Snapshot at 1090ms (MinExp: 9999999, MaxWait: 20000000) ---
+ Task: (Late_Task:4)   | Exp:    9999999 | Wait:   10000000 | Goodness:     1.9091 
+ Task: (Long_Task:3)   | Exp:    9999999 | Wait:          0 | Goodness:    21.0000 [RUNNING]
+ Task: (Medium_Task:2) | Exp:    9999999 | Wait:   20000000 | Goodness:     1.0000 
+----------------------------------------------------------------------------------
+(Medium_Task:2)/100/1089ms - Switching Process In
+
+--- Scheduler with Goodness Snapshot at 1100ms (MinExp: 9999999, MaxWait: 20000000) ---
+ Task: (Late_Task:4)   | Exp:    9999999 | Wait:   20000000 | Goodness:     1.0000 
+ Task: (Long_Task:3)   | Exp:    9999999 | Wait:   10000000 | Goodness:     1.9091 
+ Task: (Medium_Task:2) | Exp:    9999999 | Wait:          0 | Goodness:    21.0000 [RUNNING]
+----------------------------------------------------------------------------------
+(Late_Task:4)/100/1099ms - Switching Process In
+
+--- Scheduler with Goodness Snapshot at 1110ms (MinExp: 9999999, MaxWait: 20000000) ---
+ Task: (Late_Task:4)   | Exp:    9999999 | Wait:          0 | Goodness:    21.0000 [RUNNING]
+ Task: (Long_Task:3)   | Exp:    9999999 | Wait:   20000000 | Goodness:     1.0000 
+ Task: (Medium_Task:2) | Exp:    9999999 | Wait:   10000000 | Goodness:     1.9091 
+----------------------------------------------------------------------------------
+(Long_Task:3)/100/1109ms - Switching Process In
+
+--- Scheduler with Goodness Snapshot at 1120ms (MinExp: 9999999, MaxWait: 20000000) ---
+ Task: (Late_Task:4)   | Exp:    9999999 | Wait:   10000000 | Goodness:     1.9091 
+ Task: (Long_Task:3)   | Exp:    9999999 | Wait:          0 | Goodness:    21.0000 [RUNNING]
+ Task: (Medium_Task:2) | Exp:    9999999 | Wait:   20000000 | Goodness:     1.0000 
+----------------------------------------------------------------------------------
+(Medium_Task:2)/100/1119ms - Switching Process In
+
+--- Scheduler with Goodness Snapshot at 1130ms (MinExp: 9999999, MaxWait: 20000000) ---
+ Task: (Late_Task:4)   | Exp:    9999999 | Wait:   20000000 | Goodness:     1.0000 
+ Task: (Long_Task:3)   | Exp:    9999999 | Wait:   10000000 | Goodness:     1.9091 
+ Task: (Medium_Task:2) | Exp:    9999999 | Wait:          0 | Goodness:    21.0000 [RUNNING]
+----------------------------------------------------------------------------------
+(Late_Task:4)/100/1129ms - Switching Process In
+
+--- Scheduler with Goodness Snapshot at 1140ms (MinExp: 9999999, MaxWait: 20000000) ---
+ Task: (Late_Task:4)   | Exp:    9999999 | Wait:          0 | Goodness:    21.0000 [RUNNING]
+ Task: (Long_Task:3)   | Exp:    9999999 | Wait:   20000000 | Goodness:     1.0000 
+ Task: (Medium_Task:2) | Exp:    9999999 | Wait:   10000000 | Goodness:     1.9091 
+----------------------------------------------------------------------------------
+(Long_Task:3)/100/1139ms - Switching Process In
+
+--- Scheduler with Goodness Snapshot at 1150ms (MinExp: 9999999, MaxWait: 20000000) ---
+ Task: (Late_Task:4)   | Exp:    9999999 | Wait:   10000000 | Goodness:     1.9091 
+ Task: (Long_Task:3)   | Exp:    9999999 | Wait:          0 | Goodness:    21.0000 [RUNNING]
+ Task: (Medium_Task:2) | Exp:    9999999 | Wait:   20000000 | Goodness:     1.0000 
+----------------------------------------------------------------------------------
+(Medium_Task:2)/100/1149ms - Switching Process In
+
+--- Scheduler with Goodness Snapshot at 1160ms (MinExp: 9999999, MaxWait: 20000000) ---
+ Task: (Late_Task:4)   | Exp:    9999999 | Wait:   20000000 | Goodness:     1.0000 
+ Task: (Long_Task:3)   | Exp:    9999999 | Wait:   10000000 | Goodness:     1.9091 
+ Task: (Medium_Task:2) | Exp:    9999999 | Wait:          0 | Goodness:    21.0000 [RUNNING]
+----------------------------------------------------------------------------------
+(Late_Task:4)/100/1159ms - Switching Process In
+
+--- Scheduler with Goodness Snapshot at 1170ms (MinExp: 9999999, MaxWait: 20000000) ---
+ Task: (Late_Task:4)   | Exp:    9999999 | Wait:          0 | Goodness:    21.0000 [RUNNING]
+ Task: (Long_Task:3)   | Exp:    9999999 | Wait:   20000000 | Goodness:     1.0000 
+ Task: (Medium_Task:2) | Exp:    9999999 | Wait:   10000000 | Goodness:     1.9091 
+----------------------------------------------------------------------------------
+(Long_Task:3)/100/1169ms - Switching Process In
+
+--- Scheduler with Goodness Snapshot at 1180ms (MinExp: 9999999, MaxWait: 20000000) ---
+ Task: (Late_Task:4)   | Exp:    9999999 | Wait:   10000000 | Goodness:     1.9091 
+ Task: (Long_Task:3)   | Exp:    9999999 | Wait:          0 | Goodness:    21.0000 [RUNNING]
+ Task: (Medium_Task:2) | Exp:    9999999 | Wait:   20000000 | Goodness:     1.0000 
+----------------------------------------------------------------------------------
+(Medium_Task:2)/100/1179ms - Switching Process In
+
+--- Scheduler with Goodness Snapshot at 1190ms (MinExp: 9999999, MaxWait: 20000000) ---
+ Task: (Late_Task:4)   | Exp:    9999999 | Wait:   20000000 | Goodness:     1.0000 
+ Task: (Long_Task:3)   | Exp:    9999999 | Wait:   10000000 | Goodness:     1.9091 
+ Task: (Medium_Task:2) | Exp:    9999999 | Wait:          0 | Goodness:    21.0000 [RUNNING]
+----------------------------------------------------------------------------------
+(Late_Task:4)/100/1189ms - Switching Process In
+
+--- Scheduler with Goodness Snapshot at 1200ms (MinExp: 9999999, MaxWait: 20000000) ---
+ Task: (Late_Task:4)   | Exp:    9999999 | Wait:          0 | Goodness:    21.0000 [RUNNING]
+ Task: (Long_Task:3)   | Exp:    9999999 | Wait:   20000000 | Goodness:     1.0000 
+ Task: (Medium_Task:2) | Exp:    9999999 | Wait:   10000000 | Goodness:     1.9091 
+----------------------------------------------------------------------------------
+(Long_Task:3)/100/1199ms - Switching Process In
+
+--- Scheduler with Goodness Snapshot at 1210ms (MinExp: 9999999, MaxWait: 20000000) ---
+ Task: (Late_Task:4)   | Exp:    9999999 | Wait:   10000000 | Goodness:     1.9091 
+ Task: (Long_Task:3)   | Exp:    9999999 | Wait:          0 | Goodness:    21.0000 [RUNNING]
+ Task: (Medium_Task:2) | Exp:    9999999 | Wait:   20000000 | Goodness:     1.0000 
+----------------------------------------------------------------------------------
+(Medium_Task:2)/100/1209ms - Switching Process In
+
+--- Scheduler with Goodness Snapshot at 1220ms (MinExp: 9999999, MaxWait: 20000000) ---
+ Task: (Late_Task:4)   | Exp:    9999999 | Wait:   20000000 | Goodness:     1.0000 
+ Task: (Long_Task:3)   | Exp:    9999999 | Wait:   10000000 | Goodness:     1.9091 
+ Task: (Medium_Task:2) | Exp:    9999999 | Wait:          0 | Goodness:    21.0000 [RUNNING]
+----------------------------------------------------------------------------------
+(Late_Task:4)/100/1219ms - Switching Process In
+CDA: thread (Late_Task:4) finished
+ Deactivation with Exp:    3333333
+###-Process: (Late_Task:4) is going down-###
+
+--- Scheduler with Goodness Snapshot at 1220ms (MinExp: 9999999, MaxWait: 10000000) ---
+ Task: (Long_Task:3)   | Exp:    9999999 | Wait:   10000000 | Goodness:     1.0000 
+ Task: (Medium_Task:2) | Exp:    9999999 | Wait:          0 | Goodness:    11.0000 
+----------------------------------------------------------------------------------
+(Long_Task:3)/100/1222ms - Switching Process In
+
+--- Scheduler with Goodness Snapshot at 1230ms (MinExp: 9999999, MaxWait: 10000000) ---
+ Task: (Long_Task:3)   | Exp:    9999999 | Wait:          0 | Goodness:    11.0000 [RUNNING]
+ Task: (Medium_Task:2) | Exp:    9999999 | Wait:   10000000 | Goodness:     1.0000 
+----------------------------------------------------------------------------------
+(Medium_Task:2)/100/1229ms - Switching Process In
+
+--- Scheduler with Goodness Snapshot at 1240ms (MinExp: 9999999, MaxWait: 10000000) ---
+ Task: (Long_Task:3)   | Exp:    9999999 | Wait:   10000000 | Goodness:     1.0000 
+ Task: (Medium_Task:2) | Exp:    9999999 | Wait:          0 | Goodness:    11.0000 [RUNNING]
+----------------------------------------------------------------------------------
+(Long_Task:3)/100/1239ms - Switching Process In
+
+--- Scheduler with Goodness Snapshot at 1250ms (MinExp: 9999999, MaxWait: 10000000) ---
+ Task: (Long_Task:3)   | Exp:    9999999 | Wait:          0 | Goodness:    11.0000 [RUNNING]
+ Task: (Medium_Task:2) | Exp:    9999999 | Wait:   10000000 | Goodness:     1.0000 
+----------------------------------------------------------------------------------
+(Medium_Task:2)/100/1249ms - Switching Process In
+
+--- Scheduler with Goodness Snapshot at 1260ms (MinExp: 9999999, MaxWait: 10000000) ---
+ Task: (Long_Task:3)   | Exp:    9999999 | Wait:   10000000 | Goodness:     1.0000 
+ Task: (Medium_Task:2) | Exp:    9999999 | Wait:          0 | Goodness:    11.0000 [RUNNING]
+----------------------------------------------------------------------------------
+(Long_Task:3)/100/1259ms - Switching Process In
+
+--- Scheduler with Goodness Snapshot at 1270ms (MinExp: 9999999, MaxWait: 10000000) ---
+ Task: (Long_Task:3)   | Exp:    9999999 | Wait:          0 | Goodness:    11.0000 [RUNNING]
+ Task: (Medium_Task:2) | Exp:    9999999 | Wait:   10000000 | Goodness:     1.0000 
+----------------------------------------------------------------------------------
+(Medium_Task:2)/100/1269ms - Switching Process In
+
+--- Scheduler with Goodness Snapshot at 1280ms (MinExp: 9999999, MaxWait: 10000000) ---
+ Task: (Long_Task:3)   | Exp:    9999999 | Wait:   10000000 | Goodness:     1.0000 
+ Task: (Medium_Task:2) | Exp:    9999999 | Wait:          0 | Goodness:    11.0000 [RUNNING]
+----------------------------------------------------------------------------------
+(Long_Task:3)/100/1279ms - Switching Process In
+
+--- Scheduler with Goodness Snapshot at 1290ms (MinExp: 9999999, MaxWait: 10000000) ---
+ Task: (Long_Task:3)   | Exp:    9999999 | Wait:          0 | Goodness:    11.0000 [RUNNING]
+ Task: (Medium_Task:2) | Exp:    9999999 | Wait:   10000000 | Goodness:     1.0000 
+----------------------------------------------------------------------------------
+(Medium_Task:2)/100/1289ms - Switching Process In
+
+--- Scheduler with Goodness Snapshot at 1300ms (MinExp: 9999999, MaxWait: 10000000) ---
+ Task: (Long_Task:3)   | Exp:    9999999 | Wait:   10000000 | Goodness:     1.0000 
+ Task: (Medium_Task:2) | Exp:    9999999 | Wait:          0 | Goodness:    11.0000 [RUNNING]
+----------------------------------------------------------------------------------
+(Long_Task:3)/100/1299ms - Switching Process In
+
+--- Scheduler with Goodness Snapshot at 1310ms (MinExp: 9999999, MaxWait: 10000000) ---
+ Task: (Long_Task:3)   | Exp:    9999999 | Wait:          0 | Goodness:    11.0000 [RUNNING]
+ Task: (Medium_Task:2) | Exp:    9999999 | Wait:   10000000 | Goodness:     1.0000 
+----------------------------------------------------------------------------------
+(Medium_Task:2)/100/1309ms - Switching Process In
+
+--- Scheduler with Goodness Snapshot at 1320ms (MinExp: 9999999, MaxWait: 10000000) ---
+ Task: (Long_Task:3)   | Exp:    9999999 | Wait:   10000000 | Goodness:     1.0000 
+ Task: (Medium_Task:2) | Exp:    9999999 | Wait:          0 | Goodness:    11.0000 [RUNNING]
+----------------------------------------------------------------------------------
+(Long_Task:3)/100/1319ms - Switching Process In
+
+--- Scheduler with Goodness Snapshot at 1330ms (MinExp: 9999999, MaxWait: 10000000) ---
+ Task: (Long_Task:3)   | Exp:    9999999 | Wait:          0 | Goodness:    11.0000 [RUNNING]
+ Task: (Medium_Task:2) | Exp:    9999999 | Wait:   10000000 | Goodness:     1.0000 
+----------------------------------------------------------------------------------
+(Medium_Task:2)/100/1329ms - Switching Process In
+
+--- Scheduler with Goodness Snapshot at 1340ms (MinExp: 9999999, MaxWait: 10000000) ---
+ Task: (Long_Task:3)   | Exp:    9999999 | Wait:   10000000 | Goodness:     1.0000 
+ Task: (Medium_Task:2) | Exp:    9999999 | Wait:          0 | Goodness:    11.0000 [RUNNING]
+----------------------------------------------------------------------------------
+(Long_Task:3)/100/1339ms - Switching Process In
+
+--- Scheduler with Goodness Snapshot at 1350ms (MinExp: 9999999, MaxWait: 10000000) ---
+ Task: (Long_Task:3)   | Exp:    9999999 | Wait:          0 | Goodness:    11.0000 [RUNNING]
+ Task: (Medium_Task:2) | Exp:    9999999 | Wait:   10000000 | Goodness:     1.0000 
+----------------------------------------------------------------------------------
+(Medium_Task:2)/100/1349ms - Switching Process In
+
+--- Scheduler with Goodness Snapshot at 1360ms (MinExp: 9999999, MaxWait: 10000000) ---
+ Task: (Long_Task:3)   | Exp:    9999999 | Wait:   10000000 | Goodness:     1.0000 
+ Task: (Medium_Task:2) | Exp:    9999999 | Wait:          0 | Goodness:    11.0000 [RUNNING]
+----------------------------------------------------------------------------------
+(Long_Task:3)/100/1359ms - Switching Process In
+
+--- Scheduler with Goodness Snapshot at 1370ms (MinExp: 9999999, MaxWait: 10000000) ---
+ Task: (Long_Task:3)   | Exp:    9999999 | Wait:          0 | Goodness:    11.0000 [RUNNING]
+ Task: (Medium_Task:2) | Exp:    9999999 | Wait:   10000000 | Goodness:     1.0000 
+----------------------------------------------------------------------------------
+(Medium_Task:2)/100/1369ms - Switching Process In
+
+--- Scheduler with Goodness Snapshot at 1380ms (MinExp: 9999999, MaxWait: 10000000) ---
+ Task: (Long_Task:3)   | Exp:    9999999 | Wait:   10000000 | Goodness:     1.0000 
+ Task: (Medium_Task:2) | Exp:    9999999 | Wait:          0 | Goodness:    11.0000 [RUNNING]
+----------------------------------------------------------------------------------
+(Long_Task:3)/100/1379ms - Switching Process In
+
+--- Scheduler with Goodness Snapshot at 1390ms (MinExp: 9999999, MaxWait: 10000000) ---
+ Task: (Long_Task:3)   | Exp:    9999999 | Wait:          0 | Goodness:    11.0000 [RUNNING]
+ Task: (Medium_Task:2) | Exp:    9999999 | Wait:   10000000 | Goodness:     1.0000 
+----------------------------------------------------------------------------------
+(Medium_Task:2)/100/1389ms - Switching Process In
+
+--- Scheduler with Goodness Snapshot at 1400ms (MinExp: 9999999, MaxWait: 10000000) ---
+ Task: (Long_Task:3)   | Exp:    9999999 | Wait:   10000000 | Goodness:     1.0000 
+ Task: (Medium_Task:2) | Exp:    9999999 | Wait:          0 | Goodness:    11.0000 [RUNNING]
+----------------------------------------------------------------------------------
+(Long_Task:3)/100/1399ms - Switching Process In
+
+--- Scheduler with Goodness Snapshot at 1410ms (MinExp: 9999999, MaxWait: 10000000) ---
+ Task: (Long_Task:3)   | Exp:    9999999 | Wait:          0 | Goodness:    11.0000 [RUNNING]
+ Task: (Medium_Task:2) | Exp:    9999999 | Wait:   10000000 | Goodness:     1.0000 
+----------------------------------------------------------------------------------
+(Medium_Task:2)/100/1409ms - Switching Process In
+
+--- Scheduler with Goodness Snapshot at 1420ms (MinExp: 9999999, MaxWait: 10000000) ---
+ Task: (Long_Task:3)   | Exp:    9999999 | Wait:   10000000 | Goodness:     1.0000 
+ Task: (Medium_Task:2) | Exp:    9999999 | Wait:          0 | Goodness:    11.0000 [RUNNING]
+----------------------------------------------------------------------------------
+(Long_Task:3)/100/1419ms - Switching Process In
+
+--- Scheduler with Goodness Snapshot at 1430ms (MinExp: 9999999, MaxWait: 10000000) ---
+ Task: (Long_Task:3)   | Exp:    9999999 | Wait:          0 | Goodness:    11.0000 [RUNNING]
+ Task: (Medium_Task:2) | Exp:    9999999 | Wait:   10000000 | Goodness:     1.0000 
+----------------------------------------------------------------------------------
+(Medium_Task:2)/100/1429ms - Switching Process In
+
+--- Scheduler with Goodness Snapshot at 1440ms (MinExp: 9999999, MaxWait: 10000000) ---
+ Task: (Long_Task:3)   | Exp:    9999999 | Wait:   10000000 | Goodness:     1.0000 
+ Task: (Medium_Task:2) | Exp:    9999999 | Wait:          0 | Goodness:    11.0000 [RUNNING]
+----------------------------------------------------------------------------------
+(Long_Task:3)/100/1439ms - Switching Process In
+
+--- Scheduler with Goodness Snapshot at 1450ms (MinExp: 9999999, MaxWait: 10000000) ---
+ Task: (Long_Task:3)   | Exp:    9999999 | Wait:          0 | Goodness:    11.0000 [RUNNING]
+ Task: (Medium_Task:2) | Exp:    9999999 | Wait:   10000000 | Goodness:     1.0000 
+----------------------------------------------------------------------------------
+(Medium_Task:2)/100/1449ms - Switching Process In
+CDA: thread (Medium_Task:2) finished
+ Deactivation with Exp:    3333333
+###-Process: (Medium_Task:2) is going down-###
+
+--- Scheduler with Goodness Snapshot at 1450ms (MinExp: 9999999, MaxWait: 0) ---
+ Task: (Long_Task:3)   | Exp:    9999999 | Wait:          0 | Goodness:     1.0000 
+----------------------------------------------------------------------------------
+(Long_Task:3)/100/1459ms - Switching Process In
+
+--- Scheduler with Goodness Snapshot at 1460ms (MinExp: 9999999, MaxWait: 0) ---
+ Task: (Long_Task:3)   | Exp:    9999999 | Wait:          0 | Goodness:     1.0000 [RUNNING]
+----------------------------------------------------------------------------------
+
+--- Scheduler with Goodness Snapshot at 1470ms (MinExp: 16666666, MaxWait: 0) ---
+ Task: (Long_Task:3)   | Exp:   16666666 | Wait:          0 | Goodness:     1.0000 [RUNNING]
+----------------------------------------------------------------------------------
+
+--- Scheduler with Goodness Snapshot at 1480ms (MinExp: 23333333, MaxWait: 0) ---
+ Task: (Long_Task:3)   | Exp:   23333333 | Wait:          0 | Goodness:     1.0000 [RUNNING]
+----------------------------------------------------------------------------------
+
+--- Scheduler with Goodness Snapshot at 1490ms (MinExp: 29999999, MaxWait: 0) ---
+ Task: (Long_Task:3)   | Exp:   29999999 | Wait:          0 | Goodness:     1.0000 [RUNNING]
+----------------------------------------------------------------------------------
+
+--- Scheduler with Goodness Snapshot at 1500ms (MinExp: 36666666, MaxWait: 0) ---
+ Task: (Long_Task:3)   | Exp:   36666666 | Wait:          0 | Goodness:     1.0000 [RUNNING]
+----------------------------------------------------------------------------------
+
+--- Scheduler with Goodness Snapshot at 1510ms (MinExp: 43333333, MaxWait: 0) ---
+ Task: (Long_Task:3)   | Exp:   43333333 | Wait:          0 | Goodness:     1.0000 [RUNNING]
+----------------------------------------------------------------------------------
+
+--- Scheduler with Goodness Snapshot at 1520ms (MinExp: 49999999, MaxWait: 0) ---
+ Task: (Long_Task:3)   | Exp:   49999999 | Wait:          0 | Goodness:     1.0000 [RUNNING]
+----------------------------------------------------------------------------------
+
+--- Scheduler with Goodness Snapshot at 1530ms (MinExp: 56666666, MaxWait: 0) ---
+ Task: (Long_Task:3)   | Exp:   56666666 | Wait:          0 | Goodness:     1.0000 [RUNNING]
+----------------------------------------------------------------------------------
+
+--- Scheduler with Goodness Snapshot at 1540ms (MinExp: 63333333, MaxWait: 0) ---
+ Task: (Long_Task:3)   | Exp:   63333333 | Wait:          0 | Goodness:     1.0000 [RUNNING]
+----------------------------------------------------------------------------------
+###-An Interrupt has fired!-###
+
+--- Scheduler with Goodness Snapshot at 1540ms (MinExp: 63333333, MaxWait: 0) ---
+ Task: (Long_Task:3)   | Exp:   63333333 | Wait:          0 | Goodness:     1.0000 [RUNNING]
+----------------------------------------------------------------------------------
+
+--- Scheduler with Goodness Snapshot at 1550ms (MinExp: 69999999, MaxWait: 0) ---
+ Task: (Long_Task:3)   | Exp:   69999999 | Wait:          0 | Goodness:     1.0000 [RUNNING]
+----------------------------------------------------------------------------------
+
+--- Scheduler with Goodness Snapshot at 1560ms (MinExp: 76666666, MaxWait: 0) ---
+ Task: (Long_Task:3)   | Exp:   76666666 | Wait:          0 | Goodness:     1.0000 [RUNNING]
+----------------------------------------------------------------------------------
+
+--- Scheduler with Goodness Snapshot at 1570ms (MinExp: 83333333, MaxWait: 0) ---
+ Task: (Long_Task:3)   | Exp:   83333333 | Wait:          0 | Goodness:     1.0000 [RUNNING]
+----------------------------------------------------------------------------------
+
+--- Scheduler with Goodness Snapshot at 1580ms (MinExp: 89999999, MaxWait: 0) ---
+ Task: (Long_Task:3)   | Exp:   89999999 | Wait:          0 | Goodness:     1.0000 [RUNNING]
+----------------------------------------------------------------------------------
+
+--- Scheduler with Goodness Snapshot at 1590ms (MinExp: 96666666, MaxWait: 0) ---
+ Task: (Long_Task:3)   | Exp:   96666666 | Wait:          0 | Goodness:     1.0000 [RUNNING]
+----------------------------------------------------------------------------------
+
+--- Scheduler with Goodness Snapshot at 1600ms (MinExp: 103333333, MaxWait: 0) ---
+ Task: (Long_Task:3)   | Exp:  103333333 | Wait:          0 | Goodness:     1.0000 [RUNNING]
+----------------------------------------------------------------------------------
+
+--- Scheduler with Goodness Snapshot at 1610ms (MinExp: 109999999, MaxWait: 0) ---
+ Task: (Long_Task:3)   | Exp:  109999999 | Wait:          0 | Goodness:     1.0000 [RUNNING]
+----------------------------------------------------------------------------------
+
+--- Scheduler with Goodness Snapshot at 1620ms (MinExp: 116666666, MaxWait: 0) ---
+ Task: (Long_Task:3)   | Exp:  116666666 | Wait:          0 | Goodness:     1.0000 [RUNNING]
+----------------------------------------------------------------------------------
+
+--- Scheduler with Goodness Snapshot at 1630ms (MinExp: 123333333, MaxWait: 0) ---
+ Task: (Long_Task:3)   | Exp:  123333333 | Wait:          0 | Goodness:     1.0000 [RUNNING]
+----------------------------------------------------------------------------------
+
+--- Scheduler with Goodness Snapshot at 1640ms (MinExp: 129999999, MaxWait: 0) ---
+ Task: (Long_Task:3)   | Exp:  129999999 | Wait:          0 | Goodness:     1.0000 [RUNNING]
+----------------------------------------------------------------------------------
+
+--- Scheduler with Goodness Snapshot at 1650ms (MinExp: 136666666, MaxWait: 0) ---
+ Task: (Long_Task:3)   | Exp:  136666666 | Wait:          0 | Goodness:     1.0000 [RUNNING]
+----------------------------------------------------------------------------------
+
+--- Scheduler with Goodness Snapshot at 1660ms (MinExp: 143333333, MaxWait: 0) ---
+ Task: (Long_Task:3)   | Exp:  143333333 | Wait:          0 | Goodness:     1.0000 [RUNNING]
+----------------------------------------------------------------------------------
+
+--- Scheduler with Goodness Snapshot at 1670ms (MinExp: 149999999, MaxWait: 0) ---
+ Task: (Long_Task:3)   | Exp:  149999999 | Wait:          0 | Goodness:     1.0000 [RUNNING]
+----------------------------------------------------------------------------------
+
+--- Scheduler with Goodness Snapshot at 1680ms (MinExp: 156666666, MaxWait: 0) ---
+ Task: (Long_Task:3)   | Exp:  156666666 | Wait:          0 | Goodness:     1.0000 [RUNNING]
+----------------------------------------------------------------------------------
+
+--- Scheduler with Goodness Snapshot at 1690ms (MinExp: 163333333, MaxWait: 0) ---
+ Task: (Long_Task:3)   | Exp:  163333333 | Wait:          0 | Goodness:     1.0000 [RUNNING]
+----------------------------------------------------------------------------------
+
+--- Scheduler with Goodness Snapshot at 1700ms (MinExp: 169999999, MaxWait: 0) ---
+ Task: (Long_Task:3)   | Exp:  169999999 | Wait:          0 | Goodness:     1.0000 [RUNNING]
+----------------------------------------------------------------------------------
+
+--- Scheduler with Goodness Snapshot at 1710ms (MinExp: 176666666, MaxWait: 0) ---
+ Task: (Long_Task:3)   | Exp:  176666666 | Wait:          0 | Goodness:     1.0000 [RUNNING]
+----------------------------------------------------------------------------------
+
+--- Scheduler with Goodness Snapshot at 1720ms (MinExp: 183333333, MaxWait: 0) ---
+ Task: (Long_Task:3)   | Exp:  183333333 | Wait:          0 | Goodness:     1.0000 [RUNNING]
+----------------------------------------------------------------------------------
+
+--- Scheduler with Goodness Snapshot at 1730ms (MinExp: 189999999, MaxWait: 0) ---
+ Task: (Long_Task:3)   | Exp:  189999999 | Wait:          0 | Goodness:     1.0000 [RUNNING]
+----------------------------------------------------------------------------------
+
+--- Scheduler with Goodness Snapshot at 1740ms (MinExp: 196666666, MaxWait: 0) ---
+ Task: (Long_Task:3)   | Exp:  196666666 | Wait:          0 | Goodness:     1.0000 [RUNNING]
+----------------------------------------------------------------------------------
+
+--- Scheduler with Goodness Snapshot at 1750ms (MinExp: 203333333, MaxWait: 0) ---
+ Task: (Long_Task:3)   | Exp:  203333333 | Wait:          0 | Goodness:     1.0000 [RUNNING]
+----------------------------------------------------------------------------------
+
+--- Scheduler with Goodness Snapshot at 1760ms (MinExp: 209999999, MaxWait: 0) ---
+ Task: (Long_Task:3)   | Exp:  209999999 | Wait:          0 | Goodness:     1.0000 [RUNNING]
+----------------------------------------------------------------------------------
+
+--- Scheduler with Goodness Snapshot at 1770ms (MinExp: 216666666, MaxWait: 0) ---
+ Task: (Long_Task:3)   | Exp:  216666666 | Wait:          0 | Goodness:     1.0000 [RUNNING]
+----------------------------------------------------------------------------------
+
+--- Scheduler with Goodness Snapshot at 1780ms (MinExp: 223333333, MaxWait: 0) ---
+ Task: (Long_Task:3)   | Exp:  223333333 | Wait:          0 | Goodness:     1.0000 [RUNNING]
+----------------------------------------------------------------------------------
+
+--- Scheduler with Goodness Snapshot at 1790ms (MinExp: 229999999, MaxWait: 0) ---
+ Task: (Long_Task:3)   | Exp:  229999999 | Wait:          0 | Goodness:     1.0000 [RUNNING]
+----------------------------------------------------------------------------------
+
+--- Scheduler with Goodness Snapshot at 1800ms (MinExp: 236666666, MaxWait: 0) ---
+ Task: (Long_Task:3)   | Exp:  236666666 | Wait:          0 | Goodness:     1.0000 [RUNNING]
+----------------------------------------------------------------------------------
+
+--- Scheduler with Goodness Snapshot at 1810ms (MinExp: 243333333, MaxWait: 0) ---
+ Task: (Long_Task:3)   | Exp:  243333333 | Wait:          0 | Goodness:     1.0000 [RUNNING]
+----------------------------------------------------------------------------------
+
+--- Scheduler with Goodness Snapshot at 1820ms (MinExp: 249999999, MaxWait: 0) ---
+ Task: (Long_Task:3)   | Exp:  249999999 | Wait:          0 | Goodness:     1.0000 [RUNNING]
+----------------------------------------------------------------------------------
+
+--- Scheduler with Goodness Snapshot at 1830ms (MinExp: 256666666, MaxWait: 0) ---
+ Task: (Long_Task:3)   | Exp:  256666666 | Wait:          0 | Goodness:     1.0000 [RUNNING]
+----------------------------------------------------------------------------------
+
+--- Scheduler with Goodness Snapshot at 1840ms (MinExp: 263333333, MaxWait: 0) ---
+ Task: (Long_Task:3)   | Exp:  263333333 | Wait:          0 | Goodness:     1.0000 [RUNNING]
+----------------------------------------------------------------------------------
+
+--- Scheduler with Goodness Snapshot at 1850ms (MinExp: 269999999, MaxWait: 0) ---
+ Task: (Long_Task:3)   | Exp:  269999999 | Wait:          0 | Goodness:     1.0000 [RUNNING]
+----------------------------------------------------------------------------------
+
+--- Scheduler with Goodness Snapshot at 1860ms (MinExp: 276666666, MaxWait: 0) ---
+ Task: (Long_Task:3)   | Exp:  276666666 | Wait:          0 | Goodness:     1.0000 [RUNNING]
+----------------------------------------------------------------------------------
+
+--- Scheduler with Goodness Snapshot at 1870ms (MinExp: 283333333, MaxWait: 0) ---
+ Task: (Long_Task:3)   | Exp:  283333333 | Wait:          0 | Goodness:     1.0000 [RUNNING]
+----------------------------------------------------------------------------------
+
+--- Scheduler with Goodness Snapshot at 1880ms (MinExp: 289999999, MaxWait: 0) ---
+ Task: (Long_Task:3)   | Exp:  289999999 | Wait:          0 | Goodness:     1.0000 [RUNNING]
+----------------------------------------------------------------------------------
+
+--- Scheduler with Goodness Snapshot at 1890ms (MinExp: 296666666, MaxWait: 0) ---
+ Task: (Long_Task:3)   | Exp:  296666666 | Wait:          0 | Goodness:     1.0000 [RUNNING]
+----------------------------------------------------------------------------------
+
+--- Scheduler with Goodness Snapshot at 1900ms (MinExp: 303333333, MaxWait: 0) ---
+ Task: (Long_Task:3)   | Exp:  303333333 | Wait:          0 | Goodness:     1.0000 [RUNNING]
+----------------------------------------------------------------------------------
+
+--- Scheduler with Goodness Snapshot at 1910ms (MinExp: 309999999, MaxWait: 0) ---
+ Task: (Long_Task:3)   | Exp:  309999999 | Wait:          0 | Goodness:     1.0000 [RUNNING]
+----------------------------------------------------------------------------------
+
+--- Scheduler with Goodness Snapshot at 1920ms (MinExp: 316666666, MaxWait: 0) ---
+ Task: (Long_Task:3)   | Exp:  316666666 | Wait:          0 | Goodness:     1.0000 [RUNNING]
+----------------------------------------------------------------------------------
+
+--- Scheduler with Goodness Snapshot at 1930ms (MinExp: 323333333, MaxWait: 0) ---
+ Task: (Long_Task:3)   | Exp:  323333333 | Wait:          0 | Goodness:     1.0000 [RUNNING]
+----------------------------------------------------------------------------------
+
+--- Scheduler with Goodness Snapshot at 1940ms (MinExp: 329999999, MaxWait: 0) ---
+ Task: (Long_Task:3)   | Exp:  329999999 | Wait:          0 | Goodness:     1.0000 [RUNNING]
+----------------------------------------------------------------------------------
+
+--- Scheduler with Goodness Snapshot at 1950ms (MinExp: 336666666, MaxWait: 0) ---
+ Task: (Long_Task:3)   | Exp:  336666666 | Wait:          0 | Goodness:     1.0000 [RUNNING]
+----------------------------------------------------------------------------------
+
+--- Scheduler with Goodness Snapshot at 1960ms (MinExp: 343333333, MaxWait: 0) ---
+ Task: (Long_Task:3)   | Exp:  343333333 | Wait:          0 | Goodness:     1.0000 [RUNNING]
+----------------------------------------------------------------------------------
+CDA: thread (Long_Task:3) finished
+ Deactivation with Exp:  343333333
+###-Process: (Long_Task:3) is going down-###
+(Init:0)/0/1960ms - Switching Process In
+(Init:0)/0/1969ms - Switching Process In
+(Init:0)/0/1979ms - Switching Process In
+(Init:0)/0/1989ms - Switching Process In
+(Init:0)/0/1999ms - Switching Process In
+(Init:0)/0/2009ms - Switching Process In
+(Init:0)/0/2019ms - Switching Process In
+(Init:0)/0/2029ms - Switching Process In
+(Init:0)/0/2039ms - Switching Process In
+(Init:0)/0/2049ms - Switching Process In
+###-An Interrupt has fired!-###
+(Init:0)/0/2058ms - Switching Process In
+(Init:0)/0/2059ms - Switching Process In
+(Init:0)/0/2069ms - Switching Process In
+(Init:0)/0/2079ms - Switching Process In
+(Init:0)/0/2089ms - Switching Process In
+(Init:0)/0/2099ms - Switching Process In
+(Init:0)/0/2109ms - Switching Process In
+(Init:0)/0/2119ms - Switching Process In
+(Init:0)/0/2129ms - Switching Process In
+(Init:0)/0/2139ms - Switching Process In
+(Init:0)/0/2149ms - Switching Process In
+(Init:0)/0/2159ms - Switching Process In
+(Init:0)/0/2169ms - Switching Process In
+(Init:0)/0/2179ms - Switching Process In
+(Init:0)/0/2189ms - Switching Process In
+(Init:0)/0/2199ms - Switching Process In
+(Init:0)/0/2209ms - Switching Process In
+(Init:0)/0/2219ms - Switching Process In
+(Init:0)/0/2229ms - Switching Process In
+(Init:0)/0/2239ms - Switching Process In
+(Init:0)/0/2249ms - Switching Process In
+(Init:0)/0/2259ms - Switching Process In
+(Init:0)/0/2269ms - Switching Process In
+(Init:0)/0/2279ms - Switching Process In
+(Init:0)/0/2289ms - Switching Process In
+(Init:0)/0/2299ms - Switching Process In
+(Init:0)/0/2309ms - Switching Process In
+(Init:0)/0/2319ms - Switching Process In
+(Init:0)/0/2329ms - Switching Process In
+(Init:0)/0/2339ms - Switching Process In
+(Init:0)/0/2349ms - Switching Process In
+(Init:0)/0/2359ms - Switching Process In
+(Init:0)/0/2369ms - Switching Process In
+(Init:0)/0/2379ms - Switching Process In
+(Init:0)/0/2389ms - Switching Process In
+(Init:0)/0/2399ms - Switching Process In
+(Init:0)/0/2409ms - Switching Process In
+(Init:0)/0/2419ms - Switching Process In
+(Init:0)/0/2429ms - Switching Process In
+(Init:0)/0/2439ms - Switching Process In
+(Init:0)/0/2449ms - Switching Process In
+(Init:0)/0/2459ms - Switching Process In
+(Init:0)/0/2469ms - Switching Process In
+(Init:0)/0/2479ms - Switching Process In
+(Init:0)/0/2489ms - Switching Process In
+(Init:0)/0/2499ms - Switching Process In
+(Init:0)/0/2509ms - Switching Process In
+(Init:0)/0/2519ms - Switching Process In
+(Init:0)/0/2529ms - Switching Process In
+(Init:0)/0/2539ms - Switching Process In
+(Init:0)/0/2549ms - Switching Process In
+(Init:0)/0/2559ms - Switching Process In
+(Init:0)/0/2569ms - Switching Process In
+(Init:0)/0/2579ms - Switching Process In
+(Init:0)/0/2589ms - Switching Process In
+(Init:0)/0/2599ms - Switching Process In
+(Init:0)/0/2609ms - Switching Process In
+(Init:0)/0/2619ms - Switching Process In
+(Init:0)/0/2629ms - Switching Process In
+(Init:0)/0/2639ms - Switching Process In
+(Init:0)/0/2649ms - Switching Process In
+(Init:0)/0/2659ms - Switching Process In
+(Init:0)/0/2669ms - Switching Process In
+(Init:0)/0/2679ms - Switching Process In
+(Init:0)/0/2689ms - Switching Process In
+(Init:0)/0/2699ms - Switching Process In
+(Init:0)/0/2709ms - Switching Process In
+(Init:0)/0/2719ms - Switching Process In
+(Init:0)/0/2729ms - Switching Process In
+(Init:0)/0/2739ms - Switching Process In
+(Init:0)/0/2749ms - Switching Process In
+(Init:0)/0/2759ms - Switching Process In
+(Init:0)/0/2769ms - Switching Process In
+(Init:0)/0/2779ms - Switching Process In
+(Init:0)/0/2789ms - Switching Process In
+(Init:0)/0/2799ms - Switching Process In
+(Init:0)/0/2809ms - Switching Process In
+(Init:0)/0/2819ms - Switching Process In
+(Init:0)/0/2829ms - Switching Process In
+(Init:0)/0/2839ms - Switching Process In
+(Init:0)/0/2849ms - Switching Process In
+(Init:0)/0/2859ms - Switching Process In
+(Init:0)/0/2869ms - Switching Process In
+(Init:0)/0/2879ms - Switching Process In
+(Init:0)/0/2889ms - Switching Process In
+(Init:0)/0/2899ms - Switching Process In
+###-An Interrupt has fired!-###
+(Init:0)/0/2902ms - Switching Process In
+(Init:0)/0/2909ms - Switching Process In
+(Init:0)/0/2919ms - Switching Process In
+(Init:0)/0/2929ms - Switching Process In
+(Init:0)/0/2939ms - Switching Process In
+(Init:0)/0/2949ms - Switching Process In
+(Init:0)/0/2959ms - Switching Process In
+(Init:0)/0/2969ms - Switching Process In
+(Init:0)/0/2979ms - Switching Process In
+(Init:0)/0/2989ms - Switching Process In
+(Init:0)/0/2999ms - Switching Process In
+###-Sending Kill Message-###
+###-Shutting Down CPU-###

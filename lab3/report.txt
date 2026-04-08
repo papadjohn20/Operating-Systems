@@ -1,0 +1,123 @@
+REPORT
+
+**** System Call Verification ****
+- Physical Addresses: The correctness is verified via the Page Offset (the last 12 bits of the address). For any Virtual Address, the last 3 hex digits match the reported Physical Address (f.e., Virtual ...6000 maps to Physical ...e1000). This confirms the kernel correctly performs the translation using the PFN and the virtual offset.
+- Flags:
+--- Present: All active pages returned Present=1. This is expected as the monitor "touches" every page during initialization, forcing the kernel to allocate physical frames.
+--- Dirty: The pages returned Dirty=1, confirming that the write access during the initialization phase was successfully detected by the system call.
+--- Young: The reported value is 32. This matches the _PAGE_ACCESSED bit position (bit 5) in x86_64 Page Table Entries, confirming that the hardware successfully marked the pages as accessed.
+
+**** Working Set Results and Observations ****
+- Below is a summary of the results from the 100MB memory allocation tests:
+--- 10% Workload: Target was 2,560 pages. Detected ~2,430 active pages (~9,720 KB).
+--- 20% Workload: Target was 5,120 pages. Detected ~4,630 active pages (~18,500 KB).
+--- 50% Workload: Target was 12,800 pages. Detected ~10,070 active pages (~40,200 KB).
+--- 90% Workload: Target was 23,040 pages. Detected ~15,200 active pages (~60,800 KB)
+
+- Observations:
+--- Random Overlap: The detected Working Set is lower than the target number of accesses. This is because the workload uses random selection (rand % num_pages), which leads to some pages being accessed multiple times. The system call correctly counts only unique active pages.
+--- Scaling and Accuracy: As the access percentage increases, the detected Working Set size scales accordingly. This proves that the reset_young mechanism effectively clears previous access history, allowing the syscall to capture the true footprint of the current workload.
+--- Conclusion: The implementation successfully monitors active memory footprints and provides accurate physical mapping and status flags.
+
+*********************************************************
+EXAMPLE OF A RUN WITH A 100MB ALLOCATION AND 20% WORKLOAD
+*********************************************************
+--- Working Set Monitor Started ---
+--- [Step 1] Allocated 100 MB at Virtual Address: 0x7faa9ae00000
+--- [Step 2] Touched 25600 pages to ensure they are Present.
+--- [Step 3] Accessed bits (Young bits) have been reset to 0.
+--- [Step 4] Simulating workload: Accessing 20% of pages randomly...
+
+--- Total Pages: 25600, Pages to Access: 5120
+--- [Step 5] Counting working set by checking Young bits...
+
+--- Will print up to 3 active pages
+
+Detected Active Page with Virtual Address: 0x7faa9ae06000
+  -> Physical Address: 0x1308e1000
+  -> Flags: Present=1, Dirty=1, Young=32
+
+Detected Active Page with Virtual Address: 0x7faa9ae08000
+  -> Physical Address: 0x136df3000
+  -> Flags: Present=1, Dirty=1, Young=32
+
+Detected Active Page with Virtual Address: 0x7faa9ae0d000
+  -> Physical Address: 0x13031e000
+  -> Flags: Present=1, Dirty=1, Young=32
+
+--- RESULTS ---
+Total Memory Monitored: 100 MB
+Active Pages Detected (is_young == 1): 4619
+Estimated Working Set Size: in 18919424 Bytes / in 18476.000000 KB
+
+****************************************
+RESULTS FROM A 100MB WITH A 20% WORKLOAD
+****************************************
+--- RESULTS ---
+Total Memory Monitored: 100 MB
+Active Pages Detected (is_young == 1): 4619
+Estimated Working Set Size: in 18919424 Bytes / in 18476.000000 KB
+
+--- RESULTS ---
+Total Memory Monitored: 100 MB
+Active Pages Detected (is_young == 1): 4653
+Estimated Working Set Size: in 19058688 Bytes / in 18612.000000 KB
+
+--- RESULTS ---
+Total Memory Monitored: 100 MB
+Active Pages Detected (is_young == 1): 4628
+Estimated Working Set Size: in 18956288 Bytes / in 18512.000000 KB
+
+****************************************
+RESULTS FROM A 100MB WITH A 10% WORKLOAD
+****************************************
+--- RESULTS ---
+Total Memory Monitored: 100 MB
+Active Pages Detected (is_young == 1): 2432
+Estimated Working Set Size: in 9961472 Bytes / in 9728.000000 KB
+
+--- RESULTS ---
+Total Memory Monitored: 100 MB
+Active Pages Detected (is_young == 1): 2435
+Estimated Working Set Size: in 9973760 Bytes / in 9740.000000 KB
+
+--- RESULTS ---
+Total Memory Monitored: 100 MB
+Active Pages Detected (is_young == 1): 2425
+Estimated Working Set Size: in 9932800 Bytes / in 9700.000000 KB
+
+****************************************
+RESULTS FROM A 100MB WITH A 50% WORKLOAD
+****************************************
+--- RESULTS ---
+Total Memory Monitored: 100 MB
+Active Pages Detected (is_young == 1): 10061
+Estimated Working Set Size: in 41209856 Bytes / in 40244.000000 KB
+
+--- RESULTS ---
+Total Memory Monitored: 100 MB
+Active Pages Detected (is_young == 1): 10063
+Estimated Working Set Size: in 41218048 Bytes / in 40252.000000 KB
+
+--- RESULTS ---
+Total Memory Monitored: 100 MB
+Active Pages Detected (is_young == 1): 10092
+Estimated Working Set Size: in 41336832 Bytes / in 40368.000000 KB
+
+****************************************
+RESULTS FROM A 100MB WITH A 90% WORKLOAD
+****************************************
+--- RESULTS ---
+Total Memory Monitored: 100 MB
+Active Pages Detected (is_young == 1): 15169
+Estimated Working Set Size: in 62132224 Bytes / in 60676.000000 KB
+
+--- RESULTS ---
+Total Memory Monitored: 100 MB
+Active Pages Detected (is_young == 1): 15257
+Estimated Working Set Size: in 62492672 Bytes / in 61028.000000 KB
+
+--- RESULTS ---
+Total Memory Monitored: 100 MB
+Active Pages Detected (is_young == 1): 15181
+Estimated Working Set Size: in 62181376 Bytes / in 60724.000000 KB

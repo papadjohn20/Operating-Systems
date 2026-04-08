@@ -1,0 +1,1093 @@
+###-Starting CPU-###
+(Init:0)/0/0ms - Switching Process In
+(Init:0)/0/9ms - Switching Process In
+###-Process: (Short_Task:1) has been created-###
+###-Process: (Medium_Task:2) has been created-###
+###-Process: (Long_Task:3) has been created-###
+--- Scheduler Snapshot at 10ms ---
+  Task (Long_Task:3)   | Exp for comparison:          0 | Last Burst:          0 | Prev Exp:          0 | NEW Exp:          0 
+  Task (Medium_Task:2) | Exp for comparison:          0 | Last Burst:          0 | Prev Exp:          0 | NEW Exp:          0 
+  Task (Short_Task:1)  | Exp for comparison:          0 | Last Burst:          0 | Prev Exp:          0 | NEW Exp:          0 
+--------------------------------------
+(Long_Task:3)/100/10ms - Switching Process In
+--- Scheduler Snapshot at 20ms ---
+  Task (Long_Task:3)   | Exp for comparison:    6666666 | Last Burst:          0 | Prev Exp:          0 | NEW Exp:          0 [RUNNING]
+  Task (Medium_Task:2) | Exp for comparison:          0 | Last Burst:          0 | Prev Exp:          0 | NEW Exp:          0 
+  Task (Short_Task:1)  | Exp for comparison:          0 | Last Burst:          0 | Prev Exp:          0 | NEW Exp:          0 
+--------------------------------------
+(Medium_Task:2)/100/19ms - Switching Process In
+--- Scheduler Snapshot at 30ms ---
+  Task (Long_Task:3)   | Exp for comparison:    6666666 | Last Burst:   10000000 | Prev Exp:          0 | NEW Exp:    6666666 
+  Task (Medium_Task:2) | Exp for comparison:    6666666 | Last Burst:          0 | Prev Exp:          0 | NEW Exp:          0 [RUNNING]
+  Task (Short_Task:1)  | Exp for comparison:          0 | Last Burst:          0 | Prev Exp:          0 | NEW Exp:          0 
+--------------------------------------
+(Short_Task:1)/100/29ms - Switching Process In
+--- Scheduler Snapshot at 40ms ---
+  Task (Long_Task:3)   | Exp for comparison:    6666666 | Last Burst:   10000000 | Prev Exp:          0 | NEW Exp:    6666666 
+  Task (Medium_Task:2) | Exp for comparison:    6666666 | Last Burst:   10000000 | Prev Exp:          0 | NEW Exp:    6666666 
+  Task (Short_Task:1)  | Exp for comparison:    6666666 | Last Burst:          0 | Prev Exp:          0 | NEW Exp:          0 [RUNNING]
+--------------------------------------
+--- Scheduler Snapshot at 50ms ---
+  Task (Long_Task:3)   | Exp for comparison:    6666666 | Last Burst:   10000000 | Prev Exp:          0 | NEW Exp:    6666666 
+  Task (Medium_Task:2) | Exp for comparison:    6666666 | Last Burst:   10000000 | Prev Exp:          0 | NEW Exp:    6666666 
+  Task (Short_Task:1)  | Exp for comparison:   13333333 | Last Burst:          0 | Prev Exp:          0 | NEW Exp:          0 [RUNNING]
+--------------------------------------
+(Long_Task:3)/100/49ms - Switching Process In
+--- Scheduler Snapshot at 60ms ---
+  Task (Long_Task:3)   | Exp for comparison:    8888888 | Last Burst:   10000000 | Prev Exp:          0 | NEW Exp:    6666666 [RUNNING]
+  Task (Medium_Task:2) | Exp for comparison:    6666666 | Last Burst:   10000000 | Prev Exp:          0 | NEW Exp:    6666666 
+  Task (Short_Task:1)  | Exp for comparison:   13333333 | Last Burst:   20000000 | Prev Exp:          0 | NEW Exp:   13333333 
+--------------------------------------
+(Medium_Task:2)/100/59ms - Switching Process In
+--- Scheduler Snapshot at 70ms ---
+  Task (Long_Task:3)   | Exp for comparison:    8888888 | Last Burst:   10000000 | Prev Exp:    6666664 | NEW Exp:    8888888 
+  Task (Medium_Task:2) | Exp for comparison:    8888888 | Last Burst:   10000000 | Prev Exp:          0 | NEW Exp:    6666666 [RUNNING]
+  Task (Short_Task:1)  | Exp for comparison:   13333333 | Last Burst:   20000000 | Prev Exp:          0 | NEW Exp:   13333333 
+--------------------------------------
+--- Scheduler Snapshot at 80ms ---
+  Task (Long_Task:3)   | Exp for comparison:    8888888 | Last Burst:   10000000 | Prev Exp:    6666664 | NEW Exp:    8888888 
+  Task (Medium_Task:2) | Exp for comparison:   15555555 | Last Burst:   10000000 | Prev Exp:          0 | NEW Exp:    6666666 [RUNNING]
+  Task (Short_Task:1)  | Exp for comparison:   13333333 | Last Burst:   20000000 | Prev Exp:          0 | NEW Exp:   13333333 
+--------------------------------------
+(Long_Task:3)/100/79ms - Switching Process In
+--- Scheduler Snapshot at 90ms ---
+  Task (Long_Task:3)   | Exp for comparison:    9629629 | Last Burst:   10000000 | Prev Exp:    6666664 | NEW Exp:    8888888 [RUNNING]
+  Task (Medium_Task:2) | Exp for comparison:   15555555 | Last Burst:   20000000 | Prev Exp:    6666665 | NEW Exp:   15555555 
+  Task (Short_Task:1)  | Exp for comparison:   13333333 | Last Burst:   20000000 | Prev Exp:          0 | NEW Exp:   13333333 
+--------------------------------------
+--- Scheduler Snapshot at 100ms ---
+  Task (Long_Task:3)   | Exp for comparison:   16296296 | Last Burst:   10000000 | Prev Exp:    6666664 | NEW Exp:    8888888 [RUNNING]
+  Task (Medium_Task:2) | Exp for comparison:   15555555 | Last Burst:   20000000 | Prev Exp:    6666665 | NEW Exp:   15555555 
+  Task (Short_Task:1)  | Exp for comparison:   13333333 | Last Burst:   20000000 | Prev Exp:          0 | NEW Exp:   13333333 
+--------------------------------------
+(Short_Task:1)/100/99ms - Switching Process In
+--- Scheduler Snapshot at 110ms ---
+  Task (Long_Task:3)   | Exp for comparison:   16296296 | Last Burst:   20000000 | Prev Exp:    8888888 | NEW Exp:   16296296 
+  Task (Medium_Task:2) | Exp for comparison:   15555555 | Last Burst:   20000000 | Prev Exp:    6666665 | NEW Exp:   15555555 
+  Task (Short_Task:1)  | Exp for comparison:   11111111 | Last Burst:   20000000 | Prev Exp:          0 | NEW Exp:   13333333 [RUNNING]
+--------------------------------------
+###-Process: (Late_Task:4) has been created-###
+--- Scheduler Snapshot at 110ms ---
+  Task (Late_Task:4)   | Exp for comparison:          0 | Last Burst:          0 | Prev Exp:          0 | NEW Exp:          0 
+  Task (Long_Task:3)   | Exp for comparison:   16296296 | Last Burst:   20000000 | Prev Exp:    8888888 | NEW Exp:   16296296 
+  Task (Medium_Task:2) | Exp for comparison:   15555555 | Last Burst:   20000000 | Prev Exp:    6666665 | NEW Exp:   15555555 
+  Task (Short_Task:1)  | Exp for comparison:   11111111 | Last Burst:   20000000 | Prev Exp:          0 | NEW Exp:   13333333 [RUNNING]
+--------------------------------------
+(Late_Task:4)/100/110ms - Switching Process In
+--- Scheduler Snapshot at 120ms ---
+  Task (Late_Task:4)   | Exp for comparison:    6666666 | Last Burst:          0 | Prev Exp:          0 | NEW Exp:          0 [RUNNING]
+  Task (Long_Task:3)   | Exp for comparison:   16296296 | Last Burst:   20000000 | Prev Exp:    8888888 | NEW Exp:   16296296 
+  Task (Medium_Task:2) | Exp for comparison:   15555555 | Last Burst:   20000000 | Prev Exp:    6666665 | NEW Exp:   15555555 
+  Task (Short_Task:1)  | Exp for comparison:   11111111 | Last Burst:   10000000 | Prev Exp:   13333333 | NEW Exp:   11111111 
+--------------------------------------
+--- Scheduler Snapshot at 130ms ---
+  Task (Late_Task:4)   | Exp for comparison:   13333333 | Last Burst:          0 | Prev Exp:          0 | NEW Exp:          0 [RUNNING]
+  Task (Long_Task:3)   | Exp for comparison:   16296296 | Last Burst:   20000000 | Prev Exp:    8888888 | NEW Exp:   16296296 
+  Task (Medium_Task:2) | Exp for comparison:   15555555 | Last Burst:   20000000 | Prev Exp:    6666665 | NEW Exp:   15555555 
+  Task (Short_Task:1)  | Exp for comparison:   11111111 | Last Burst:   10000000 | Prev Exp:   13333333 | NEW Exp:   11111111 
+--------------------------------------
+(Short_Task:1)/100/129ms - Switching Process In
+--- Scheduler Snapshot at 140ms ---
+  Task (Late_Task:4)   | Exp for comparison:   13333333 | Last Burst:   20000000 | Prev Exp:          0 | NEW Exp:   13333333 
+  Task (Long_Task:3)   | Exp for comparison:   16296296 | Last Burst:   20000000 | Prev Exp:    8888888 | NEW Exp:   16296296 
+  Task (Medium_Task:2) | Exp for comparison:   15555555 | Last Burst:   20000000 | Prev Exp:    6666665 | NEW Exp:   15555555 
+  Task (Short_Task:1)  | Exp for comparison:   10370370 | Last Burst:   10000000 | Prev Exp:   13333333 | NEW Exp:   11111111 [RUNNING]
+--------------------------------------
+--- Scheduler Snapshot at 150ms ---
+  Task (Late_Task:4)   | Exp for comparison:   13333333 | Last Burst:   20000000 | Prev Exp:          0 | NEW Exp:   13333333 
+  Task (Long_Task:3)   | Exp for comparison:   16296296 | Last Burst:   20000000 | Prev Exp:    8888888 | NEW Exp:   16296296 
+  Task (Medium_Task:2) | Exp for comparison:   15555555 | Last Burst:   20000000 | Prev Exp:    6666665 | NEW Exp:   15555555 
+  Task (Short_Task:1)  | Exp for comparison:   17037037 | Last Burst:   10000000 | Prev Exp:   13333333 | NEW Exp:   11111111 [RUNNING]
+--------------------------------------
+(Late_Task:4)/100/149ms - Switching Process In
+--- Scheduler Snapshot at 160ms ---
+  Task (Late_Task:4)   | Exp for comparison:   11111111 | Last Burst:   20000000 | Prev Exp:          0 | NEW Exp:   13333333 [RUNNING]
+  Task (Long_Task:3)   | Exp for comparison:   16296296 | Last Burst:   20000000 | Prev Exp:    8888888 | NEW Exp:   16296296 
+  Task (Medium_Task:2) | Exp for comparison:   15555555 | Last Burst:   20000000 | Prev Exp:    6666665 | NEW Exp:   15555555 
+  Task (Short_Task:1)  | Exp for comparison:   17037037 | Last Burst:   20000000 | Prev Exp:   11111111 | NEW Exp:   17037037 
+--------------------------------------
+--- Scheduler Snapshot at 170ms ---
+  Task (Late_Task:4)   | Exp for comparison:   17777777 | Last Burst:   20000000 | Prev Exp:          0 | NEW Exp:   13333333 [RUNNING]
+  Task (Long_Task:3)   | Exp for comparison:   16296296 | Last Burst:   20000000 | Prev Exp:    8888888 | NEW Exp:   16296296 
+  Task (Medium_Task:2) | Exp for comparison:   15555555 | Last Burst:   20000000 | Prev Exp:    6666665 | NEW Exp:   15555555 
+  Task (Short_Task:1)  | Exp for comparison:   17037037 | Last Burst:   20000000 | Prev Exp:   11111111 | NEW Exp:   17037037 
+--------------------------------------
+(Medium_Task:2)/100/169ms - Switching Process In
+--- Scheduler Snapshot at 180ms ---
+  Task (Late_Task:4)   | Exp for comparison:   17777777 | Last Burst:   20000000 | Prev Exp:   13333331 | NEW Exp:   17777777 
+  Task (Long_Task:3)   | Exp for comparison:   16296296 | Last Burst:   20000000 | Prev Exp:    8888888 | NEW Exp:   16296296 
+  Task (Medium_Task:2) | Exp for comparison:   11851851 | Last Burst:   20000000 | Prev Exp:    6666665 | NEW Exp:   15555555 [RUNNING]
+  Task (Short_Task:1)  | Exp for comparison:   17037037 | Last Burst:   20000000 | Prev Exp:   11111111 | NEW Exp:   17037037 
+--------------------------------------
+--- Scheduler Snapshot at 190ms ---
+  Task (Late_Task:4)   | Exp for comparison:   17777777 | Last Burst:   20000000 | Prev Exp:   13333331 | NEW Exp:   17777777 
+  Task (Long_Task:3)   | Exp for comparison:   16296296 | Last Burst:   20000000 | Prev Exp:    8888888 | NEW Exp:   16296296 
+  Task (Medium_Task:2) | Exp for comparison:   18518518 | Last Burst:   20000000 | Prev Exp:    6666665 | NEW Exp:   15555555 [RUNNING]
+  Task (Short_Task:1)  | Exp for comparison:   17037037 | Last Burst:   20000000 | Prev Exp:   11111111 | NEW Exp:   17037037 
+--------------------------------------
+(Long_Task:3)/100/189ms - Switching Process In
+--- Scheduler Snapshot at 200ms ---
+  Task (Late_Task:4)   | Exp for comparison:   17777777 | Last Burst:   20000000 | Prev Exp:   13333331 | NEW Exp:   17777777 
+  Task (Long_Task:3)   | Exp for comparison:   12098765 | Last Burst:   20000000 | Prev Exp:    8888888 | NEW Exp:   16296296 [RUNNING]
+  Task (Medium_Task:2) | Exp for comparison:   18518518 | Last Burst:   20000000 | Prev Exp:   15555554 | NEW Exp:   18518518 
+  Task (Short_Task:1)  | Exp for comparison:   17037037 | Last Burst:   20000000 | Prev Exp:   11111111 | NEW Exp:   17037037 
+--------------------------------------
+--- Scheduler Snapshot at 210ms ---
+  Task (Late_Task:4)   | Exp for comparison:   17777777 | Last Burst:   20000000 | Prev Exp:   13333331 | NEW Exp:   17777777 
+  Task (Long_Task:3)   | Exp for comparison:   18765432 | Last Burst:   20000000 | Prev Exp:    8888888 | NEW Exp:   16296296 [RUNNING]
+  Task (Medium_Task:2) | Exp for comparison:   18518518 | Last Burst:   20000000 | Prev Exp:   15555554 | NEW Exp:   18518518 
+  Task (Short_Task:1)  | Exp for comparison:   17037037 | Last Burst:   20000000 | Prev Exp:   11111111 | NEW Exp:   17037037 
+--------------------------------------
+(Short_Task:1)/100/209ms - Switching Process In
+--- Scheduler Snapshot at 220ms ---
+  Task (Late_Task:4)   | Exp for comparison:   17777777 | Last Burst:   20000000 | Prev Exp:   13333331 | NEW Exp:   17777777 
+  Task (Long_Task:3)   | Exp for comparison:   18765432 | Last Burst:   20000000 | Prev Exp:   16296296 | NEW Exp:   18765432 
+  Task (Medium_Task:2) | Exp for comparison:   18518518 | Last Burst:   20000000 | Prev Exp:   15555554 | NEW Exp:   18518518 
+  Task (Short_Task:1)  | Exp for comparison:   12345679 | Last Burst:   20000000 | Prev Exp:   11111111 | NEW Exp:   17037037 [RUNNING]
+--------------------------------------
+--- Scheduler Snapshot at 230ms ---
+  Task (Late_Task:4)   | Exp for comparison:   17777777 | Last Burst:   20000000 | Prev Exp:   13333331 | NEW Exp:   17777777 
+  Task (Long_Task:3)   | Exp for comparison:   18765432 | Last Burst:   20000000 | Prev Exp:   16296296 | NEW Exp:   18765432 
+  Task (Medium_Task:2) | Exp for comparison:   18518518 | Last Burst:   20000000 | Prev Exp:   15555554 | NEW Exp:   18518518 
+  Task (Short_Task:1)  | Exp for comparison:   19012345 | Last Burst:   20000000 | Prev Exp:   11111111 | NEW Exp:   17037037 [RUNNING]
+--------------------------------------
+(Late_Task:4)/100/229ms - Switching Process In
+--- Scheduler Snapshot at 240ms ---
+  Task (Late_Task:4)   | Exp for comparison:   12592592 | Last Burst:   20000000 | Prev Exp:   13333331 | NEW Exp:   17777777 [RUNNING]
+  Task (Long_Task:3)   | Exp for comparison:   18765432 | Last Burst:   20000000 | Prev Exp:   16296296 | NEW Exp:   18765432 
+  Task (Medium_Task:2) | Exp for comparison:   18518518 | Last Burst:   20000000 | Prev Exp:   15555554 | NEW Exp:   18518518 
+  Task (Short_Task:1)  | Exp for comparison:   19012345 | Last Burst:   20000000 | Prev Exp:   17037035 | NEW Exp:   19012345 
+--------------------------------------
+--- Scheduler Snapshot at 250ms ---
+  Task (Late_Task:4)   | Exp for comparison:   19259259 | Last Burst:   20000000 | Prev Exp:   13333331 | NEW Exp:   17777777 [RUNNING]
+  Task (Long_Task:3)   | Exp for comparison:   18765432 | Last Burst:   20000000 | Prev Exp:   16296296 | NEW Exp:   18765432 
+  Task (Medium_Task:2) | Exp for comparison:   18518518 | Last Burst:   20000000 | Prev Exp:   15555554 | NEW Exp:   18518518 
+  Task (Short_Task:1)  | Exp for comparison:   19012345 | Last Burst:   20000000 | Prev Exp:   17037035 | NEW Exp:   19012345 
+--------------------------------------
+(Medium_Task:2)/100/249ms - Switching Process In
+--- Scheduler Snapshot at 260ms ---
+  Task (Late_Task:4)   | Exp for comparison:   19259259 | Last Burst:   20000000 | Prev Exp:   17777777 | NEW Exp:   19259259 
+  Task (Long_Task:3)   | Exp for comparison:   18765432 | Last Burst:   20000000 | Prev Exp:   16296296 | NEW Exp:   18765432 
+  Task (Medium_Task:2) | Exp for comparison:   12839506 | Last Burst:   20000000 | Prev Exp:   15555554 | NEW Exp:   18518518 [RUNNING]
+  Task (Short_Task:1)  | Exp for comparison:   19012345 | Last Burst:   20000000 | Prev Exp:   17037035 | NEW Exp:   19012345 
+--------------------------------------
+--- Scheduler Snapshot at 270ms ---
+  Task (Late_Task:4)   | Exp for comparison:   19259259 | Last Burst:   20000000 | Prev Exp:   17777777 | NEW Exp:   19259259 
+  Task (Long_Task:3)   | Exp for comparison:   18765432 | Last Burst:   20000000 | Prev Exp:   16296296 | NEW Exp:   18765432 
+  Task (Medium_Task:2) | Exp for comparison:   19506172 | Last Burst:   20000000 | Prev Exp:   15555554 | NEW Exp:   18518518 [RUNNING]
+  Task (Short_Task:1)  | Exp for comparison:   19012345 | Last Burst:   20000000 | Prev Exp:   17037035 | NEW Exp:   19012345 
+--------------------------------------
+(Long_Task:3)/100/269ms - Switching Process In
+--- Scheduler Snapshot at 280ms ---
+  Task (Late_Task:4)   | Exp for comparison:   19259259 | Last Burst:   20000000 | Prev Exp:   17777777 | NEW Exp:   19259259 
+  Task (Long_Task:3)   | Exp for comparison:   12921810 | Last Burst:   20000000 | Prev Exp:   16296296 | NEW Exp:   18765432 [RUNNING]
+  Task (Medium_Task:2) | Exp for comparison:   19506172 | Last Burst:   20000000 | Prev Exp:   18518516 | NEW Exp:   19506172 
+  Task (Short_Task:1)  | Exp for comparison:   19012345 | Last Burst:   20000000 | Prev Exp:   17037035 | NEW Exp:   19012345 
+--------------------------------------
+--- Scheduler Snapshot at 290ms ---
+  Task (Late_Task:4)   | Exp for comparison:   19259259 | Last Burst:   20000000 | Prev Exp:   17777777 | NEW Exp:   19259259 
+  Task (Long_Task:3)   | Exp for comparison:   19588477 | Last Burst:   20000000 | Prev Exp:   16296296 | NEW Exp:   18765432 [RUNNING]
+  Task (Medium_Task:2) | Exp for comparison:   19506172 | Last Burst:   20000000 | Prev Exp:   18518516 | NEW Exp:   19506172 
+  Task (Short_Task:1)  | Exp for comparison:   19012345 | Last Burst:   20000000 | Prev Exp:   17037035 | NEW Exp:   19012345 
+--------------------------------------
+(Short_Task:1)/100/289ms - Switching Process In
+--- Scheduler Snapshot at 300ms ---
+  Task (Late_Task:4)   | Exp for comparison:   19259259 | Last Burst:   20000000 | Prev Exp:   17777777 | NEW Exp:   19259259 
+  Task (Long_Task:3)   | Exp for comparison:   19588477 | Last Burst:   20000000 | Prev Exp:   18765431 | NEW Exp:   19588477 
+  Task (Medium_Task:2) | Exp for comparison:   19506172 | Last Burst:   20000000 | Prev Exp:   18518516 | NEW Exp:   19506172 
+  Task (Short_Task:1)  | Exp for comparison:   13004115 | Last Burst:   20000000 | Prev Exp:   17037035 | NEW Exp:   19012345 [RUNNING]
+--------------------------------------
+--- Scheduler Snapshot at 310ms ---
+  Task (Late_Task:4)   | Exp for comparison:   19259259 | Last Burst:   20000000 | Prev Exp:   17777777 | NEW Exp:   19259259 
+  Task (Long_Task:3)   | Exp for comparison:   19588477 | Last Burst:   20000000 | Prev Exp:   18765431 | NEW Exp:   19588477 
+  Task (Medium_Task:2) | Exp for comparison:   19506172 | Last Burst:   20000000 | Prev Exp:   18518516 | NEW Exp:   19506172 
+  Task (Short_Task:1)  | Exp for comparison:   19670781 | Last Burst:   20000000 | Prev Exp:   17037035 | NEW Exp:   19012345 [RUNNING]
+--------------------------------------
+(Late_Task:4)/100/309ms - Switching Process In
+--- Scheduler Snapshot at 320ms ---
+  Task (Late_Task:4)   | Exp for comparison:   13086419 | Last Burst:   20000000 | Prev Exp:   17777777 | NEW Exp:   19259259 [RUNNING]
+  Task (Long_Task:3)   | Exp for comparison:   19588477 | Last Burst:   20000000 | Prev Exp:   18765431 | NEW Exp:   19588477 
+  Task (Medium_Task:2) | Exp for comparison:   19506172 | Last Burst:   20000000 | Prev Exp:   18518516 | NEW Exp:   19506172 
+  Task (Short_Task:1)  | Exp for comparison:   19670781 | Last Burst:   20000000 | Prev Exp:   19012343 | NEW Exp:   19670781 
+--------------------------------------
+--- Scheduler Snapshot at 330ms ---
+  Task (Late_Task:4)   | Exp for comparison:   19753086 | Last Burst:   20000000 | Prev Exp:   17777777 | NEW Exp:   19259259 [RUNNING]
+  Task (Long_Task:3)   | Exp for comparison:   19588477 | Last Burst:   20000000 | Prev Exp:   18765431 | NEW Exp:   19588477 
+  Task (Medium_Task:2) | Exp for comparison:   19506172 | Last Burst:   20000000 | Prev Exp:   18518516 | NEW Exp:   19506172 
+  Task (Short_Task:1)  | Exp for comparison:   19670781 | Last Burst:   20000000 | Prev Exp:   19012343 | NEW Exp:   19670781 
+--------------------------------------
+(Medium_Task:2)/100/329ms - Switching Process In
+--- Scheduler Snapshot at 340ms ---
+  Task (Late_Task:4)   | Exp for comparison:   19753086 | Last Burst:   20000000 | Prev Exp:   19259258 | NEW Exp:   19753086 
+  Task (Long_Task:3)   | Exp for comparison:   19588477 | Last Burst:   20000000 | Prev Exp:   18765431 | NEW Exp:   19588477 
+  Task (Medium_Task:2) | Exp for comparison:   13168724 | Last Burst:   20000000 | Prev Exp:   18518516 | NEW Exp:   19506172 [RUNNING]
+  Task (Short_Task:1)  | Exp for comparison:   19670781 | Last Burst:   20000000 | Prev Exp:   19012343 | NEW Exp:   19670781 
+--------------------------------------
+--- Scheduler Snapshot at 350ms ---
+  Task (Late_Task:4)   | Exp for comparison:   19753086 | Last Burst:   20000000 | Prev Exp:   19259258 | NEW Exp:   19753086 
+  Task (Long_Task:3)   | Exp for comparison:   19588477 | Last Burst:   20000000 | Prev Exp:   18765431 | NEW Exp:   19588477 
+  Task (Medium_Task:2) | Exp for comparison:   19835390 | Last Burst:   20000000 | Prev Exp:   18518516 | NEW Exp:   19506172 [RUNNING]
+  Task (Short_Task:1)  | Exp for comparison:   19670781 | Last Burst:   20000000 | Prev Exp:   19012343 | NEW Exp:   19670781 
+--------------------------------------
+(Long_Task:3)/100/349ms - Switching Process In
+--- Scheduler Snapshot at 360ms ---
+  Task (Late_Task:4)   | Exp for comparison:   19753086 | Last Burst:   20000000 | Prev Exp:   19259258 | NEW Exp:   19753086 
+  Task (Long_Task:3)   | Exp for comparison:   13196159 | Last Burst:   20000000 | Prev Exp:   18765431 | NEW Exp:   19588477 [RUNNING]
+  Task (Medium_Task:2) | Exp for comparison:   19835390 | Last Burst:   20000000 | Prev Exp:   19506170 | NEW Exp:   19835390 
+  Task (Short_Task:1)  | Exp for comparison:   19670781 | Last Burst:   20000000 | Prev Exp:   19012343 | NEW Exp:   19670781 
+--------------------------------------
+--- Scheduler Snapshot at 370ms ---
+  Task (Late_Task:4)   | Exp for comparison:   19753086 | Last Burst:   20000000 | Prev Exp:   19259258 | NEW Exp:   19753086 
+  Task (Long_Task:3)   | Exp for comparison:   19862825 | Last Burst:   20000000 | Prev Exp:   18765431 | NEW Exp:   19588477 [RUNNING]
+  Task (Medium_Task:2) | Exp for comparison:   19835390 | Last Burst:   20000000 | Prev Exp:   19506170 | NEW Exp:   19835390 
+  Task (Short_Task:1)  | Exp for comparison:   19670781 | Last Burst:   20000000 | Prev Exp:   19012343 | NEW Exp:   19670781 
+--------------------------------------
+(Short_Task:1)/100/369ms - Switching Process In
+CDA: thread (Short_Task:1) finished
+ Deactivation with Exp:    6556927
+###-Process: (Short_Task:1) is going down-###
+--- Scheduler Snapshot at 370ms ---
+  Task (Late_Task:4)   | Exp for comparison:   19753086 | Last Burst:   20000000 | Prev Exp:   19259258 | NEW Exp:   19753086 
+  Task (Long_Task:3)   | Exp for comparison:   19862825 | Last Burst:   20000000 | Prev Exp:   19588475 | NEW Exp:   19862825 
+  Task (Medium_Task:2) | Exp for comparison:   19835390 | Last Burst:   20000000 | Prev Exp:   19506170 | NEW Exp:   19835390 
+--------------------------------------
+(Late_Task:4)/100/379ms - Switching Process In
+--- Scheduler Snapshot at 380ms ---
+  Task (Late_Task:4)   | Exp for comparison:   13251028 | Last Burst:   20000000 | Prev Exp:   19259258 | NEW Exp:   19753086 [RUNNING]
+  Task (Long_Task:3)   | Exp for comparison:   19862825 | Last Burst:   20000000 | Prev Exp:   19588475 | NEW Exp:   19862825 
+  Task (Medium_Task:2) | Exp for comparison:   19835390 | Last Burst:   20000000 | Prev Exp:   19506170 | NEW Exp:   19835390 
+--------------------------------------
+--- Scheduler Snapshot at 390ms ---
+  Task (Late_Task:4)   | Exp for comparison:   19917695 | Last Burst:   20000000 | Prev Exp:   19259258 | NEW Exp:   19753086 [RUNNING]
+  Task (Long_Task:3)   | Exp for comparison:   19862825 | Last Burst:   20000000 | Prev Exp:   19588475 | NEW Exp:   19862825 
+  Task (Medium_Task:2) | Exp for comparison:   19835390 | Last Burst:   20000000 | Prev Exp:   19506170 | NEW Exp:   19835390 
+--------------------------------------
+(Medium_Task:2)/100/389ms - Switching Process In
+--- Scheduler Snapshot at 400ms ---
+  Task (Late_Task:4)   | Exp for comparison:   19917695 | Last Burst:   20000000 | Prev Exp:   19753085 | NEW Exp:   19917695 
+  Task (Long_Task:3)   | Exp for comparison:   19862825 | Last Burst:   20000000 | Prev Exp:   19588475 | NEW Exp:   19862825 
+  Task (Medium_Task:2) | Exp for comparison:   13278463 | Last Burst:   20000000 | Prev Exp:   19506170 | NEW Exp:   19835390 [RUNNING]
+--------------------------------------
+--- Scheduler Snapshot at 410ms ---
+  Task (Late_Task:4)   | Exp for comparison:   19917695 | Last Burst:   20000000 | Prev Exp:   19753085 | NEW Exp:   19917695 
+  Task (Long_Task:3)   | Exp for comparison:   19862825 | Last Burst:   20000000 | Prev Exp:   19588475 | NEW Exp:   19862825 
+  Task (Medium_Task:2) | Exp for comparison:   19945130 | Last Burst:   20000000 | Prev Exp:   19506170 | NEW Exp:   19835390 [RUNNING]
+--------------------------------------
+(Long_Task:3)/100/409ms - Switching Process In
+--- Scheduler Snapshot at 420ms ---
+  Task (Late_Task:4)   | Exp for comparison:   19917695 | Last Burst:   20000000 | Prev Exp:   19753085 | NEW Exp:   19917695 
+  Task (Long_Task:3)   | Exp for comparison:   13287608 | Last Burst:   20000000 | Prev Exp:   19588475 | NEW Exp:   19862825 [RUNNING]
+  Task (Medium_Task:2) | Exp for comparison:   19945130 | Last Burst:   20000000 | Prev Exp:   19835390 | NEW Exp:   19945130 
+--------------------------------------
+--- Scheduler Snapshot at 430ms ---
+  Task (Late_Task:4)   | Exp for comparison:   19917695 | Last Burst:   20000000 | Prev Exp:   19753085 | NEW Exp:   19917695 
+  Task (Long_Task:3)   | Exp for comparison:   19954275 | Last Burst:   20000000 | Prev Exp:   19588475 | NEW Exp:   19862825 [RUNNING]
+  Task (Medium_Task:2) | Exp for comparison:   19945130 | Last Burst:   20000000 | Prev Exp:   19835390 | NEW Exp:   19945130 
+--------------------------------------
+(Late_Task:4)/100/429ms - Switching Process In
+--- Scheduler Snapshot at 440ms ---
+  Task (Late_Task:4)   | Exp for comparison:   13305898 | Last Burst:   20000000 | Prev Exp:   19753085 | NEW Exp:   19917695 [RUNNING]
+  Task (Long_Task:3)   | Exp for comparison:   19954275 | Last Burst:   20000000 | Prev Exp:   19862825 | NEW Exp:   19954275 
+  Task (Medium_Task:2) | Exp for comparison:   19945130 | Last Burst:   20000000 | Prev Exp:   19835390 | NEW Exp:   19945130 
+--------------------------------------
+--- Scheduler Snapshot at 450ms ---
+  Task (Late_Task:4)   | Exp for comparison:   19972565 | Last Burst:   20000000 | Prev Exp:   19753085 | NEW Exp:   19917695 [RUNNING]
+  Task (Long_Task:3)   | Exp for comparison:   19954275 | Last Burst:   20000000 | Prev Exp:   19862825 | NEW Exp:   19954275 
+  Task (Medium_Task:2) | Exp for comparison:   19945130 | Last Burst:   20000000 | Prev Exp:   19835390 | NEW Exp:   19945130 
+--------------------------------------
+(Medium_Task:2)/100/449ms - Switching Process In
+--- Scheduler Snapshot at 460ms ---
+  Task (Late_Task:4)   | Exp for comparison:   19972565 | Last Burst:   20000000 | Prev Exp:   19917695 | NEW Exp:   19972565 
+  Task (Long_Task:3)   | Exp for comparison:   19954275 | Last Burst:   20000000 | Prev Exp:   19862825 | NEW Exp:   19954275 
+  Task (Medium_Task:2) | Exp for comparison:   13315043 | Last Burst:   20000000 | Prev Exp:   19835390 | NEW Exp:   19945130 [RUNNING]
+--------------------------------------
+--- Scheduler Snapshot at 470ms ---
+  Task (Late_Task:4)   | Exp for comparison:   19972565 | Last Burst:   20000000 | Prev Exp:   19917695 | NEW Exp:   19972565 
+  Task (Long_Task:3)   | Exp for comparison:   19954275 | Last Burst:   20000000 | Prev Exp:   19862825 | NEW Exp:   19954275 
+  Task (Medium_Task:2) | Exp for comparison:   19981710 | Last Burst:   20000000 | Prev Exp:   19835390 | NEW Exp:   19945130 [RUNNING]
+--------------------------------------
+(Long_Task:3)/100/469ms - Switching Process In
+--- Scheduler Snapshot at 480ms ---
+  Task (Late_Task:4)   | Exp for comparison:   19972565 | Last Burst:   20000000 | Prev Exp:   19917695 | NEW Exp:   19972565 
+  Task (Long_Task:3)   | Exp for comparison:   13318091 | Last Burst:   20000000 | Prev Exp:   19862825 | NEW Exp:   19954275 [RUNNING]
+  Task (Medium_Task:2) | Exp for comparison:   19981710 | Last Burst:   20000000 | Prev Exp:   19945130 | NEW Exp:   19981710 
+--------------------------------------
+--- Scheduler Snapshot at 490ms ---
+  Task (Late_Task:4)   | Exp for comparison:   19972565 | Last Burst:   20000000 | Prev Exp:   19917695 | NEW Exp:   19972565 
+  Task (Long_Task:3)   | Exp for comparison:   19984758 | Last Burst:   20000000 | Prev Exp:   19862825 | NEW Exp:   19954275 [RUNNING]
+  Task (Medium_Task:2) | Exp for comparison:   19981710 | Last Burst:   20000000 | Prev Exp:   19945130 | NEW Exp:   19981710 
+--------------------------------------
+(Late_Task:4)/100/489ms - Switching Process In
+--- Scheduler Snapshot at 500ms ---
+  Task (Late_Task:4)   | Exp for comparison:   13324188 | Last Burst:   20000000 | Prev Exp:   19917695 | NEW Exp:   19972565 [RUNNING]
+  Task (Long_Task:3)   | Exp for comparison:   19984758 | Last Burst:   20000000 | Prev Exp:   19954274 | NEW Exp:   19984758 
+  Task (Medium_Task:2) | Exp for comparison:   19981710 | Last Burst:   20000000 | Prev Exp:   19945130 | NEW Exp:   19981710 
+--------------------------------------
+--- Scheduler Snapshot at 510ms ---
+  Task (Late_Task:4)   | Exp for comparison:   19990855 | Last Burst:   20000000 | Prev Exp:   19917695 | NEW Exp:   19972565 [RUNNING]
+  Task (Long_Task:3)   | Exp for comparison:   19984758 | Last Burst:   20000000 | Prev Exp:   19954274 | NEW Exp:   19984758 
+  Task (Medium_Task:2) | Exp for comparison:   19981710 | Last Burst:   20000000 | Prev Exp:   19945130 | NEW Exp:   19981710 
+--------------------------------------
+(Medium_Task:2)/100/509ms - Switching Process In
+--- Scheduler Snapshot at 520ms ---
+  Task (Late_Task:4)   | Exp for comparison:   19990855 | Last Burst:   20000000 | Prev Exp:   19972565 | NEW Exp:   19990855 
+  Task (Long_Task:3)   | Exp for comparison:   19984758 | Last Burst:   20000000 | Prev Exp:   19954274 | NEW Exp:   19984758 
+  Task (Medium_Task:2) | Exp for comparison:   13327236 | Last Burst:   20000000 | Prev Exp:   19945130 | NEW Exp:   19981710 [RUNNING]
+--------------------------------------
+--- Scheduler Snapshot at 530ms ---
+  Task (Late_Task:4)   | Exp for comparison:   19990855 | Last Burst:   20000000 | Prev Exp:   19972565 | NEW Exp:   19990855 
+  Task (Long_Task:3)   | Exp for comparison:   19984758 | Last Burst:   20000000 | Prev Exp:   19954274 | NEW Exp:   19984758 
+  Task (Medium_Task:2) | Exp for comparison:   19993903 | Last Burst:   20000000 | Prev Exp:   19945130 | NEW Exp:   19981710 [RUNNING]
+--------------------------------------
+(Long_Task:3)/100/529ms - Switching Process In
+--- Scheduler Snapshot at 540ms ---
+  Task (Late_Task:4)   | Exp for comparison:   19990855 | Last Burst:   20000000 | Prev Exp:   19972565 | NEW Exp:   19990855 
+  Task (Long_Task:3)   | Exp for comparison:   13328252 | Last Burst:   20000000 | Prev Exp:   19954274 | NEW Exp:   19984758 [RUNNING]
+  Task (Medium_Task:2) | Exp for comparison:   19993903 | Last Burst:   20000000 | Prev Exp:   19981709 | NEW Exp:   19993903 
+--------------------------------------
+--- Scheduler Snapshot at 550ms ---
+  Task (Late_Task:4)   | Exp for comparison:   19990855 | Last Burst:   20000000 | Prev Exp:   19972565 | NEW Exp:   19990855 
+  Task (Long_Task:3)   | Exp for comparison:   19994919 | Last Burst:   20000000 | Prev Exp:   19954274 | NEW Exp:   19984758 [RUNNING]
+  Task (Medium_Task:2) | Exp for comparison:   19993903 | Last Burst:   20000000 | Prev Exp:   19981709 | NEW Exp:   19993903 
+--------------------------------------
+(Late_Task:4)/100/549ms - Switching Process In
+--- Scheduler Snapshot at 560ms ---
+  Task (Late_Task:4)   | Exp for comparison:   13330285 | Last Burst:   20000000 | Prev Exp:   19972565 | NEW Exp:   19990855 [RUNNING]
+  Task (Long_Task:3)   | Exp for comparison:   19994919 | Last Burst:   20000000 | Prev Exp:   19984757 | NEW Exp:   19994919 
+  Task (Medium_Task:2) | Exp for comparison:   19993903 | Last Burst:   20000000 | Prev Exp:   19981709 | NEW Exp:   19993903 
+--------------------------------------
+--- Scheduler Snapshot at 570ms ---
+  Task (Late_Task:4)   | Exp for comparison:   19996951 | Last Burst:   20000000 | Prev Exp:   19972565 | NEW Exp:   19990855 [RUNNING]
+  Task (Long_Task:3)   | Exp for comparison:   19994919 | Last Burst:   20000000 | Prev Exp:   19984757 | NEW Exp:   19994919 
+  Task (Medium_Task:2) | Exp for comparison:   19993903 | Last Burst:   20000000 | Prev Exp:   19981709 | NEW Exp:   19993903 
+--------------------------------------
+(Medium_Task:2)/100/569ms - Switching Process In
+--- Scheduler Snapshot at 580ms ---
+  Task (Late_Task:4)   | Exp for comparison:   19996951 | Last Burst:   20000000 | Prev Exp:   19990853 | NEW Exp:   19996951 
+  Task (Long_Task:3)   | Exp for comparison:   19994919 | Last Burst:   20000000 | Prev Exp:   19984757 | NEW Exp:   19994919 
+  Task (Medium_Task:2) | Exp for comparison:   13331301 | Last Burst:   20000000 | Prev Exp:   19981709 | NEW Exp:   19993903 [RUNNING]
+--------------------------------------
+--- Scheduler Snapshot at 590ms ---
+  Task (Late_Task:4)   | Exp for comparison:   19996951 | Last Burst:   20000000 | Prev Exp:   19990853 | NEW Exp:   19996951 
+  Task (Long_Task:3)   | Exp for comparison:   19994919 | Last Burst:   20000000 | Prev Exp:   19984757 | NEW Exp:   19994919 
+  Task (Medium_Task:2) | Exp for comparison:   19997967 | Last Burst:   20000000 | Prev Exp:   19981709 | NEW Exp:   19993903 [RUNNING]
+--------------------------------------
+(Long_Task:3)/100/589ms - Switching Process In
+--- Scheduler Snapshot at 600ms ---
+  Task (Late_Task:4)   | Exp for comparison:   19996951 | Last Burst:   20000000 | Prev Exp:   19990853 | NEW Exp:   19996951 
+  Task (Long_Task:3)   | Exp for comparison:   13331639 | Last Burst:   20000000 | Prev Exp:   19984757 | NEW Exp:   19994919 [RUNNING]
+  Task (Medium_Task:2) | Exp for comparison:   19997967 | Last Burst:   20000000 | Prev Exp:   19993901 | NEW Exp:   19997967 
+--------------------------------------
+--- Scheduler Snapshot at 610ms ---
+  Task (Late_Task:4)   | Exp for comparison:   19996951 | Last Burst:   20000000 | Prev Exp:   19990853 | NEW Exp:   19996951 
+  Task (Long_Task:3)   | Exp for comparison:   19998306 | Last Burst:   20000000 | Prev Exp:   19984757 | NEW Exp:   19994919 [RUNNING]
+  Task (Medium_Task:2) | Exp for comparison:   19997967 | Last Burst:   20000000 | Prev Exp:   19993901 | NEW Exp:   19997967 
+--------------------------------------
+(Late_Task:4)/100/609ms - Switching Process In
+--- Scheduler Snapshot at 620ms ---
+  Task (Late_Task:4)   | Exp for comparison:   13332317 | Last Burst:   20000000 | Prev Exp:   19990853 | NEW Exp:   19996951 [RUNNING]
+  Task (Long_Task:3)   | Exp for comparison:   19998306 | Last Burst:   20000000 | Prev Exp:   19994918 | NEW Exp:   19998306 
+  Task (Medium_Task:2) | Exp for comparison:   19997967 | Last Burst:   20000000 | Prev Exp:   19993901 | NEW Exp:   19997967 
+--------------------------------------
+###-An Interrupt has fired!-###
+--- Scheduler Snapshot at 620ms ---
+  Task (Late_Task:4)   | Exp for comparison:   13332317 | Last Burst:   20000000 | Prev Exp:   19990853 | NEW Exp:   19996951 [RUNNING]
+  Task (Long_Task:3)   | Exp for comparison:   19998306 | Last Burst:   20000000 | Prev Exp:   19994918 | NEW Exp:   19998306 
+  Task (Medium_Task:2) | Exp for comparison:   19997967 | Last Burst:   20000000 | Prev Exp:   19993901 | NEW Exp:   19997967 
+--------------------------------------
+--- Scheduler Snapshot at 630ms ---
+  Task (Late_Task:4)   | Exp for comparison:   19998983 | Last Burst:   20000000 | Prev Exp:   19990853 | NEW Exp:   19996951 [RUNNING]
+  Task (Long_Task:3)   | Exp for comparison:   19998306 | Last Burst:   20000000 | Prev Exp:   19994918 | NEW Exp:   19998306 
+  Task (Medium_Task:2) | Exp for comparison:   19997967 | Last Burst:   20000000 | Prev Exp:   19993901 | NEW Exp:   19997967 
+--------------------------------------
+(Medium_Task:2)/100/629ms - Switching Process In
+--- Scheduler Snapshot at 640ms ---
+  Task (Late_Task:4)   | Exp for comparison:   19998983 | Last Burst:   20000000 | Prev Exp:   19996949 | NEW Exp:   19998983 
+  Task (Long_Task:3)   | Exp for comparison:   19998306 | Last Burst:   20000000 | Prev Exp:   19994918 | NEW Exp:   19998306 
+  Task (Medium_Task:2) | Exp for comparison:   13332655 | Last Burst:   20000000 | Prev Exp:   19993901 | NEW Exp:   19997967 [RUNNING]
+--------------------------------------
+--- Scheduler Snapshot at 650ms ---
+  Task (Late_Task:4)   | Exp for comparison:   19998983 | Last Burst:   20000000 | Prev Exp:   19996949 | NEW Exp:   19998983 
+  Task (Long_Task:3)   | Exp for comparison:   19998306 | Last Burst:   20000000 | Prev Exp:   19994918 | NEW Exp:   19998306 
+  Task (Medium_Task:2) | Exp for comparison:   19999322 | Last Burst:   20000000 | Prev Exp:   19993901 | NEW Exp:   19997967 [RUNNING]
+--------------------------------------
+(Long_Task:3)/100/649ms - Switching Process In
+--- Scheduler Snapshot at 660ms ---
+  Task (Late_Task:4)   | Exp for comparison:   19998983 | Last Burst:   20000000 | Prev Exp:   19996949 | NEW Exp:   19998983 
+  Task (Long_Task:3)   | Exp for comparison:   13332768 | Last Burst:   20000000 | Prev Exp:   19994918 | NEW Exp:   19998306 [RUNNING]
+  Task (Medium_Task:2) | Exp for comparison:   19999322 | Last Burst:   20000000 | Prev Exp:   19997966 | NEW Exp:   19999322 
+--------------------------------------
+--- Scheduler Snapshot at 670ms ---
+  Task (Late_Task:4)   | Exp for comparison:   19998983 | Last Burst:   20000000 | Prev Exp:   19996949 | NEW Exp:   19998983 
+  Task (Long_Task:3)   | Exp for comparison:   19999435 | Last Burst:   20000000 | Prev Exp:   19994918 | NEW Exp:   19998306 [RUNNING]
+  Task (Medium_Task:2) | Exp for comparison:   19999322 | Last Burst:   20000000 | Prev Exp:   19997966 | NEW Exp:   19999322 
+--------------------------------------
+(Late_Task:4)/100/669ms - Switching Process In
+--- Scheduler Snapshot at 680ms ---
+  Task (Late_Task:4)   | Exp for comparison:   13332994 | Last Burst:   20000000 | Prev Exp:   19996949 | NEW Exp:   19998983 [RUNNING]
+  Task (Long_Task:3)   | Exp for comparison:   19999435 | Last Burst:   20000000 | Prev Exp:   19998305 | NEW Exp:   19999435 
+  Task (Medium_Task:2) | Exp for comparison:   19999322 | Last Burst:   20000000 | Prev Exp:   19997966 | NEW Exp:   19999322 
+--------------------------------------
+--- Scheduler Snapshot at 690ms ---
+  Task (Late_Task:4)   | Exp for comparison:   19999661 | Last Burst:   20000000 | Prev Exp:   19996949 | NEW Exp:   19998983 [RUNNING]
+  Task (Long_Task:3)   | Exp for comparison:   19999435 | Last Burst:   20000000 | Prev Exp:   19998305 | NEW Exp:   19999435 
+  Task (Medium_Task:2) | Exp for comparison:   19999322 | Last Burst:   20000000 | Prev Exp:   19997966 | NEW Exp:   19999322 
+--------------------------------------
+(Medium_Task:2)/100/689ms - Switching Process In
+--- Scheduler Snapshot at 700ms ---
+  Task (Late_Task:4)   | Exp for comparison:   19999661 | Last Burst:   20000000 | Prev Exp:   19998983 | NEW Exp:   19999661 
+  Task (Long_Task:3)   | Exp for comparison:   19999435 | Last Burst:   20000000 | Prev Exp:   19998305 | NEW Exp:   19999435 
+  Task (Medium_Task:2) | Exp for comparison:   13333107 | Last Burst:   20000000 | Prev Exp:   19997966 | NEW Exp:   19999322 [RUNNING]
+--------------------------------------
+--- Scheduler Snapshot at 710ms ---
+  Task (Late_Task:4)   | Exp for comparison:   19999661 | Last Burst:   20000000 | Prev Exp:   19998983 | NEW Exp:   19999661 
+  Task (Long_Task:3)   | Exp for comparison:   19999435 | Last Burst:   20000000 | Prev Exp:   19998305 | NEW Exp:   19999435 
+  Task (Medium_Task:2) | Exp for comparison:   19999774 | Last Burst:   20000000 | Prev Exp:   19997966 | NEW Exp:   19999322 [RUNNING]
+--------------------------------------
+(Long_Task:3)/100/709ms - Switching Process In
+--- Scheduler Snapshot at 720ms ---
+  Task (Late_Task:4)   | Exp for comparison:   19999661 | Last Burst:   20000000 | Prev Exp:   19998983 | NEW Exp:   19999661 
+  Task (Long_Task:3)   | Exp for comparison:   13333145 | Last Burst:   20000000 | Prev Exp:   19998305 | NEW Exp:   19999435 [RUNNING]
+  Task (Medium_Task:2) | Exp for comparison:   19999774 | Last Burst:   20000000 | Prev Exp:   19999322 | NEW Exp:   19999774 
+--------------------------------------
+--- Scheduler Snapshot at 730ms ---
+  Task (Late_Task:4)   | Exp for comparison:   19999661 | Last Burst:   20000000 | Prev Exp:   19998983 | NEW Exp:   19999661 
+  Task (Long_Task:3)   | Exp for comparison:   19999811 | Last Burst:   20000000 | Prev Exp:   19998305 | NEW Exp:   19999435 [RUNNING]
+  Task (Medium_Task:2) | Exp for comparison:   19999774 | Last Burst:   20000000 | Prev Exp:   19999322 | NEW Exp:   19999774 
+--------------------------------------
+(Late_Task:4)/100/729ms - Switching Process In
+--- Scheduler Snapshot at 740ms ---
+  Task (Late_Task:4)   | Exp for comparison:   13333220 | Last Burst:   20000000 | Prev Exp:   19998983 | NEW Exp:   19999661 [RUNNING]
+  Task (Long_Task:3)   | Exp for comparison:   19999811 | Last Burst:   20000000 | Prev Exp:   19999433 | NEW Exp:   19999811 
+  Task (Medium_Task:2) | Exp for comparison:   19999774 | Last Burst:   20000000 | Prev Exp:   19999322 | NEW Exp:   19999774 
+--------------------------------------
+--- Scheduler Snapshot at 750ms ---
+  Task (Late_Task:4)   | Exp for comparison:   19999887 | Last Burst:   20000000 | Prev Exp:   19998983 | NEW Exp:   19999661 [RUNNING]
+  Task (Long_Task:3)   | Exp for comparison:   19999811 | Last Burst:   20000000 | Prev Exp:   19999433 | NEW Exp:   19999811 
+  Task (Medium_Task:2) | Exp for comparison:   19999774 | Last Burst:   20000000 | Prev Exp:   19999322 | NEW Exp:   19999774 
+--------------------------------------
+(Medium_Task:2)/100/749ms - Switching Process In
+--- Scheduler Snapshot at 760ms ---
+  Task (Late_Task:4)   | Exp for comparison:   19999887 | Last Burst:   20000000 | Prev Exp:   19999661 | NEW Exp:   19999887 
+  Task (Long_Task:3)   | Exp for comparison:   19999811 | Last Burst:   20000000 | Prev Exp:   19999433 | NEW Exp:   19999811 
+  Task (Medium_Task:2) | Exp for comparison:   13333258 | Last Burst:   20000000 | Prev Exp:   19999322 | NEW Exp:   19999774 [RUNNING]
+--------------------------------------
+--- Scheduler Snapshot at 770ms ---
+  Task (Late_Task:4)   | Exp for comparison:   19999887 | Last Burst:   20000000 | Prev Exp:   19999661 | NEW Exp:   19999887 
+  Task (Long_Task:3)   | Exp for comparison:   19999811 | Last Burst:   20000000 | Prev Exp:   19999433 | NEW Exp:   19999811 
+  Task (Medium_Task:2) | Exp for comparison:   19999924 | Last Burst:   20000000 | Prev Exp:   19999322 | NEW Exp:   19999774 [RUNNING]
+--------------------------------------
+(Long_Task:3)/100/769ms - Switching Process In
+--- Scheduler Snapshot at 780ms ---
+  Task (Late_Task:4)   | Exp for comparison:   19999887 | Last Burst:   20000000 | Prev Exp:   19999661 | NEW Exp:   19999887 
+  Task (Long_Task:3)   | Exp for comparison:   13333270 | Last Burst:   20000000 | Prev Exp:   19999433 | NEW Exp:   19999811 [RUNNING]
+  Task (Medium_Task:2) | Exp for comparison:   19999924 | Last Burst:   20000000 | Prev Exp:   19999772 | NEW Exp:   19999924 
+--------------------------------------
+--- Scheduler Snapshot at 790ms ---
+  Task (Late_Task:4)   | Exp for comparison:   19999887 | Last Burst:   20000000 | Prev Exp:   19999661 | NEW Exp:   19999887 
+  Task (Long_Task:3)   | Exp for comparison:   19999937 | Last Burst:   20000000 | Prev Exp:   19999433 | NEW Exp:   19999811 [RUNNING]
+  Task (Medium_Task:2) | Exp for comparison:   19999924 | Last Burst:   20000000 | Prev Exp:   19999772 | NEW Exp:   19999924 
+--------------------------------------
+(Late_Task:4)/100/789ms - Switching Process In
+--- Scheduler Snapshot at 800ms ---
+  Task (Late_Task:4)   | Exp for comparison:   13333295 | Last Burst:   20000000 | Prev Exp:   19999661 | NEW Exp:   19999887 [RUNNING]
+  Task (Long_Task:3)   | Exp for comparison:   19999937 | Last Burst:   20000000 | Prev Exp:   19999811 | NEW Exp:   19999937 
+  Task (Medium_Task:2) | Exp for comparison:   19999924 | Last Burst:   20000000 | Prev Exp:   19999772 | NEW Exp:   19999924 
+--------------------------------------
+--- Scheduler Snapshot at 810ms ---
+  Task (Late_Task:4)   | Exp for comparison:   19999962 | Last Burst:   20000000 | Prev Exp:   19999661 | NEW Exp:   19999887 [RUNNING]
+  Task (Long_Task:3)   | Exp for comparison:   19999937 | Last Burst:   20000000 | Prev Exp:   19999811 | NEW Exp:   19999937 
+  Task (Medium_Task:2) | Exp for comparison:   19999924 | Last Burst:   20000000 | Prev Exp:   19999772 | NEW Exp:   19999924 
+--------------------------------------
+(Medium_Task:2)/100/809ms - Switching Process In
+--- Scheduler Snapshot at 820ms ---
+  Task (Late_Task:4)   | Exp for comparison:   19999962 | Last Burst:   20000000 | Prev Exp:   19999886 | NEW Exp:   19999962 
+  Task (Long_Task:3)   | Exp for comparison:   19999937 | Last Burst:   20000000 | Prev Exp:   19999811 | NEW Exp:   19999937 
+  Task (Medium_Task:2) | Exp for comparison:   13333308 | Last Burst:   20000000 | Prev Exp:   19999772 | NEW Exp:   19999924 [RUNNING]
+--------------------------------------
+--- Scheduler Snapshot at 830ms ---
+  Task (Late_Task:4)   | Exp for comparison:   19999962 | Last Burst:   20000000 | Prev Exp:   19999886 | NEW Exp:   19999962 
+  Task (Long_Task:3)   | Exp for comparison:   19999937 | Last Burst:   20000000 | Prev Exp:   19999811 | NEW Exp:   19999937 
+  Task (Medium_Task:2) | Exp for comparison:   19999974 | Last Burst:   20000000 | Prev Exp:   19999772 | NEW Exp:   19999924 [RUNNING]
+--------------------------------------
+(Long_Task:3)/100/829ms - Switching Process In
+--- Scheduler Snapshot at 840ms ---
+  Task (Late_Task:4)   | Exp for comparison:   19999962 | Last Burst:   20000000 | Prev Exp:   19999886 | NEW Exp:   19999962 
+  Task (Long_Task:3)   | Exp for comparison:   13333312 | Last Burst:   20000000 | Prev Exp:   19999811 | NEW Exp:   19999937 [RUNNING]
+  Task (Medium_Task:2) | Exp for comparison:   19999974 | Last Burst:   20000000 | Prev Exp:   19999922 | NEW Exp:   19999974 
+--------------------------------------
+--- Scheduler Snapshot at 850ms ---
+  Task (Late_Task:4)   | Exp for comparison:   19999962 | Last Burst:   20000000 | Prev Exp:   19999886 | NEW Exp:   19999962 
+  Task (Long_Task:3)   | Exp for comparison:   19999979 | Last Burst:   20000000 | Prev Exp:   19999811 | NEW Exp:   19999937 [RUNNING]
+  Task (Medium_Task:2) | Exp for comparison:   19999974 | Last Burst:   20000000 | Prev Exp:   19999922 | NEW Exp:   19999974 
+--------------------------------------
+(Late_Task:4)/100/849ms - Switching Process In
+--- Scheduler Snapshot at 860ms ---
+  Task (Late_Task:4)   | Exp for comparison:   13333320 | Last Burst:   20000000 | Prev Exp:   19999886 | NEW Exp:   19999962 [RUNNING]
+  Task (Long_Task:3)   | Exp for comparison:   19999979 | Last Burst:   20000000 | Prev Exp:   19999937 | NEW Exp:   19999979 
+  Task (Medium_Task:2) | Exp for comparison:   19999974 | Last Burst:   20000000 | Prev Exp:   19999922 | NEW Exp:   19999974 
+--------------------------------------
+--- Scheduler Snapshot at 870ms ---
+  Task (Late_Task:4)   | Exp for comparison:   19999987 | Last Burst:   20000000 | Prev Exp:   19999886 | NEW Exp:   19999962 [RUNNING]
+  Task (Long_Task:3)   | Exp for comparison:   19999979 | Last Burst:   20000000 | Prev Exp:   19999937 | NEW Exp:   19999979 
+  Task (Medium_Task:2) | Exp for comparison:   19999974 | Last Burst:   20000000 | Prev Exp:   19999922 | NEW Exp:   19999974 
+--------------------------------------
+(Medium_Task:2)/100/869ms - Switching Process In
+--- Scheduler Snapshot at 880ms ---
+  Task (Late_Task:4)   | Exp for comparison:   19999987 | Last Burst:   20000000 | Prev Exp:   19999961 | NEW Exp:   19999987 
+  Task (Long_Task:3)   | Exp for comparison:   19999979 | Last Burst:   20000000 | Prev Exp:   19999937 | NEW Exp:   19999979 
+  Task (Medium_Task:2) | Exp for comparison:   13333324 | Last Burst:   20000000 | Prev Exp:   19999922 | NEW Exp:   19999974 [RUNNING]
+--------------------------------------
+--- Scheduler Snapshot at 890ms ---
+  Task (Late_Task:4)   | Exp for comparison:   19999987 | Last Burst:   20000000 | Prev Exp:   19999961 | NEW Exp:   19999987 
+  Task (Long_Task:3)   | Exp for comparison:   19999979 | Last Burst:   20000000 | Prev Exp:   19999937 | NEW Exp:   19999979 
+  Task (Medium_Task:2) | Exp for comparison:   19999991 | Last Burst:   20000000 | Prev Exp:   19999922 | NEW Exp:   19999974 [RUNNING]
+--------------------------------------
+(Long_Task:3)/100/889ms - Switching Process In
+--- Scheduler Snapshot at 900ms ---
+  Task (Late_Task:4)   | Exp for comparison:   19999987 | Last Burst:   20000000 | Prev Exp:   19999961 | NEW Exp:   19999987 
+  Task (Long_Task:3)   | Exp for comparison:   13333326 | Last Burst:   20000000 | Prev Exp:   19999937 | NEW Exp:   19999979 [RUNNING]
+  Task (Medium_Task:2) | Exp for comparison:   19999991 | Last Burst:   20000000 | Prev Exp:   19999973 | NEW Exp:   19999991 
+--------------------------------------
+--- Scheduler Snapshot at 910ms ---
+  Task (Late_Task:4)   | Exp for comparison:   19999987 | Last Burst:   20000000 | Prev Exp:   19999961 | NEW Exp:   19999987 
+  Task (Long_Task:3)   | Exp for comparison:   19999993 | Last Burst:   20000000 | Prev Exp:   19999937 | NEW Exp:   19999979 [RUNNING]
+  Task (Medium_Task:2) | Exp for comparison:   19999991 | Last Burst:   20000000 | Prev Exp:   19999973 | NEW Exp:   19999991 
+--------------------------------------
+(Late_Task:4)/100/909ms - Switching Process In
+--- Scheduler Snapshot at 920ms ---
+  Task (Late_Task:4)   | Exp for comparison:   13333329 | Last Burst:   20000000 | Prev Exp:   19999961 | NEW Exp:   19999987 [RUNNING]
+  Task (Long_Task:3)   | Exp for comparison:   19999993 | Last Burst:   20000000 | Prev Exp:   19999979 | NEW Exp:   19999993 
+  Task (Medium_Task:2) | Exp for comparison:   19999991 | Last Burst:   20000000 | Prev Exp:   19999973 | NEW Exp:   19999991 
+--------------------------------------
+--- Scheduler Snapshot at 930ms ---
+  Task (Late_Task:4)   | Exp for comparison:   19999995 | Last Burst:   20000000 | Prev Exp:   19999961 | NEW Exp:   19999987 [RUNNING]
+  Task (Long_Task:3)   | Exp for comparison:   19999993 | Last Burst:   20000000 | Prev Exp:   19999979 | NEW Exp:   19999993 
+  Task (Medium_Task:2) | Exp for comparison:   19999991 | Last Burst:   20000000 | Prev Exp:   19999973 | NEW Exp:   19999991 
+--------------------------------------
+(Medium_Task:2)/100/929ms - Switching Process In
+--- Scheduler Snapshot at 940ms ---
+  Task (Late_Task:4)   | Exp for comparison:   19999995 | Last Burst:   20000000 | Prev Exp:   19999985 | NEW Exp:   19999995 
+  Task (Long_Task:3)   | Exp for comparison:   19999993 | Last Burst:   20000000 | Prev Exp:   19999979 | NEW Exp:   19999993 
+  Task (Medium_Task:2) | Exp for comparison:   13333330 | Last Burst:   20000000 | Prev Exp:   19999973 | NEW Exp:   19999991 [RUNNING]
+--------------------------------------
+--- Scheduler Snapshot at 950ms ---
+  Task (Late_Task:4)   | Exp for comparison:   19999995 | Last Burst:   20000000 | Prev Exp:   19999985 | NEW Exp:   19999995 
+  Task (Long_Task:3)   | Exp for comparison:   19999993 | Last Burst:   20000000 | Prev Exp:   19999979 | NEW Exp:   19999993 
+  Task (Medium_Task:2) | Exp for comparison:   19999997 | Last Burst:   20000000 | Prev Exp:   19999973 | NEW Exp:   19999991 [RUNNING]
+--------------------------------------
+(Long_Task:3)/100/949ms - Switching Process In
+--- Scheduler Snapshot at 960ms ---
+  Task (Late_Task:4)   | Exp for comparison:   19999995 | Last Burst:   20000000 | Prev Exp:   19999985 | NEW Exp:   19999995 
+  Task (Long_Task:3)   | Exp for comparison:   13333331 | Last Burst:   20000000 | Prev Exp:   19999979 | NEW Exp:   19999993 [RUNNING]
+  Task (Medium_Task:2) | Exp for comparison:   19999997 | Last Burst:   20000000 | Prev Exp:   19999991 | NEW Exp:   19999997 
+--------------------------------------
+--- Scheduler Snapshot at 970ms ---
+  Task (Late_Task:4)   | Exp for comparison:   19999995 | Last Burst:   20000000 | Prev Exp:   19999985 | NEW Exp:   19999995 
+  Task (Long_Task:3)   | Exp for comparison:   19999997 | Last Burst:   20000000 | Prev Exp:   19999979 | NEW Exp:   19999993 [RUNNING]
+  Task (Medium_Task:2) | Exp for comparison:   19999997 | Last Burst:   20000000 | Prev Exp:   19999991 | NEW Exp:   19999997 
+--------------------------------------
+(Late_Task:4)/100/969ms - Switching Process In
+--- Scheduler Snapshot at 980ms ---
+  Task (Late_Task:4)   | Exp for comparison:   13333331 | Last Burst:   20000000 | Prev Exp:   19999985 | NEW Exp:   19999995 [RUNNING]
+  Task (Long_Task:3)   | Exp for comparison:   19999997 | Last Burst:   20000000 | Prev Exp:   19999991 | NEW Exp:   19999997 
+  Task (Medium_Task:2) | Exp for comparison:   19999997 | Last Burst:   20000000 | Prev Exp:   19999991 | NEW Exp:   19999997 
+--------------------------------------
+--- Scheduler Snapshot at 990ms ---
+  Task (Late_Task:4)   | Exp for comparison:   19999998 | Last Burst:   20000000 | Prev Exp:   19999985 | NEW Exp:   19999995 [RUNNING]
+  Task (Long_Task:3)   | Exp for comparison:   19999997 | Last Burst:   20000000 | Prev Exp:   19999991 | NEW Exp:   19999997 
+  Task (Medium_Task:2) | Exp for comparison:   19999997 | Last Burst:   20000000 | Prev Exp:   19999991 | NEW Exp:   19999997 
+--------------------------------------
+(Long_Task:3)/100/989ms - Switching Process In
+--- Scheduler Snapshot at 1000ms ---
+  Task (Late_Task:4)   | Exp for comparison:   19999998 | Last Burst:   20000000 | Prev Exp:   19999994 | NEW Exp:   19999998 
+  Task (Long_Task:3)   | Exp for comparison:   13333332 | Last Burst:   20000000 | Prev Exp:   19999991 | NEW Exp:   19999997 [RUNNING]
+  Task (Medium_Task:2) | Exp for comparison:   19999997 | Last Burst:   20000000 | Prev Exp:   19999991 | NEW Exp:   19999997 
+--------------------------------------
+--- Scheduler Snapshot at 1010ms ---
+  Task (Late_Task:4)   | Exp for comparison:   19999998 | Last Burst:   20000000 | Prev Exp:   19999994 | NEW Exp:   19999998 
+  Task (Long_Task:3)   | Exp for comparison:   19999999 | Last Burst:   20000000 | Prev Exp:   19999991 | NEW Exp:   19999997 [RUNNING]
+  Task (Medium_Task:2) | Exp for comparison:   19999997 | Last Burst:   20000000 | Prev Exp:   19999991 | NEW Exp:   19999997 
+--------------------------------------
+(Medium_Task:2)/100/1009ms - Switching Process In
+--- Scheduler Snapshot at 1020ms ---
+  Task (Late_Task:4)   | Exp for comparison:   19999998 | Last Burst:   20000000 | Prev Exp:   19999994 | NEW Exp:   19999998 
+  Task (Long_Task:3)   | Exp for comparison:   19999999 | Last Burst:   20000000 | Prev Exp:   19999997 | NEW Exp:   19999999 
+  Task (Medium_Task:2) | Exp for comparison:   13333332 | Last Burst:   20000000 | Prev Exp:   19999991 | NEW Exp:   19999997 [RUNNING]
+--------------------------------------
+--- Scheduler Snapshot at 1030ms ---
+  Task (Late_Task:4)   | Exp for comparison:   19999998 | Last Burst:   20000000 | Prev Exp:   19999994 | NEW Exp:   19999998 
+  Task (Long_Task:3)   | Exp for comparison:   19999999 | Last Burst:   20000000 | Prev Exp:   19999997 | NEW Exp:   19999999 
+  Task (Medium_Task:2) | Exp for comparison:   19999999 | Last Burst:   20000000 | Prev Exp:   19999991 | NEW Exp:   19999997 [RUNNING]
+--------------------------------------
+(Late_Task:4)/100/1029ms - Switching Process In
+--- Scheduler Snapshot at 1040ms ---
+  Task (Late_Task:4)   | Exp for comparison:   13333332 | Last Burst:   20000000 | Prev Exp:   19999994 | NEW Exp:   19999998 [RUNNING]
+  Task (Long_Task:3)   | Exp for comparison:   19999999 | Last Burst:   20000000 | Prev Exp:   19999997 | NEW Exp:   19999999 
+  Task (Medium_Task:2) | Exp for comparison:   19999999 | Last Burst:   20000000 | Prev Exp:   19999997 | NEW Exp:   19999999 
+--------------------------------------
+--- Scheduler Snapshot at 1050ms ---
+  Task (Late_Task:4)   | Exp for comparison:   19999999 | Last Burst:   20000000 | Prev Exp:   19999994 | NEW Exp:   19999998 [RUNNING]
+  Task (Long_Task:3)   | Exp for comparison:   19999999 | Last Burst:   20000000 | Prev Exp:   19999997 | NEW Exp:   19999999 
+  Task (Medium_Task:2) | Exp for comparison:   19999999 | Last Burst:   20000000 | Prev Exp:   19999997 | NEW Exp:   19999999 
+--------------------------------------
+--- Scheduler Snapshot at 1060ms ---
+  Task (Late_Task:4)   | Exp for comparison:   26666666 | Last Burst:   20000000 | Prev Exp:   19999994 | NEW Exp:   19999998 [RUNNING]
+  Task (Long_Task:3)   | Exp for comparison:   19999999 | Last Burst:   20000000 | Prev Exp:   19999997 | NEW Exp:   19999999 
+  Task (Medium_Task:2) | Exp for comparison:   19999999 | Last Burst:   20000000 | Prev Exp:   19999997 | NEW Exp:   19999999 
+--------------------------------------
+(Long_Task:3)/100/1059ms - Switching Process In
+--- Scheduler Snapshot at 1070ms ---
+  Task (Late_Task:4)   | Exp for comparison:   26666666 | Last Burst:   30000000 | Prev Exp:   19999998 | NEW Exp:   26666666 
+  Task (Long_Task:3)   | Exp for comparison:   13333333 | Last Burst:   20000000 | Prev Exp:   19999997 | NEW Exp:   19999999 [RUNNING]
+  Task (Medium_Task:2) | Exp for comparison:   19999999 | Last Burst:   20000000 | Prev Exp:   19999997 | NEW Exp:   19999999 
+--------------------------------------
+--- Scheduler Snapshot at 1080ms ---
+  Task (Late_Task:4)   | Exp for comparison:   26666666 | Last Burst:   30000000 | Prev Exp:   19999998 | NEW Exp:   26666666 
+  Task (Long_Task:3)   | Exp for comparison:   19999999 | Last Burst:   20000000 | Prev Exp:   19999997 | NEW Exp:   19999999 [RUNNING]
+  Task (Medium_Task:2) | Exp for comparison:   19999999 | Last Burst:   20000000 | Prev Exp:   19999997 | NEW Exp:   19999999 
+--------------------------------------
+--- Scheduler Snapshot at 1090ms ---
+  Task (Late_Task:4)   | Exp for comparison:   26666666 | Last Burst:   30000000 | Prev Exp:   19999998 | NEW Exp:   26666666 
+  Task (Long_Task:3)   | Exp for comparison:   26666666 | Last Burst:   20000000 | Prev Exp:   19999997 | NEW Exp:   19999999 [RUNNING]
+  Task (Medium_Task:2) | Exp for comparison:   19999999 | Last Burst:   20000000 | Prev Exp:   19999997 | NEW Exp:   19999999 
+--------------------------------------
+(Medium_Task:2)/100/1089ms - Switching Process In
+--- Scheduler Snapshot at 1100ms ---
+  Task (Late_Task:4)   | Exp for comparison:   26666666 | Last Burst:   30000000 | Prev Exp:   19999998 | NEW Exp:   26666666 
+  Task (Long_Task:3)   | Exp for comparison:   26666666 | Last Burst:   30000000 | Prev Exp:   19999998 | NEW Exp:   26666666 
+  Task (Medium_Task:2) | Exp for comparison:   13333333 | Last Burst:   20000000 | Prev Exp:   19999997 | NEW Exp:   19999999 [RUNNING]
+--------------------------------------
+--- Scheduler Snapshot at 1110ms ---
+  Task (Late_Task:4)   | Exp for comparison:   26666666 | Last Burst:   30000000 | Prev Exp:   19999998 | NEW Exp:   26666666 
+  Task (Long_Task:3)   | Exp for comparison:   26666666 | Last Burst:   30000000 | Prev Exp:   19999998 | NEW Exp:   26666666 
+  Task (Medium_Task:2) | Exp for comparison:   19999999 | Last Burst:   20000000 | Prev Exp:   19999997 | NEW Exp:   19999999 [RUNNING]
+--------------------------------------
+--- Scheduler Snapshot at 1120ms ---
+  Task (Late_Task:4)   | Exp for comparison:   26666666 | Last Burst:   30000000 | Prev Exp:   19999998 | NEW Exp:   26666666 
+  Task (Long_Task:3)   | Exp for comparison:   26666666 | Last Burst:   30000000 | Prev Exp:   19999998 | NEW Exp:   26666666 
+  Task (Medium_Task:2) | Exp for comparison:   26666666 | Last Burst:   20000000 | Prev Exp:   19999997 | NEW Exp:   19999999 [RUNNING]
+--------------------------------------
+--- Scheduler Snapshot at 1130ms ---
+  Task (Late_Task:4)   | Exp for comparison:   26666666 | Last Burst:   30000000 | Prev Exp:   19999998 | NEW Exp:   26666666 
+  Task (Long_Task:3)   | Exp for comparison:   26666666 | Last Burst:   30000000 | Prev Exp:   19999998 | NEW Exp:   26666666 
+  Task (Medium_Task:2) | Exp for comparison:   33333333 | Last Burst:   20000000 | Prev Exp:   19999997 | NEW Exp:   19999999 [RUNNING]
+--------------------------------------
+(Late_Task:4)/100/1129ms - Switching Process In
+--- Scheduler Snapshot at 1140ms ---
+  Task (Late_Task:4)   | Exp for comparison:   15555555 | Last Burst:   30000000 | Prev Exp:   19999998 | NEW Exp:   26666666 [RUNNING]
+  Task (Long_Task:3)   | Exp for comparison:   26666666 | Last Burst:   30000000 | Prev Exp:   19999998 | NEW Exp:   26666666 
+  Task (Medium_Task:2) | Exp for comparison:   33333333 | Last Burst:   40000000 | Prev Exp:   19999999 | NEW Exp:   33333333 
+--------------------------------------
+--- Scheduler Snapshot at 1150ms ---
+  Task (Late_Task:4)   | Exp for comparison:   22222222 | Last Burst:   30000000 | Prev Exp:   19999998 | NEW Exp:   26666666 [RUNNING]
+  Task (Long_Task:3)   | Exp for comparison:   26666666 | Last Burst:   30000000 | Prev Exp:   19999998 | NEW Exp:   26666666 
+  Task (Medium_Task:2) | Exp for comparison:   33333333 | Last Burst:   40000000 | Prev Exp:   19999999 | NEW Exp:   33333333 
+--------------------------------------
+CDA: thread (Late_Task:4) finished
+ Deactivation with Exp:   22222222
+###-Process: (Late_Task:4) is going down-###
+--- Scheduler Snapshot at 1160ms ---
+  Task (Long_Task:3)   | Exp for comparison:   26666666 | Last Burst:   30000000 | Prev Exp:   19999998 | NEW Exp:   26666666 
+  Task (Medium_Task:2) | Exp for comparison:   33333333 | Last Burst:   40000000 | Prev Exp:   19999999 | NEW Exp:   33333333 
+--------------------------------------
+(Long_Task:3)/100/1160ms - Switching Process In
+--- Scheduler Snapshot at 1170ms ---
+  Task (Long_Task:3)   | Exp for comparison:   15555555 | Last Burst:   30000000 | Prev Exp:   19999998 | NEW Exp:   26666666 [RUNNING]
+  Task (Medium_Task:2) | Exp for comparison:   33333333 | Last Burst:   40000000 | Prev Exp:   19999999 | NEW Exp:   33333333 
+--------------------------------------
+--- Scheduler Snapshot at 1180ms ---
+  Task (Long_Task:3)   | Exp for comparison:   22222222 | Last Burst:   30000000 | Prev Exp:   19999998 | NEW Exp:   26666666 [RUNNING]
+  Task (Medium_Task:2) | Exp for comparison:   33333333 | Last Burst:   40000000 | Prev Exp:   19999999 | NEW Exp:   33333333 
+--------------------------------------
+--- Scheduler Snapshot at 1190ms ---
+  Task (Long_Task:3)   | Exp for comparison:   28888888 | Last Burst:   30000000 | Prev Exp:   19999998 | NEW Exp:   26666666 [RUNNING]
+  Task (Medium_Task:2) | Exp for comparison:   33333333 | Last Burst:   40000000 | Prev Exp:   19999999 | NEW Exp:   33333333 
+--------------------------------------
+--- Scheduler Snapshot at 1200ms ---
+  Task (Long_Task:3)   | Exp for comparison:   35555555 | Last Burst:   30000000 | Prev Exp:   19999998 | NEW Exp:   26666666 [RUNNING]
+  Task (Medium_Task:2) | Exp for comparison:   33333333 | Last Burst:   40000000 | Prev Exp:   19999999 | NEW Exp:   33333333 
+--------------------------------------
+(Medium_Task:2)/100/1199ms - Switching Process In
+--- Scheduler Snapshot at 1210ms ---
+  Task (Long_Task:3)   | Exp for comparison:   35555555 | Last Burst:   40000000 | Prev Exp:   26666665 | NEW Exp:   35555555 
+  Task (Medium_Task:2) | Exp for comparison:   17777777 | Last Burst:   40000000 | Prev Exp:   19999999 | NEW Exp:   33333333 [RUNNING]
+--------------------------------------
+--- Scheduler Snapshot at 1220ms ---
+  Task (Long_Task:3)   | Exp for comparison:   35555555 | Last Burst:   40000000 | Prev Exp:   26666665 | NEW Exp:   35555555 
+  Task (Medium_Task:2) | Exp for comparison:   24444444 | Last Burst:   40000000 | Prev Exp:   19999999 | NEW Exp:   33333333 [RUNNING]
+--------------------------------------
+--- Scheduler Snapshot at 1230ms ---
+  Task (Long_Task:3)   | Exp for comparison:   35555555 | Last Burst:   40000000 | Prev Exp:   26666665 | NEW Exp:   35555555 
+  Task (Medium_Task:2) | Exp for comparison:   31111111 | Last Burst:   40000000 | Prev Exp:   19999999 | NEW Exp:   33333333 [RUNNING]
+--------------------------------------
+--- Scheduler Snapshot at 1240ms ---
+  Task (Long_Task:3)   | Exp for comparison:   35555555 | Last Burst:   40000000 | Prev Exp:   26666665 | NEW Exp:   35555555 
+  Task (Medium_Task:2) | Exp for comparison:   37777777 | Last Burst:   40000000 | Prev Exp:   19999999 | NEW Exp:   33333333 [RUNNING]
+--------------------------------------
+(Long_Task:3)/100/1239ms - Switching Process In
+--- Scheduler Snapshot at 1250ms ---
+  Task (Long_Task:3)   | Exp for comparison:   18518518 | Last Burst:   40000000 | Prev Exp:   26666665 | NEW Exp:   35555555 [RUNNING]
+  Task (Medium_Task:2) | Exp for comparison:   37777777 | Last Burst:   40000000 | Prev Exp:   33333331 | NEW Exp:   37777777 
+--------------------------------------
+--- Scheduler Snapshot at 1260ms ---
+  Task (Long_Task:3)   | Exp for comparison:   25185185 | Last Burst:   40000000 | Prev Exp:   26666665 | NEW Exp:   35555555 [RUNNING]
+  Task (Medium_Task:2) | Exp for comparison:   37777777 | Last Burst:   40000000 | Prev Exp:   33333331 | NEW Exp:   37777777 
+--------------------------------------
+--- Scheduler Snapshot at 1270ms ---
+  Task (Long_Task:3)   | Exp for comparison:   31851851 | Last Burst:   40000000 | Prev Exp:   26666665 | NEW Exp:   35555555 [RUNNING]
+  Task (Medium_Task:2) | Exp for comparison:   37777777 | Last Burst:   40000000 | Prev Exp:   33333331 | NEW Exp:   37777777 
+--------------------------------------
+--- Scheduler Snapshot at 1280ms ---
+  Task (Long_Task:3)   | Exp for comparison:   38518518 | Last Burst:   40000000 | Prev Exp:   26666665 | NEW Exp:   35555555 [RUNNING]
+  Task (Medium_Task:2) | Exp for comparison:   37777777 | Last Burst:   40000000 | Prev Exp:   33333331 | NEW Exp:   37777777 
+--------------------------------------
+(Medium_Task:2)/100/1279ms - Switching Process In
+--- Scheduler Snapshot at 1290ms ---
+  Task (Long_Task:3)   | Exp for comparison:   38518518 | Last Burst:   40000000 | Prev Exp:   35555554 | NEW Exp:   38518518 
+  Task (Medium_Task:2) | Exp for comparison:   19259259 | Last Burst:   40000000 | Prev Exp:   33333331 | NEW Exp:   37777777 [RUNNING]
+--------------------------------------
+--- Scheduler Snapshot at 1300ms ---
+  Task (Long_Task:3)   | Exp for comparison:   38518518 | Last Burst:   40000000 | Prev Exp:   35555554 | NEW Exp:   38518518 
+  Task (Medium_Task:2) | Exp for comparison:   25925925 | Last Burst:   40000000 | Prev Exp:   33333331 | NEW Exp:   37777777 [RUNNING]
+--------------------------------------
+--- Scheduler Snapshot at 1310ms ---
+  Task (Long_Task:3)   | Exp for comparison:   38518518 | Last Burst:   40000000 | Prev Exp:   35555554 | NEW Exp:   38518518 
+  Task (Medium_Task:2) | Exp for comparison:   32592592 | Last Burst:   40000000 | Prev Exp:   33333331 | NEW Exp:   37777777 [RUNNING]
+--------------------------------------
+--- Scheduler Snapshot at 1320ms ---
+  Task (Long_Task:3)   | Exp for comparison:   38518518 | Last Burst:   40000000 | Prev Exp:   35555554 | NEW Exp:   38518518 
+  Task (Medium_Task:2) | Exp for comparison:   39259259 | Last Burst:   40000000 | Prev Exp:   33333331 | NEW Exp:   37777777 [RUNNING]
+--------------------------------------
+(Long_Task:3)/100/1319ms - Switching Process In
+--- Scheduler Snapshot at 1330ms ---
+  Task (Long_Task:3)   | Exp for comparison:   19506172 | Last Burst:   40000000 | Prev Exp:   35555554 | NEW Exp:   38518518 [RUNNING]
+  Task (Medium_Task:2) | Exp for comparison:   39259259 | Last Burst:   40000000 | Prev Exp:   37777777 | NEW Exp:   39259259 
+--------------------------------------
+--- Scheduler Snapshot at 1340ms ---
+  Task (Long_Task:3)   | Exp for comparison:   26172839 | Last Burst:   40000000 | Prev Exp:   35555554 | NEW Exp:   38518518 [RUNNING]
+  Task (Medium_Task:2) | Exp for comparison:   39259259 | Last Burst:   40000000 | Prev Exp:   37777777 | NEW Exp:   39259259 
+--------------------------------------
+--- Scheduler Snapshot at 1350ms ---
+  Task (Long_Task:3)   | Exp for comparison:   32839506 | Last Burst:   40000000 | Prev Exp:   35555554 | NEW Exp:   38518518 [RUNNING]
+  Task (Medium_Task:2) | Exp for comparison:   39259259 | Last Burst:   40000000 | Prev Exp:   37777777 | NEW Exp:   39259259 
+--------------------------------------
+--- Scheduler Snapshot at 1360ms ---
+  Task (Long_Task:3)   | Exp for comparison:   39506172 | Last Burst:   40000000 | Prev Exp:   35555554 | NEW Exp:   38518518 [RUNNING]
+  Task (Medium_Task:2) | Exp for comparison:   39259259 | Last Burst:   40000000 | Prev Exp:   37777777 | NEW Exp:   39259259 
+--------------------------------------
+(Medium_Task:2)/100/1359ms - Switching Process In
+--- Scheduler Snapshot at 1370ms ---
+  Task (Long_Task:3)   | Exp for comparison:   39506172 | Last Burst:   40000000 | Prev Exp:   38518516 | NEW Exp:   39506172 
+  Task (Medium_Task:2) | Exp for comparison:   19753086 | Last Burst:   40000000 | Prev Exp:   37777777 | NEW Exp:   39259259 [RUNNING]
+--------------------------------------
+--- Scheduler Snapshot at 1380ms ---
+  Task (Long_Task:3)   | Exp for comparison:   39506172 | Last Burst:   40000000 | Prev Exp:   38518516 | NEW Exp:   39506172 
+  Task (Medium_Task:2) | Exp for comparison:   26419753 | Last Burst:   40000000 | Prev Exp:   37777777 | NEW Exp:   39259259 [RUNNING]
+--------------------------------------
+--- Scheduler Snapshot at 1390ms ---
+  Task (Long_Task:3)   | Exp for comparison:   39506172 | Last Burst:   40000000 | Prev Exp:   38518516 | NEW Exp:   39506172 
+  Task (Medium_Task:2) | Exp for comparison:   33086419 | Last Burst:   40000000 | Prev Exp:   37777777 | NEW Exp:   39259259 [RUNNING]
+--------------------------------------
+--- Scheduler Snapshot at 1400ms ---
+  Task (Long_Task:3)   | Exp for comparison:   39506172 | Last Burst:   40000000 | Prev Exp:   38518516 | NEW Exp:   39506172 
+  Task (Medium_Task:2) | Exp for comparison:   39753086 | Last Burst:   40000000 | Prev Exp:   37777777 | NEW Exp:   39259259 [RUNNING]
+--------------------------------------
+(Long_Task:3)/100/1399ms - Switching Process In
+--- Scheduler Snapshot at 1410ms ---
+  Task (Long_Task:3)   | Exp for comparison:   19835390 | Last Burst:   40000000 | Prev Exp:   38518516 | NEW Exp:   39506172 [RUNNING]
+  Task (Medium_Task:2) | Exp for comparison:   39753086 | Last Burst:   40000000 | Prev Exp:   39259258 | NEW Exp:   39753086 
+--------------------------------------
+--- Scheduler Snapshot at 1420ms ---
+  Task (Long_Task:3)   | Exp for comparison:   26502057 | Last Burst:   40000000 | Prev Exp:   38518516 | NEW Exp:   39506172 [RUNNING]
+  Task (Medium_Task:2) | Exp for comparison:   39753086 | Last Burst:   40000000 | Prev Exp:   39259258 | NEW Exp:   39753086 
+--------------------------------------
+--- Scheduler Snapshot at 1430ms ---
+  Task (Long_Task:3)   | Exp for comparison:   33168724 | Last Burst:   40000000 | Prev Exp:   38518516 | NEW Exp:   39506172 [RUNNING]
+  Task (Medium_Task:2) | Exp for comparison:   39753086 | Last Burst:   40000000 | Prev Exp:   39259258 | NEW Exp:   39753086 
+--------------------------------------
+--- Scheduler Snapshot at 1440ms ---
+  Task (Long_Task:3)   | Exp for comparison:   39835390 | Last Burst:   40000000 | Prev Exp:   38518516 | NEW Exp:   39506172 [RUNNING]
+  Task (Medium_Task:2) | Exp for comparison:   39753086 | Last Burst:   40000000 | Prev Exp:   39259258 | NEW Exp:   39753086 
+--------------------------------------
+(Medium_Task:2)/100/1439ms - Switching Process In
+--- Scheduler Snapshot at 1450ms ---
+  Task (Long_Task:3)   | Exp for comparison:   39835390 | Last Burst:   40000000 | Prev Exp:   39506170 | NEW Exp:   39835390 
+  Task (Medium_Task:2) | Exp for comparison:   19917695 | Last Burst:   40000000 | Prev Exp:   39259258 | NEW Exp:   39753086 [RUNNING]
+--------------------------------------
+--- Scheduler Snapshot at 1460ms ---
+  Task (Long_Task:3)   | Exp for comparison:   39835390 | Last Burst:   40000000 | Prev Exp:   39506170 | NEW Exp:   39835390 
+  Task (Medium_Task:2) | Exp for comparison:   26584362 | Last Burst:   40000000 | Prev Exp:   39259258 | NEW Exp:   39753086 [RUNNING]
+--------------------------------------
+CDA: thread (Medium_Task:2) finished
+ Deactivation with Exp:   26584362
+###-Process: (Medium_Task:2) is going down-###
+--- Scheduler Snapshot at 1470ms ---
+  Task (Long_Task:3)   | Exp for comparison:   39835390 | Last Burst:   40000000 | Prev Exp:   39506170 | NEW Exp:   39835390 
+--------------------------------------
+(Long_Task:3)/100/1470ms - Switching Process In
+--- Scheduler Snapshot at 1480ms ---
+  Task (Long_Task:3)   | Exp for comparison:   19945130 | Last Burst:   40000000 | Prev Exp:   39506170 | NEW Exp:   39835390 [RUNNING]
+--------------------------------------
+--- Scheduler Snapshot at 1490ms ---
+  Task (Long_Task:3)   | Exp for comparison:   26611796 | Last Burst:   40000000 | Prev Exp:   39506170 | NEW Exp:   39835390 [RUNNING]
+--------------------------------------
+--- Scheduler Snapshot at 1500ms ---
+  Task (Long_Task:3)   | Exp for comparison:   33278463 | Last Burst:   40000000 | Prev Exp:   39506170 | NEW Exp:   39835390 [RUNNING]
+--------------------------------------
+--- Scheduler Snapshot at 1510ms ---
+  Task (Long_Task:3)   | Exp for comparison:   39945130 | Last Burst:   40000000 | Prev Exp:   39506170 | NEW Exp:   39835390 [RUNNING]
+--------------------------------------
+--- Scheduler Snapshot at 1520ms ---
+  Task (Long_Task:3)   | Exp for comparison:   46611796 | Last Burst:   40000000 | Prev Exp:   39506170 | NEW Exp:   39835390 [RUNNING]
+--------------------------------------
+--- Scheduler Snapshot at 1530ms ---
+  Task (Long_Task:3)   | Exp for comparison:   53278463 | Last Burst:   40000000 | Prev Exp:   39506170 | NEW Exp:   39835390 [RUNNING]
+--------------------------------------
+--- Scheduler Snapshot at 1540ms ---
+  Task (Long_Task:3)   | Exp for comparison:   59945130 | Last Burst:   40000000 | Prev Exp:   39506170 | NEW Exp:   39835390 [RUNNING]
+--------------------------------------
+###-An Interrupt has fired!-###
+--- Scheduler Snapshot at 1540ms ---
+  Task (Long_Task:3)   | Exp for comparison:   59945130 | Last Burst:   40000000 | Prev Exp:   39506170 | NEW Exp:   39835390 [RUNNING]
+--------------------------------------
+--- Scheduler Snapshot at 1550ms ---
+  Task (Long_Task:3)   | Exp for comparison:   66611796 | Last Burst:   40000000 | Prev Exp:   39506170 | NEW Exp:   39835390 [RUNNING]
+--------------------------------------
+--- Scheduler Snapshot at 1560ms ---
+  Task (Long_Task:3)   | Exp for comparison:   73278463 | Last Burst:   40000000 | Prev Exp:   39506170 | NEW Exp:   39835390 [RUNNING]
+--------------------------------------
+--- Scheduler Snapshot at 1570ms ---
+  Task (Long_Task:3)   | Exp for comparison:   79945130 | Last Burst:   40000000 | Prev Exp:   39506170 | NEW Exp:   39835390 [RUNNING]
+--------------------------------------
+--- Scheduler Snapshot at 1580ms ---
+  Task (Long_Task:3)   | Exp for comparison:   86611796 | Last Burst:   40000000 | Prev Exp:   39506170 | NEW Exp:   39835390 [RUNNING]
+--------------------------------------
+--- Scheduler Snapshot at 1590ms ---
+  Task (Long_Task:3)   | Exp for comparison:   93278463 | Last Burst:   40000000 | Prev Exp:   39506170 | NEW Exp:   39835390 [RUNNING]
+--------------------------------------
+--- Scheduler Snapshot at 1600ms ---
+  Task (Long_Task:3)   | Exp for comparison:   99945130 | Last Burst:   40000000 | Prev Exp:   39506170 | NEW Exp:   39835390 [RUNNING]
+--------------------------------------
+--- Scheduler Snapshot at 1610ms ---
+  Task (Long_Task:3)   | Exp for comparison:  106611796 | Last Burst:   40000000 | Prev Exp:   39506170 | NEW Exp:   39835390 [RUNNING]
+--------------------------------------
+--- Scheduler Snapshot at 1620ms ---
+  Task (Long_Task:3)   | Exp for comparison:  113278463 | Last Burst:   40000000 | Prev Exp:   39506170 | NEW Exp:   39835390 [RUNNING]
+--------------------------------------
+--- Scheduler Snapshot at 1630ms ---
+  Task (Long_Task:3)   | Exp for comparison:  119945130 | Last Burst:   40000000 | Prev Exp:   39506170 | NEW Exp:   39835390 [RUNNING]
+--------------------------------------
+--- Scheduler Snapshot at 1640ms ---
+  Task (Long_Task:3)   | Exp for comparison:  126611796 | Last Burst:   40000000 | Prev Exp:   39506170 | NEW Exp:   39835390 [RUNNING]
+--------------------------------------
+--- Scheduler Snapshot at 1650ms ---
+  Task (Long_Task:3)   | Exp for comparison:  133278463 | Last Burst:   40000000 | Prev Exp:   39506170 | NEW Exp:   39835390 [RUNNING]
+--------------------------------------
+--- Scheduler Snapshot at 1660ms ---
+  Task (Long_Task:3)   | Exp for comparison:  139945130 | Last Burst:   40000000 | Prev Exp:   39506170 | NEW Exp:   39835390 [RUNNING]
+--------------------------------------
+--- Scheduler Snapshot at 1670ms ---
+  Task (Long_Task:3)   | Exp for comparison:  146611796 | Last Burst:   40000000 | Prev Exp:   39506170 | NEW Exp:   39835390 [RUNNING]
+--------------------------------------
+--- Scheduler Snapshot at 1680ms ---
+  Task (Long_Task:3)   | Exp for comparison:  153278463 | Last Burst:   40000000 | Prev Exp:   39506170 | NEW Exp:   39835390 [RUNNING]
+--------------------------------------
+--- Scheduler Snapshot at 1690ms ---
+  Task (Long_Task:3)   | Exp for comparison:  159945130 | Last Burst:   40000000 | Prev Exp:   39506170 | NEW Exp:   39835390 [RUNNING]
+--------------------------------------
+--- Scheduler Snapshot at 1700ms ---
+  Task (Long_Task:3)   | Exp for comparison:  166611796 | Last Burst:   40000000 | Prev Exp:   39506170 | NEW Exp:   39835390 [RUNNING]
+--------------------------------------
+--- Scheduler Snapshot at 1710ms ---
+  Task (Long_Task:3)   | Exp for comparison:  173278463 | Last Burst:   40000000 | Prev Exp:   39506170 | NEW Exp:   39835390 [RUNNING]
+--------------------------------------
+--- Scheduler Snapshot at 1720ms ---
+  Task (Long_Task:3)   | Exp for comparison:  179945130 | Last Burst:   40000000 | Prev Exp:   39506170 | NEW Exp:   39835390 [RUNNING]
+--------------------------------------
+--- Scheduler Snapshot at 1730ms ---
+  Task (Long_Task:3)   | Exp for comparison:  186611796 | Last Burst:   40000000 | Prev Exp:   39506170 | NEW Exp:   39835390 [RUNNING]
+--------------------------------------
+--- Scheduler Snapshot at 1740ms ---
+  Task (Long_Task:3)   | Exp for comparison:  193278463 | Last Burst:   40000000 | Prev Exp:   39506170 | NEW Exp:   39835390 [RUNNING]
+--------------------------------------
+--- Scheduler Snapshot at 1750ms ---
+  Task (Long_Task:3)   | Exp for comparison:  199945130 | Last Burst:   40000000 | Prev Exp:   39506170 | NEW Exp:   39835390 [RUNNING]
+--------------------------------------
+--- Scheduler Snapshot at 1760ms ---
+  Task (Long_Task:3)   | Exp for comparison:  206611796 | Last Burst:   40000000 | Prev Exp:   39506170 | NEW Exp:   39835390 [RUNNING]
+--------------------------------------
+--- Scheduler Snapshot at 1770ms ---
+  Task (Long_Task:3)   | Exp for comparison:  213278463 | Last Burst:   40000000 | Prev Exp:   39506170 | NEW Exp:   39835390 [RUNNING]
+--------------------------------------
+--- Scheduler Snapshot at 1780ms ---
+  Task (Long_Task:3)   | Exp for comparison:  219945130 | Last Burst:   40000000 | Prev Exp:   39506170 | NEW Exp:   39835390 [RUNNING]
+--------------------------------------
+--- Scheduler Snapshot at 1790ms ---
+  Task (Long_Task:3)   | Exp for comparison:  226611796 | Last Burst:   40000000 | Prev Exp:   39506170 | NEW Exp:   39835390 [RUNNING]
+--------------------------------------
+--- Scheduler Snapshot at 1800ms ---
+  Task (Long_Task:3)   | Exp for comparison:  233278463 | Last Burst:   40000000 | Prev Exp:   39506170 | NEW Exp:   39835390 [RUNNING]
+--------------------------------------
+--- Scheduler Snapshot at 1810ms ---
+  Task (Long_Task:3)   | Exp for comparison:  239945130 | Last Burst:   40000000 | Prev Exp:   39506170 | NEW Exp:   39835390 [RUNNING]
+--------------------------------------
+--- Scheduler Snapshot at 1820ms ---
+  Task (Long_Task:3)   | Exp for comparison:  246611796 | Last Burst:   40000000 | Prev Exp:   39506170 | NEW Exp:   39835390 [RUNNING]
+--------------------------------------
+--- Scheduler Snapshot at 1830ms ---
+  Task (Long_Task:3)   | Exp for comparison:  253278463 | Last Burst:   40000000 | Prev Exp:   39506170 | NEW Exp:   39835390 [RUNNING]
+--------------------------------------
+--- Scheduler Snapshot at 1840ms ---
+  Task (Long_Task:3)   | Exp for comparison:  259945130 | Last Burst:   40000000 | Prev Exp:   39506170 | NEW Exp:   39835390 [RUNNING]
+--------------------------------------
+--- Scheduler Snapshot at 1850ms ---
+  Task (Long_Task:3)   | Exp for comparison:  266611796 | Last Burst:   40000000 | Prev Exp:   39506170 | NEW Exp:   39835390 [RUNNING]
+--------------------------------------
+--- Scheduler Snapshot at 1860ms ---
+  Task (Long_Task:3)   | Exp for comparison:  273278463 | Last Burst:   40000000 | Prev Exp:   39506170 | NEW Exp:   39835390 [RUNNING]
+--------------------------------------
+--- Scheduler Snapshot at 1870ms ---
+  Task (Long_Task:3)   | Exp for comparison:  279945130 | Last Burst:   40000000 | Prev Exp:   39506170 | NEW Exp:   39835390 [RUNNING]
+--------------------------------------
+--- Scheduler Snapshot at 1880ms ---
+  Task (Long_Task:3)   | Exp for comparison:  286611796 | Last Burst:   40000000 | Prev Exp:   39506170 | NEW Exp:   39835390 [RUNNING]
+--------------------------------------
+--- Scheduler Snapshot at 1890ms ---
+  Task (Long_Task:3)   | Exp for comparison:  293278463 | Last Burst:   40000000 | Prev Exp:   39506170 | NEW Exp:   39835390 [RUNNING]
+--------------------------------------
+--- Scheduler Snapshot at 1900ms ---
+  Task (Long_Task:3)   | Exp for comparison:  299945130 | Last Burst:   40000000 | Prev Exp:   39506170 | NEW Exp:   39835390 [RUNNING]
+--------------------------------------
+--- Scheduler Snapshot at 1910ms ---
+  Task (Long_Task:3)   | Exp for comparison:  306611796 | Last Burst:   40000000 | Prev Exp:   39506170 | NEW Exp:   39835390 [RUNNING]
+--------------------------------------
+--- Scheduler Snapshot at 1920ms ---
+  Task (Long_Task:3)   | Exp for comparison:  313278463 | Last Burst:   40000000 | Prev Exp:   39506170 | NEW Exp:   39835390 [RUNNING]
+--------------------------------------
+--- Scheduler Snapshot at 1930ms ---
+  Task (Long_Task:3)   | Exp for comparison:  319945130 | Last Burst:   40000000 | Prev Exp:   39506170 | NEW Exp:   39835390 [RUNNING]
+--------------------------------------
+--- Scheduler Snapshot at 1940ms ---
+  Task (Long_Task:3)   | Exp for comparison:  326611796 | Last Burst:   40000000 | Prev Exp:   39506170 | NEW Exp:   39835390 [RUNNING]
+--------------------------------------
+--- Scheduler Snapshot at 1950ms ---
+  Task (Long_Task:3)   | Exp for comparison:  333278463 | Last Burst:   40000000 | Prev Exp:   39506170 | NEW Exp:   39835390 [RUNNING]
+--------------------------------------
+--- Scheduler Snapshot at 1960ms ---
+  Task (Long_Task:3)   | Exp for comparison:  339945130 | Last Burst:   40000000 | Prev Exp:   39506170 | NEW Exp:   39835390 [RUNNING]
+--------------------------------------
+CDA: thread (Long_Task:3) finished
+ Deactivation with Exp:  339945130
+###-Process: (Long_Task:3) is going down-###
+(Init:0)/0/1960ms - Switching Process In
+(Init:0)/0/1969ms - Switching Process In
+(Init:0)/0/1979ms - Switching Process In
+(Init:0)/0/1989ms - Switching Process In
+(Init:0)/0/1999ms - Switching Process In
+(Init:0)/0/2009ms - Switching Process In
+(Init:0)/0/2019ms - Switching Process In
+(Init:0)/0/2029ms - Switching Process In
+(Init:0)/0/2039ms - Switching Process In
+(Init:0)/0/2049ms - Switching Process In
+###-An Interrupt has fired!-###
+(Init:0)/0/2058ms - Switching Process In
+(Init:0)/0/2059ms - Switching Process In
+(Init:0)/0/2069ms - Switching Process In
+(Init:0)/0/2079ms - Switching Process In
+(Init:0)/0/2089ms - Switching Process In
+(Init:0)/0/2099ms - Switching Process In
+(Init:0)/0/2109ms - Switching Process In
+(Init:0)/0/2119ms - Switching Process In
+(Init:0)/0/2129ms - Switching Process In
+(Init:0)/0/2139ms - Switching Process In
+(Init:0)/0/2149ms - Switching Process In
+(Init:0)/0/2159ms - Switching Process In
+(Init:0)/0/2169ms - Switching Process In
+(Init:0)/0/2179ms - Switching Process In
+(Init:0)/0/2189ms - Switching Process In
+(Init:0)/0/2199ms - Switching Process In
+(Init:0)/0/2209ms - Switching Process In
+(Init:0)/0/2219ms - Switching Process In
+(Init:0)/0/2229ms - Switching Process In
+(Init:0)/0/2239ms - Switching Process In
+(Init:0)/0/2249ms - Switching Process In
+(Init:0)/0/2259ms - Switching Process In
+(Init:0)/0/2269ms - Switching Process In
+(Init:0)/0/2279ms - Switching Process In
+(Init:0)/0/2289ms - Switching Process In
+(Init:0)/0/2299ms - Switching Process In
+(Init:0)/0/2309ms - Switching Process In
+(Init:0)/0/2319ms - Switching Process In
+(Init:0)/0/2329ms - Switching Process In
+(Init:0)/0/2339ms - Switching Process In
+(Init:0)/0/2349ms - Switching Process In
+(Init:0)/0/2359ms - Switching Process In
+(Init:0)/0/2369ms - Switching Process In
+(Init:0)/0/2379ms - Switching Process In
+(Init:0)/0/2389ms - Switching Process In
+(Init:0)/0/2399ms - Switching Process In
+(Init:0)/0/2409ms - Switching Process In
+(Init:0)/0/2419ms - Switching Process In
+(Init:0)/0/2429ms - Switching Process In
+(Init:0)/0/2439ms - Switching Process In
+(Init:0)/0/2449ms - Switching Process In
+(Init:0)/0/2459ms - Switching Process In
+(Init:0)/0/2469ms - Switching Process In
+(Init:0)/0/2479ms - Switching Process In
+(Init:0)/0/2489ms - Switching Process In
+(Init:0)/0/2499ms - Switching Process In
+(Init:0)/0/2509ms - Switching Process In
+(Init:0)/0/2519ms - Switching Process In
+(Init:0)/0/2529ms - Switching Process In
+(Init:0)/0/2539ms - Switching Process In
+(Init:0)/0/2549ms - Switching Process In
+(Init:0)/0/2559ms - Switching Process In
+(Init:0)/0/2569ms - Switching Process In
+(Init:0)/0/2579ms - Switching Process In
+(Init:0)/0/2589ms - Switching Process In
+(Init:0)/0/2599ms - Switching Process In
+(Init:0)/0/2609ms - Switching Process In
+(Init:0)/0/2619ms - Switching Process In
+(Init:0)/0/2629ms - Switching Process In
+(Init:0)/0/2639ms - Switching Process In
+(Init:0)/0/2649ms - Switching Process In
+(Init:0)/0/2659ms - Switching Process In
+(Init:0)/0/2669ms - Switching Process In
+(Init:0)/0/2679ms - Switching Process In
+(Init:0)/0/2689ms - Switching Process In
+(Init:0)/0/2699ms - Switching Process In
+(Init:0)/0/2709ms - Switching Process In
+(Init:0)/0/2719ms - Switching Process In
+(Init:0)/0/2729ms - Switching Process In
+(Init:0)/0/2739ms - Switching Process In
+(Init:0)/0/2749ms - Switching Process In
+(Init:0)/0/2759ms - Switching Process In
+(Init:0)/0/2769ms - Switching Process In
+(Init:0)/0/2779ms - Switching Process In
+(Init:0)/0/2789ms - Switching Process In
+(Init:0)/0/2799ms - Switching Process In
+(Init:0)/0/2809ms - Switching Process In
+(Init:0)/0/2819ms - Switching Process In
+(Init:0)/0/2829ms - Switching Process In
+(Init:0)/0/2839ms - Switching Process In
+(Init:0)/0/2849ms - Switching Process In
+(Init:0)/0/2859ms - Switching Process In
+(Init:0)/0/2869ms - Switching Process In
+(Init:0)/0/2879ms - Switching Process In
+(Init:0)/0/2889ms - Switching Process In
+(Init:0)/0/2899ms - Switching Process In
+###-An Interrupt has fired!-###
+(Init:0)/0/2902ms - Switching Process In
+(Init:0)/0/2909ms - Switching Process In
+(Init:0)/0/2919ms - Switching Process In
+(Init:0)/0/2929ms - Switching Process In
+(Init:0)/0/2939ms - Switching Process In
+(Init:0)/0/2949ms - Switching Process In
+(Init:0)/0/2959ms - Switching Process In
+(Init:0)/0/2969ms - Switching Process In
+(Init:0)/0/2979ms - Switching Process In
+(Init:0)/0/2989ms - Switching Process In
+(Init:0)/0/2999ms - Switching Process In
+###-Sending Kill Message-###
+###-Shutting Down CPU-###
