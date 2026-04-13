@@ -75,6 +75,7 @@ To maintain a clean repository, the files are organized as follows:
 * **Experimental Evaluation & Reporting:** Conducted performance tests using `wset_monitor` across various memory access patterns (f.e., 10%, 20%, 50%, 90%). Verified the accuracy of physical address mapping and page flags returned by the system call, while documenting the correlation between estimated Working Set and actual memory access in a detailed `report.txt`.
 
 #### 📂 Lab 3 Directory Structure
+* `patch_3`: Patch file containing all kernel-side modifications.
 * `page_info.c`: The code containing the syscall implementation and page table traversal logic.
 * `wset_monitor.c`: The code for the user-space applicationt. 
 * `report.txt`: Detailed experimental results, observations on the "is_young" flag accuracy, and final conclusions.
