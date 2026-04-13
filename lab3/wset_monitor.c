@@ -30,7 +30,7 @@ int main() {
     char temp; // Temporary variable for simulating page access
     printf("\n--- Working Set Monitor Started ---\n");
 
-    // -----------  STEP 1: Allocate Memory -----------
+    // STEP 1: Allocate Memory
     // Allocate 100 MB. fd == 1 because we use MAP_ANONYMOUS
     char *buffer = mmap(NULL, MEM_SIZE, PROT_READ | PROT_WRITE, 
                         MAP_PRIVATE | MAP_ANONYMOUS, -1, 0);
@@ -41,14 +41,14 @@ int main() {
     }
     printf("--- [Step 1] Allocated 100 MB at Virtual Address: %p\n", buffer);
 
-    // -----------  STEP 2: Touch Pages to Make Them Present -----------
+    // STEP 2: Touch Pages to Make Them Present 
     // Writing to each page ensures they become 'Present' in RAM.
     for (i = 0; i < num_pages; i++) {
         buffer[i * PAGE_SIZE] = 'X'; 
     }
     printf("--- [Step 2] Touched %zu pages to ensure they are Present.\n", num_pages);
 
-    // -----------  STEP 3: Call sys_page_info -----------
+    // STEP 3: Call sys_page_info 
     // Reset Accessed bits by calling syscall with reset_young=1 for all pages.
     for (i = 0; i < num_pages; i++) {
         if (syscall(ID_page_info, (unsigned long)(buffer + i * PAGE_SIZE), &info, 1) != 0) {
@@ -58,7 +58,7 @@ int main() {
     }
     printf("--- [Step 3] Accessed bits (Young bits) have been reset to 0.\n");
 
-    // -----------  STEP 4: Simulate Workload -----------
+    // STEP 4: Simulate Workload 
     // Simulate Workload (Randomly accessing 20% of the pages)
     printf("--- [Step 4] Simulating workload: Accessing %d%% of pages randomly...\n", Workload_Access_Percentage);
     srand(time(NULL));
@@ -73,7 +73,7 @@ int main() {
         temp = buffer[random_index * PAGE_SIZE]; 
     }
 
-    // -----------  STEP 5: Count Working Set -----------
+    // STEP 5: Count Working Set
     // Scan memory again and count Working Set
     // Calling syscall with reset_young=0 to check which pages were accessed.
     printf("--- [Step 5] Counting working set by checking Young bits...\n");
