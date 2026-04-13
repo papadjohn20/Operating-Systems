@@ -1,9 +1,5 @@
 ======================================================================
 Project 3: 13/4/2026
-Team:
-Ioannis Papadopoulos 03899 papadjohn@uth.gr
-Marios Sioros 04069 msioros@uth.gr
-Charalampos Zachariadis 03734 czachariadis@uth.gr
 
 ----------------------------------------------------------------------
 BUILD INSTRUCTIONS
